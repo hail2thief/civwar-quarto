@@ -1,0 +1,83 @@
+---
+title: "Schedule"
+sidebar: false
+toc: false
+page-layout: full
+---
+
+
+
+- **Content** ({{< fa book-open-reader >}}): contain links to the readings for each week. Read these **before** class. Lecture slide decks will also appear here. 
+
+- **Assignment** ({{< fa pen-ruler >}}): contain the instructions for each assignment. Due dates and submission links will appear on Canvas.
+
+
+
+```{r, echo=FALSE,message=FALSE,warning=FALSE}
+library(tidyverse)
+library(kableExtra)
+library(knitr)
+library(glue)
+
+
+
+# format days
+format_days = function(date, day2) 
+{
+  case_when(
+    # we meet on both days
+    !is.na(date) & !is.na(day2) ~
+      glue('{format(date, "%b %e")} / {format(day2, "%b %e")}'),
+    # we meet only on first day
+    !is.na(date) & is.na(day2) ~
+      glue('{format(date, "%b %e")}'),
+    # we meet only on day 2
+    is.na(date) & !is.na(day2) ~
+      glue('{format(day2, "%b %e")}')
+  )
+}
+
+
+# format schedule data for table
+format_schedule = function(schedule_file)
+{
+  schedule = read_csv(schedule_file, show_col_types = FALSE) |> 
+    mutate(date = ymd(date),
+           day2 = ymd(day2)) |> 
+    mutate(week = ifelse(is.na(week), " ", week)) |> 
+    mutate(col_date = format_days(date, day2)) |> 
+    mutate(var_title = ifelse(!is.na(content),
+                              glue('<span class="content-title">{title}</span>'),
+                              glue('{title}'))) |> 
+    mutate(var_content = ifelse(!is.na(content),
+                                glue('<a href="{content}.qmd"><i class="fa-solid fa-book-open-reader fa-lg"></i></a>'),
+                                glue('<font color="#e9ecef"><i class="fa-solid fa-book-open-reader fa-lg"></i></font>'))) |> 
+    mutate(var_assignment = ifelse(!is.na(assignment),
+                                   glue('<a href="{assignment}.qmd"><i class="fa-solid fa-pen-ruler fa-lg"></i></a>'),
+                                   glue('<font color="#e9ecef"><i class="fa-solid fa-pen-ruler fa-lg"></i></font>'))) |> 
+    mutate(col_title = var_title) %>%
+    mutate(col_content = var_content,
+           col_assignment = var_assignment)
+  
+  return(schedule)
+}
+```
+
+
+
+
+```{r, echo = FALSE, warning=FALSE, message=FALSE,results='asis'}
+
+
+
+tbl = format_schedule(schedule_file = "data/schedule.csv") |> 
+  select(`  ` = week, ` ` = col_date, Topic = col_title, Content = col_content, 
+         Assignment = col_assignment) |> 
+  kbl(escape = FALSE, align = "rrlcc", table.attr = 'class="schedule-table"')%>% 
+    kable_styling(bootstrap_options = c("striped", "hover")) 
+
+
+# not sure why it has to be "cat()" (?)
+cat(tbl)
+```
+

@@ -1,0 +1,29 @@
+author: Juan Tellez
+
+instructor:
+  name: Professor Juan Tellez
+  name_no_title: Juan Tellez
+  email: jftellez@ucdavis.edu
+  url: "https://www.juanftellez.com"
+  github: https://github.com/hail2thief
+  office: "583 Kerr Hall"
+  appointment_url: "https://calendly.com/juan-f-tellez/15min"
+
+course:
+  number: "POL126"
+  semester: "Winter 2024"
+  days: "Tue/Thu"
+  github: https://github.com/hail2thief/civwar
+  time: "1:40PM - 3:00PM"
+  location: "Olson Hall 6"
+  dates: "Jan 6th-March 22nd, 2024"
+  url: "https://lapol.juanftellez.com"
+  copyright_year: "2024"
+
+university:
+  name: University of California, Davis
+  url: "https://www.ucdavis.edu/"
+
+school:
+  name: Department of Political Science
+  url: "https://ps.ucdavis.edu/"

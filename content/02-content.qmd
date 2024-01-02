@@ -1,0 +1,23 @@
+---
+title: "Why do people rebel? Grievances and identity"
+---
+
+# Readings
+
+
+## Required
+
+- {{< fa book >}}&ensp; Chapter 1 in [@wood:2003]
+- {{< fa file-pdf >}}&ensp;[@posen:1993]
+- {{< fa book >}}&ensp; Chapter 3 in [@cockburn:2016]
+
+
+## Recommended
+
+
+# Slides
+
+* [Tuesday slides here]()
+* [Thursday slides here]()
+
+

@@ -1,0 +1,26 @@
+---
+title: "Why do people rebel? Resources and opportunity"
+---
+
+# Readings
+
+
+## Required
+
+
+- {{< fa file-pdf >}}&ensp;[@collier:hoeffler:2004]
+- {{< fa file-pdf >}}&ensp;[@dube:vargas:2013]
+- {{< fa file-pdf >}}&ensp;[@carter:etal:2019]
+
+
+## Recommended
+
+- {{< fa file-pdf >}}&ensp;[@paine:2016]
+
+
+# Slides
+
+* [Tuesday slides here]()
+* [Thursday slides here]()
+
+

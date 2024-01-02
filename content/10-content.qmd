@@ -1,0 +1,21 @@
+---
+title: "How do wars end?"
+---
+
+# Readings
+
+
+## Required
+
+{{< fa file-pdf >}}&ensp;[@luttwak:1999]
+{{< fa file-pdf >}}&ensp;[@tepperman:2002]
+
+## Recommended
+
+
+# Slides
+
+* [Tuesday slides here]()
+* [Thursday slides here]()
+
+

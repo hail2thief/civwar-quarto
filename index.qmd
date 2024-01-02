@@ -1,0 +1,227 @@
+---
+title: "Syllabus"
+sidebar: false
+---
+
+
+
+![](images/apotheosis.jpeg){width=100%}
+
+
+::: {.grid .course-details .course-details-smaller}
+
+::: {.g-col-12 .g-col-sm-6 .g-col-md-4}
+### Instructor
+
+- {{< fa user >}} &nbsp; [{{< var instructor.name >}}]({{< var instructor.url >}})
+- {{< fa university >}} &nbsp; {{< var instructor.office >}}
+- {{< fa envelope >}} &nbsp; {{< var instructor.email >}}
+- {{< fa clock >}} &nbsp; Th 11:00am-1:00pm
+:::
+
+
+::: {.g-col-12 .g-col-md-4 .contact-policy}
+### Teaching assistants
+
+- {{< fa user-graduate >}}  &nbsp; **Julian Haddad** <br> {{< fa clock >}} &nbsp; Tu 9am-11am <br> {{< fa university >}} &nbsp; Kerr 663 <br> {{< fa envelope >}} &nbsp; bldavis@ucdavis.edu
+- {{< fa user-graduate >}}  &nbsp; **Seung-Hwan (Sam) Hong** <br> {{< fa clock >}} &nbsp; M 9am-11am <br> {{< fa university >}} &nbsp; Kerr 577 <br> {{< fa envelope >}} &nbsp; samhong@ucdavis.edu
+:::
+
+::: {.g-col-12 .g-col-sm-6 .g-col-md-4}
+### Course details
+
+- {{< fa calendar >}} &nbsp; {{< var course.days >}}
+- {{< fa calendar-alt >}} &nbsp; {{< var course.dates >}}
+- {{< fa clock >}} &nbsp; {{< var course.time >}}
+- {{< fa location-dot >}} &nbsp; {{< var course.location >}}
+:::
+
+
+:::
+
+
+```{r load-libraries, message=FALSE, warning=FALSE, include=FALSE}
+library(dplyr)
+library(tibble)
+library(pander)
+```
+
+
+
+
+## What is this class about? 
+
+
+This is an undergraduate course on the study of civil wars, political violence, and other forms of armed conflict. Each week will be organized around a different topic related to the study of civil wars, including why civil wars break out, the tactics insurgents and states use during wars, what happens when third-parties intervene, whether negotiations can effectively end wars, and other key questions in the conflict literature. 
+
+
+In addition to reading, we will also spend a significant amount of time in this class **working with data** on political violence. We will explore general patterns and trends, think about how to measure different concepts related to political violence, and see to what extent different theories of political violence are supported by evidence. 
+
+
+By the end of this course, you will be able to:
+
+1. Identify structural and historical drivers of violence
+2. Think about civil war as a strategic process involving states, civilians, and armed groups
+3. Explore, analyze, and interpret data bearing on political violence
+
+
+
+::: {.callout-note}
+The class assumes no prior experience with data but you will need regular access to a computer.
+:::
+
+
+
+
+## What materials do I need for this course?
+
+
+### Where do I find the readings?
+
+
+Book chapters and other non-easily accessible readings will be linked on this site. You will have to find journal articles and easily accessible readings on your own (a valuable skill!). Googling the article is often enough, otherwise Google Scholar and being either on campus wi-fi or on the library VPN should do the trick. If you're stuck the TAs will be happy to help. 
+
+### Google Sheets
+
+All homework requiring data will be done in Google Sheets or Excel. [Google Sheets](http://sheets.google.com/) is free to use with a Google account, and I will do all data analysis tutorials in Google Sheets. However, you can easily follow along with whatever program you prefer.
+
+
+### Podcasts
+
+You should listen to podcasts, although I won't grade you on it. Here are some of my favorite podcasts that frequently discuss politics and history in Latin America:  
+
+
+- [WOLA](https://www.wola.org/format/podcast/)
+- [The Daily](https://www.nytimes.com/column/the-daily)
+- [Revolutions](https://www.revolutionspodcast.com/)
+- [La Silla Vacia (for Spanish speakers)](https://lasillavacia.com/silla-llena/podcasts)
+
+
+
+
+## How can I get help or contact the instructors?
+
+
+For big questions -- stuck on the homework, question about a grade, confusion/questions about the reading -- the best thing is to come to our office hours. You will get *better* help from us during office hours than over email. 
+
+
+For small and/or urgent questions -- my grade is missing, you believe there is an error in something we uploaded, etc. -- the best thing is to email. In your emails, please: 
+
+- Be professional (include a subject line, a greeting, e.g., "Dear Prof. XYZ,")
+- Be brief (I won't be offended!)
+
+
+
+
+## Frequently Answered No Questions (FANQ)
+
+
+This is an important list of questions that students frequently ask where the answer is 'no'. 
+
+
+
+- *Do you record lecture?*
+   I do not record lecture.
+
+- *Can I record your lecture?*
+   You may not record my lecture.
+   
+- *I had to miss class, do I need to let you know?*
+  I don't take attendance, so you do not need to let me know. 
+
+- *Can I have your lecture notes in addition to your slides?*
+   You may not have any additional notes.
+
+- *Will you make us a study guide?*
+   I will not make you a study guide.
+
+- *Are there extra practice tests / practice questions?*
+   There are no extra practice tests / questions. 
+
+- *Can I correct what I got wrong on the homework / test and resubmit for credit?*
+   You may not resubmit homework / test for credit.
+
+- *Can I take the exam earlier / later than scheduled?*
+   You may not take exams earlier / later than scheduled.
+
+- *It is week X, can I turn in a missing assignment from week X - N?*
+   You may not turn in an assignment from previous weeks.
+
+- *I had to miss class, can you catch me up on what I missed?*
+   I will not catch you up on what you missed.
+
+- *The homework was due Wednesday, but when I went to turn it in that evening, something happened that was out of my control and I couldn’t turn it in. Can I turn it in now without missing points?*
+    You may not turn it in now without missing points.
+
+- *Will there be extra credit?*
+    There may be, but I will not pre-commit to extra credit opportunities.
+
+
+
+## Counseling & Psychiatry Services
+
+
+Life at Davis can be complicated and challenging. You might feel overwhelmed, experience anxiety or depression, or struggle with relationships or family responsibilities. [UC Davis Counseling Services](https://shcs.ucdavis.edu/services/counseling-services) provide *confidential* support for students who are struggling with mental health and emotional challenges. Please do not hesitate to contact them for assistance—getting help is a smart and good thing to do.
+
+
+
+## Assignments and grades
+
+You can find descriptions for all the assignments on the [assignments page](/assignment/).
+
+```{r assignments-grades, include=FALSE}
+assignments <- tribble(
+  ~Points, ~Assignment,
+  50, "Problem sets (8)", 
+  25, "Midterm", 
+  25, "Final"
+) %>%
+  mutate(Percent = Points / sum(Points),
+         Percent = scales::percent(Percent))
+
+grading <- tribble(
+  ~Grade, ~Range, ~Grade1, ~Range1,
+  "A",  "93–100%", "C",  "73–76%",
+  "A−", "90–92%", "C−", "70–72%",
+  "B+", "87–89%", "D+", "67–69%",
+  "B",  "83–86%", "D",  "63–66%",
+  "B−", "80–82%", "D−", "60–62%",
+  "C+", "77–79%", "F",  "< 60%"
+)
+```
+
+
+```{r show-assignments-table, echo=FALSE, results="asis"}
+assignments_total <- tibble(Assignment = "Total",
+                                Points = sum(assignments$Points),
+                                Percent = NA)
+
+bind_rows(assignments) %>% 
+  select(Assignment, Percent) %>% 
+  pandoc.table(justify = "lc", missing = "—")
+```
+
+\
+
+```{r show-grades-table, echo=FALSE, results="asis"}
+grading %>%
+  pandoc.table(justify = "lclc", 
+               col.names = c("Grade", "Range", "Grade", "Range"))
+```
+
+
+
+
+
+## The art of war
+
+
+War is a common subject of art (like the painting up top). Look through some famous paintings of war. Draw a quick sketch of the painting of your choice on scratch paper, including your name and the name of the painting / art piece. Bring it to me in class. I’ll round your final grade up to the nearest whole number; you’ve got until the end of week 2 of class to do this. 
+
+
+
+
+
+## Credits
+
+This course draws on code, content, ideas, inspirations and much more from work by Andrew Heiss, Kieran Healy, Laia Balcells, and others who have made their courses publicly available.

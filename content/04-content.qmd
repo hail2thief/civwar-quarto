@@ -1,0 +1,22 @@
+---
+title: "How wars are fought"
+---
+
+# Readings
+
+
+## Required
+
+- {{< fa file-pdf >}}&ensp; Chapter 7 in [@kalyvas:2006]
+- {{< fa file-pdf >}}&ensp;[@weinstein:2005]
+- {{< fa file-pdf >}}&ensp;[@cohen:2013]
+
+## Recommended
+
+
+# Slides
+
+* [Tuesday slides here]()
+* [Thursday slides here]()
+
+

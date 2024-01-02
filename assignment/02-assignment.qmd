@@ -1,0 +1,23 @@
+---
+title: "Hello"
+---
+
+## Instructions
+
+
+- For the data, right-click, "save/download file as..."
+- Open the data
+- Complete all of the tasks associated with that data and keep track of your answers / images
+- **Once you are done**, go on Canvas and answer the questions related to the assignment
+    - the Canvas assignment is **timed**; if you open it prior to completing the tasks you will run out of time
+
+
+
+Skills used: 
+
+- 
+
+
+[My awkward Google Sheets video tutorials are here](https://www.dropbox.com/sh/rsj9qm67se619pm/AAD1wPt84O8yaIfSPcwN9edua?dl=0)
+
+

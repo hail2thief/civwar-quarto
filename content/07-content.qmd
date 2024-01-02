@@ -1,0 +1,23 @@
+---
+title: "Displacement in Colombia"
+---
+
+# Readings
+
+
+## Required
+
+
+- {{< fa file-pdf >}}&ensp;[@tellez:2022]
+- {{< fa file-pdf >}}&ensp;[@lichtenheld:2020]
+
+
+## Recommended
+
+
+# Slides
+
+* [Tuesday slides here]()
+* [Thursday slides here]()
+
+
