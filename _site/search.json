@@ -1,0 +1,394 @@
+[
+  {
+    "objectID": "schedule.html",
+    "href": "schedule.html",
+    "title": "Schedule",
+    "section": "",
+    "text": "Content (): contain links to the readings for each week. Read these before class. Lecture slide decks will also appear here.\nAssignment (): contain the instructions for each assignment. Due dates and submission links will appear on Canvas.\n\n\n\n\n\n\n\n\n\n\nTopic\n\n\nContent\n\n\nAssignment\n\n\n\n\n\n\nWeek 01\n\n\nJan 9 / Jan 11\n\n\nHello + what are civil wars?\n\n\n\n\n\n\n\n\n\n\nWeek 02\n\n\nJan 16 / Jan 18\n\n\nWhy do people rebel? Grievances, ethnicity\n\n\n\n\n\n\n\n\n\n\nWeek 03\n\n\nJan 23 / Jan 25\n\n\nWhy do people rebel? Resources\n\n\n\n\n\n\n\n\n\n\nWeek 04\n\n\nJan 30 / Feb 1\n\n\nHow are wars fought? Insurgency\n\n\n\n\n\n\n\n\n\n\nWeek 05\n\n\nFeb 6 / Feb 8\n\n\nMidterm exam  + film\n\n\n\n\n\n\n\n\n\n\nWeek 06\n\n\nFeb 13 / Feb 15\n\n\nHow are wars fought? Counterinsurgency\n\n\n\n\n\n\n\n\n\n\nWeek 07\n\n\nFeb 20 / Feb 22\n\n\nCase study: forced displacement in Colombia\n\n\n\n\n\n\n\n\n\n\nWeek 08\n\n\nFeb 27 / Feb 29\n\n\nCase study: civilian resistance in Peru\n\n\n\n\n\n\n\n\n\n\nWeek 09\n\n\nMar 5 / Mar 7\n\n\nCase study: ethnic partition in Ethiopia\n\n\n\n\n\n\n\n\n\n\nWeek 10\n\n\nMar 12 / Mar 14\n\n\nHow do wars end? Negotiated settlements\n\n\n\n\n\n\n\n\n\n\n\n\nMar 21\n\n\nFinal exam at 3:30pm"
+  },
+  {
+    "objectID": "assignment/index.html#preparation",
+    "href": "assignment/index.html#preparation",
+    "title": "Overview",
+    "section": "Preparation",
+    "text": "Preparation\nYou will succeed in this class if you (1) attend lecture, (2) attend section, and (3) do the problem sets."
+  },
+  {
+    "objectID": "assignment/index.html#problem-sets",
+    "href": "assignment/index.html#problem-sets",
+    "title": "Overview",
+    "section": "Problem sets",
+    "text": "Problem sets\nTo practice working with data you will complete problem sets throughout the quarter. Feel free to work together on the problem sets but you must turn in your own answers to Canvas. You cannot work in groups of more than three people."
+  },
+  {
+    "objectID": "assignment/index.html#exams",
+    "href": "assignment/index.html#exams",
+    "title": "Overview",
+    "section": "Exams",
+    "text": "Exams\nWe will hold midterm and final exams. The exams will be in-person. The format will either be multiple choice (scantrons) or written (blue books) or a combination of the two."
+  },
+  {
+    "objectID": "assignment/index.html#honor-code",
+    "href": "assignment/index.html#honor-code",
+    "title": "Overview",
+    "section": "Honor Code",
+    "text": "Honor Code\nBe nice. Don’t cheat. The Code of Academic Conduct is in effect in this class and all others at the University. I will treat violations seriously. If you have doubts, it is your responsibility to ask about the Code’s application."
+  },
+  {
+    "objectID": "assignment/index.html#chatgpt-and-other-llms",
+    "href": "assignment/index.html#chatgpt-and-other-llms",
+    "title": "Overview",
+    "section": "ChatGPT (and other LLMs)",
+    "text": "ChatGPT (and other LLMs)\nThe world is still figuring out how to deal with large language models (LLMs) like ChatGPT. My view is that ChatGPT is not functionally different from searching online forums, Google, etc., for help with how to complete tasks. Looking up how to do things online is good practice, so I don’t want to discourage that.\n\nwhat is allowed. You are allowed to use ChatGPT to figure out how to complete data analysis tasks (e.g., how do I make a barplot in Excel?).\nwhat is not allowed. You are not allowed to pass off ChatGPT’s writing as if it was your own (e.g., submitting ChatGPT’s interpretation of some graph or data pattern).\nBe careful. In my experience, these machines can give answers that are way off. Plus, if you over rely on them and don’t develop an understanding of the material, you’ll likely suffer during the in-class exams."
+  },
+  {
+    "objectID": "assignment/index.html#grade-disputes",
+    "href": "assignment/index.html#grade-disputes",
+    "title": "Overview",
+    "section": "Grade disputes",
+    "text": "Grade disputes\nIf you believe that you received the wrong grade on an assignment or exam:\n\nsend an email specifying exactly which questions you believe were graded incorrectly, and provide specific justification for why your answer is the correct one. We will then regrade your entire assignment. Your grade may go up, down, or stay the same\nI will only accept grade appeals up to three days after the posting of a grade\n\n\nExtensions on assignments\nYou can turn in the problem set/weekly check-in one day late, no questions asked, though you will lose a full letter-grade. Beyond that I will not accept late assignments without a doctor’s note, so don’t ask!"
+  },
+  {
+    "objectID": "assignment/09-assignment.html",
+    "href": "assignment/09-assignment.html",
+    "title": "Hello",
+    "section": "",
+    "text": "For the data, right-click, “save/download file as…”\nOpen the data\nComplete all of the tasks associated with that data and keep track of your answers / images\nOnce you are done, go on Canvas and answer the questions related to the assignment\n\nthe Canvas assignment is timed; if you open it prior to completing the tasks you will run out of time\n\n\nSkills used:\n\n\n\nMy awkward Google Sheets video tutorials are here"
+  },
+  {
+    "objectID": "assignment/09-assignment.html#instructions",
+    "href": "assignment/09-assignment.html#instructions",
+    "title": "Hello",
+    "section": "",
+    "text": "For the data, right-click, “save/download file as…”\nOpen the data\nComplete all of the tasks associated with that data and keep track of your answers / images\nOnce you are done, go on Canvas and answer the questions related to the assignment\n\nthe Canvas assignment is timed; if you open it prior to completing the tasks you will run out of time\n\n\nSkills used:\n\n\n\nMy awkward Google Sheets video tutorials are here"
+  },
+  {
+    "objectID": "assignment/08-assignment.html",
+    "href": "assignment/08-assignment.html",
+    "title": "Hello",
+    "section": "",
+    "text": "For the data, right-click, “save/download file as…”\nOpen the data\nComplete all of the tasks associated with that data and keep track of your answers / images\nOnce you are done, go on Canvas and answer the questions related to the assignment\n\nthe Canvas assignment is timed; if you open it prior to completing the tasks you will run out of time\n\n\nSkills used:\n\n\n\nMy awkward Google Sheets video tutorials are here"
+  },
+  {
+    "objectID": "assignment/08-assignment.html#instructions",
+    "href": "assignment/08-assignment.html#instructions",
+    "title": "Hello",
+    "section": "",
+    "text": "For the data, right-click, “save/download file as…”\nOpen the data\nComplete all of the tasks associated with that data and keep track of your answers / images\nOnce you are done, go on Canvas and answer the questions related to the assignment\n\nthe Canvas assignment is timed; if you open it prior to completing the tasks you will run out of time\n\n\nSkills used:\n\n\n\nMy awkward Google Sheets video tutorials are here"
+  },
+  {
+    "objectID": "assignment/05-assignment.html",
+    "href": "assignment/05-assignment.html",
+    "title": "Hello",
+    "section": "",
+    "text": "For the data, right-click, “save/download file as…”\nOpen the data\nComplete all of the tasks associated with that data and keep track of your answers / images\nOnce you are done, go on Canvas and answer the questions related to the assignment\n\nthe Canvas assignment is timed; if you open it prior to completing the tasks you will run out of time\n\n\nSkills used:\n\n\n\nMy awkward Google Sheets video tutorials are here"
+  },
+  {
+    "objectID": "assignment/05-assignment.html#instructions",
+    "href": "assignment/05-assignment.html#instructions",
+    "title": "Hello",
+    "section": "",
+    "text": "For the data, right-click, “save/download file as…”\nOpen the data\nComplete all of the tasks associated with that data and keep track of your answers / images\nOnce you are done, go on Canvas and answer the questions related to the assignment\n\nthe Canvas assignment is timed; if you open it prior to completing the tasks you will run out of time\n\n\nSkills used:\n\n\n\nMy awkward Google Sheets video tutorials are here"
+  },
+  {
+    "objectID": "assignment/02-assignment.html",
+    "href": "assignment/02-assignment.html",
+    "title": "Hello",
+    "section": "",
+    "text": "For the data, right-click, “save/download file as…”\nOpen the data\nComplete all of the tasks associated with that data and keep track of your answers / images\nOnce you are done, go on Canvas and answer the questions related to the assignment\n\nthe Canvas assignment is timed; if you open it prior to completing the tasks you will run out of time\n\n\nSkills used:\n\n\n\nMy awkward Google Sheets video tutorials are here"
+  },
+  {
+    "objectID": "assignment/02-assignment.html#instructions",
+    "href": "assignment/02-assignment.html#instructions",
+    "title": "Hello",
+    "section": "",
+    "text": "For the data, right-click, “save/download file as…”\nOpen the data\nComplete all of the tasks associated with that data and keep track of your answers / images\nOnce you are done, go on Canvas and answer the questions related to the assignment\n\nthe Canvas assignment is timed; if you open it prior to completing the tasks you will run out of time\n\n\nSkills used:\n\n\n\nMy awkward Google Sheets video tutorials are here"
+  },
+  {
+    "objectID": "assignment/04-assignment.html",
+    "href": "assignment/04-assignment.html",
+    "title": "Hello",
+    "section": "",
+    "text": "For the data, right-click, “save/download file as…”\nOpen the data\nComplete all of the tasks associated with that data and keep track of your answers / images\nOnce you are done, go on Canvas and answer the questions related to the assignment\n\nthe Canvas assignment is timed; if you open it prior to completing the tasks you will run out of time\n\n\nSkills used:\n\n\n\nMy awkward Google Sheets video tutorials are here"
+  },
+  {
+    "objectID": "assignment/04-assignment.html#instructions",
+    "href": "assignment/04-assignment.html#instructions",
+    "title": "Hello",
+    "section": "",
+    "text": "For the data, right-click, “save/download file as…”\nOpen the data\nComplete all of the tasks associated with that data and keep track of your answers / images\nOnce you are done, go on Canvas and answer the questions related to the assignment\n\nthe Canvas assignment is timed; if you open it prior to completing the tasks you will run out of time\n\n\nSkills used:\n\n\n\nMy awkward Google Sheets video tutorials are here"
+  },
+  {
+    "objectID": "content/02-content.html",
+    "href": "content/02-content.html",
+    "title": "Why do people rebel? Grievances and identity",
+    "section": "",
+    "text": "Chapter 1 in Elisabeth J. Wood, Insurgent Collective Action and Civil War in El Salvador (Cambridge University Press, 2003).\n Barry R. Posen, “The Security Dilemma and Ethnic Conflict,” Survival 35, no. 1 (1993): 27–47.\n  Chapter 3 in Patrick Cockburn, The Age of Jihad: Islamic State and the Great War for the Middle East (Verso Books, 2016)."
+  },
+  {
+    "objectID": "content/02-content.html#required",
+    "href": "content/02-content.html#required",
+    "title": "Why do people rebel? Grievances and identity",
+    "section": "",
+    "text": "Chapter 1 in Elisabeth J. Wood, Insurgent Collective Action and Civil War in El Salvador (Cambridge University Press, 2003).\n Barry R. Posen, “The Security Dilemma and Ethnic Conflict,” Survival 35, no. 1 (1993): 27–47.\n  Chapter 3 in Patrick Cockburn, The Age of Jihad: Islamic State and the Great War for the Middle East (Verso Books, 2016)."
+  },
+  {
+    "objectID": "content/01-content.html",
+    "href": "content/01-content.html",
+    "title": "What is civil war?",
+    "section": "",
+    "text": "The syllabus and assignments pages for this class\n Stathis N Kalyvas and Laia Balcells, “International System and Technologies of Rebellion: How the End of the Cold War Shaped Internal Conflict,” American Political Science Review 104, no. 3 (2010): 415–429.\n Stathis N. Kalyvas, “Jihadi Rebels in Civil War,” Dædalus 147, no. 1 (2018): 36–47.\n\n\n\n\n\n  Amelia Hoover Green’s reading guide: here\n  Michael Nelson’s reading guide"
+  },
+  {
+    "objectID": "content/01-content.html#required",
+    "href": "content/01-content.html#required",
+    "title": "What is civil war?",
+    "section": "",
+    "text": "The syllabus and assignments pages for this class\n Stathis N Kalyvas and Laia Balcells, “International System and Technologies of Rebellion: How the End of the Cold War Shaped Internal Conflict,” American Political Science Review 104, no. 3 (2010): 415–429.\n Stathis N. Kalyvas, “Jihadi Rebels in Civil War,” Dædalus 147, no. 1 (2018): 36–47."
+  },
+  {
+    "objectID": "content/01-content.html#recommended",
+    "href": "content/01-content.html#recommended",
+    "title": "What is civil war?",
+    "section": "",
+    "text": "Amelia Hoover Green’s reading guide: here\n  Michael Nelson’s reading guide"
+  },
+  {
+    "objectID": "content/index.html",
+    "href": "content/index.html",
+    "title": "Readings and Lecture Materials",
+    "section": "",
+    "text": "Each session has a set of required readings that you should complete before class.\nThe lecture slides are special HTML files. On each class session page you’ll see a button for opening the slides in a new browser tab, and a button for downloading a PDF of the slides. They look like this:\n\n View all slides in new window  Download PDF of all slides\n\nThe slides are also embedded on each page. You can click in the slides and navigate through them with ← and →. If you type ? while viewing the slides you can see a list of slide-specific commands (like f for fullscreen)."
+  },
+  {
+    "objectID": "content/06-content.html",
+    "href": "content/06-content.html",
+    "title": "Counterinsurgency",
+    "section": "",
+    "text": "Counterinsurgency field manual, read section titled: ASPECTS OF COUNTERINSURGENCY (Pages 1:19 through 1:29, look at bottom-right of page)\n David A. Siegel, “When Does Repression Work?: Collective Action in Social Networks,” Journal of Politics 73, no. 4 (2011): 993–1010.\n Sabine C. Carey and Neil J. Mitchell, “Progovernment Militias,” Annual Review of Political Science 20 (2017): 127–147.\n\n\n\n\n\nBenjamin Valentino, Paul Huth, and Dylan Balch-Lindsay, “‘Draining the Sea’: Mass Killing and Guerrilla Warfare,” International Organization 58, no. 2 (2004): 375–407.\nEli Berman, Jacob N Shapiro, and Joseph H Felter, “Can Hearts and Minds Be Bought? The Economics of Counterinsurgency in Iraq,” Journal of Political Economy 119, no. 4 (2011): 766–819.\nLuke N. Condra and Jacob N. Shapiro, “Who Takes the Blame? The Strategic Effects of Collateral Damage,” American Journal of Political Science 56, no. 1 (2012): 167–187.\nbdm:2005a?\nbdm:2005?\nbdm:dickson:2007?"
+  },
+  {
+    "objectID": "content/06-content.html#required",
+    "href": "content/06-content.html#required",
+    "title": "Counterinsurgency",
+    "section": "",
+    "text": "Counterinsurgency field manual, read section titled: ASPECTS OF COUNTERINSURGENCY (Pages 1:19 through 1:29, look at bottom-right of page)\n David A. Siegel, “When Does Repression Work?: Collective Action in Social Networks,” Journal of Politics 73, no. 4 (2011): 993–1010.\n Sabine C. Carey and Neil J. Mitchell, “Progovernment Militias,” Annual Review of Political Science 20 (2017): 127–147."
+  },
+  {
+    "objectID": "content/06-content.html#recommended",
+    "href": "content/06-content.html#recommended",
+    "title": "Counterinsurgency",
+    "section": "",
+    "text": "Benjamin Valentino, Paul Huth, and Dylan Balch-Lindsay, “‘Draining the Sea’: Mass Killing and Guerrilla Warfare,” International Organization 58, no. 2 (2004): 375–407.\nEli Berman, Jacob N Shapiro, and Joseph H Felter, “Can Hearts and Minds Be Bought? The Economics of Counterinsurgency in Iraq,” Journal of Political Economy 119, no. 4 (2011): 766–819.\nLuke N. Condra and Jacob N. Shapiro, “Who Takes the Blame? The Strategic Effects of Collateral Damage,” American Journal of Political Science 56, no. 1 (2012): 167–187.\nbdm:2005a?\nbdm:2005?\nbdm:dickson:2007?"
+  },
+  {
+    "objectID": "content/05-content.html",
+    "href": "content/05-content.html",
+    "title": "No reading",
+    "section": "",
+    "text": "Readings\nWe’re at the movies"
+  },
+  {
+    "objectID": "content/10-content.html",
+    "href": "content/10-content.html",
+    "title": "How do wars end?",
+    "section": "",
+    "text": "Edward N. Luttwak, “Give War a Chance,” Foreign Aff. 78 (1999): 36.  Jonathan D. Tepperman, “Truth and Consequences,” Foreign Aff. 81 (2002): 128."
+  },
+  {
+    "objectID": "content/10-content.html#required",
+    "href": "content/10-content.html#required",
+    "title": "How do wars end?",
+    "section": "",
+    "text": "Edward N. Luttwak, “Give War a Chance,” Foreign Aff. 78 (1999): 36.  Jonathan D. Tepperman, “Truth and Consequences,” Foreign Aff. 81 (2002): 128."
+  },
+  {
+    "objectID": "content/03-content.html",
+    "href": "content/03-content.html",
+    "title": "Why do people rebel? Resources and opportunity",
+    "section": "",
+    "text": "Paul Collier and Anke Hoeffler, “Greed and Grievance in Civil War,” Oxford Economic Papers 56 (2004): 563–595.\n Oeindrila Dube and Juan F Vargas, “Commodity Price Shocks and Civil Conflict: Evidence from Colombia,” The Review of Economic Studies 80, no. 4 (2013): 1384–1421.\n David B. Carter, Andrew C. Shaver, and Austin L. Wright, “Places to Hide: Terrain, Ethnicity, and Civil Conflict,” The Journal of Politics 81, no. 4 (2019): 1446–1465.\n\n\n\n\n\n Jack Paine, “Rethinking the Conflict ‘Resource Curse’: How Oil Wealth Prevents Center-Seeking Civil Wars,” International Organization 70, no. 4 (2016): 727–761."
+  },
+  {
+    "objectID": "content/03-content.html#required",
+    "href": "content/03-content.html#required",
+    "title": "Why do people rebel? Resources and opportunity",
+    "section": "",
+    "text": "Paul Collier and Anke Hoeffler, “Greed and Grievance in Civil War,” Oxford Economic Papers 56 (2004): 563–595.\n Oeindrila Dube and Juan F Vargas, “Commodity Price Shocks and Civil Conflict: Evidence from Colombia,” The Review of Economic Studies 80, no. 4 (2013): 1384–1421.\n David B. Carter, Andrew C. Shaver, and Austin L. Wright, “Places to Hide: Terrain, Ethnicity, and Civil Conflict,” The Journal of Politics 81, no. 4 (2019): 1446–1465."
+  },
+  {
+    "objectID": "content/03-content.html#recommended",
+    "href": "content/03-content.html#recommended",
+    "title": "Why do people rebel? Resources and opportunity",
+    "section": "",
+    "text": "Jack Paine, “Rethinking the Conflict ‘Resource Curse’: How Oil Wealth Prevents Center-Seeking Civil Wars,” International Organization 70, no. 4 (2016): 727–761."
+  },
+  {
+    "objectID": "content/04-content.html",
+    "href": "content/04-content.html",
+    "title": "How wars are fought",
+    "section": "",
+    "text": "Chapter 7 in Stathis Kalyvas, The Logic of Violence in Civil War (New York: Cambridge University Press, 2006).\n J. M. Weinstein, “Resources and the Information Problem in Rebel Recruitment,” Journal of Conflict Resolution 49, no. 4 (2005): 598–624.\n Dara Kay Cohen, “Explaining Rape During Civil War: Cross-national Evidence (19802009),” American Political Science Review 107, no. 3 (2013): 461–477."
+  },
+  {
+    "objectID": "content/04-content.html#required",
+    "href": "content/04-content.html#required",
+    "title": "How wars are fought",
+    "section": "",
+    "text": "Chapter 7 in Stathis Kalyvas, The Logic of Violence in Civil War (New York: Cambridge University Press, 2006).\n J. M. Weinstein, “Resources and the Information Problem in Rebel Recruitment,” Journal of Conflict Resolution 49, no. 4 (2005): 598–624.\n Dara Kay Cohen, “Explaining Rape During Civil War: Cross-national Evidence (19802009),” American Political Science Review 107, no. 3 (2013): 461–477."
+  },
+  {
+    "objectID": "content/08-content.html",
+    "href": "content/08-content.html",
+    "title": "Civilian resistance in Peru",
+    "section": "",
+    "text": "Ch. 4 and Ch. 5, serna:2012?"
+  },
+  {
+    "objectID": "content/08-content.html#required",
+    "href": "content/08-content.html#required",
+    "title": "Civilian resistance in Peru",
+    "section": "",
+    "text": "Ch. 4 and Ch. 5, serna:2012?"
+  },
+  {
+    "objectID": "content/07-content.html",
+    "href": "content/07-content.html",
+    "title": "Displacement in Colombia",
+    "section": "",
+    "text": "Juan F. Tellez, “Land, Opportunism, and Displacement in Civil Wars: Evidence from Colombia,” American Political Science Review 116, no. 2 (2022): 403–418.\n Adam G. Lichtenheld, “Explaining Population Displacement Strategies in Civil Wars: A Cross-National Analysis,” International Organization 74, no. 2 (2020): 253–294."
+  },
+  {
+    "objectID": "content/07-content.html#required",
+    "href": "content/07-content.html#required",
+    "title": "Displacement in Colombia",
+    "section": "",
+    "text": "Juan F. Tellez, “Land, Opportunism, and Displacement in Civil Wars: Evidence from Colombia,” American Political Science Review 116, no. 2 (2022): 403–418.\n Adam G. Lichtenheld, “Explaining Population Displacement Strategies in Civil Wars: A Cross-National Analysis,” International Organization 74, no. 2 (2020): 253–294."
+  },
+  {
+    "objectID": "assignment/03-assignment.html",
+    "href": "assignment/03-assignment.html",
+    "title": "Hello",
+    "section": "",
+    "text": "For the data, right-click, “save/download file as…”\nOpen the data\nComplete all of the tasks associated with that data and keep track of your answers / images\nOnce you are done, go on Canvas and answer the questions related to the assignment\n\nthe Canvas assignment is timed; if you open it prior to completing the tasks you will run out of time\n\n\nSkills used:\n\n\n\nMy awkward Google Sheets video tutorials are here"
+  },
+  {
+    "objectID": "assignment/03-assignment.html#instructions",
+    "href": "assignment/03-assignment.html#instructions",
+    "title": "Hello",
+    "section": "",
+    "text": "For the data, right-click, “save/download file as…”\nOpen the data\nComplete all of the tasks associated with that data and keep track of your answers / images\nOnce you are done, go on Canvas and answer the questions related to the assignment\n\nthe Canvas assignment is timed; if you open it prior to completing the tasks you will run out of time\n\n\nSkills used:\n\n\n\nMy awkward Google Sheets video tutorials are here"
+  },
+  {
+    "objectID": "assignment/10-assignment.html",
+    "href": "assignment/10-assignment.html",
+    "title": "Hello",
+    "section": "",
+    "text": "For the data, right-click, “save/download file as…”\nOpen the data\nComplete all of the tasks associated with that data and keep track of your answers / images\nOnce you are done, go on Canvas and answer the questions related to the assignment\n\nthe Canvas assignment is timed; if you open it prior to completing the tasks you will run out of time\n\n\nSkills used:\n\n\n\nMy awkward Google Sheets video tutorials are here"
+  },
+  {
+    "objectID": "assignment/10-assignment.html#instructions",
+    "href": "assignment/10-assignment.html#instructions",
+    "title": "Hello",
+    "section": "",
+    "text": "For the data, right-click, “save/download file as…”\nOpen the data\nComplete all of the tasks associated with that data and keep track of your answers / images\nOnce you are done, go on Canvas and answer the questions related to the assignment\n\nthe Canvas assignment is timed; if you open it prior to completing the tasks you will run out of time\n\n\nSkills used:\n\n\n\nMy awkward Google Sheets video tutorials are here"
+  },
+  {
+    "objectID": "assignment/07-assignment.html",
+    "href": "assignment/07-assignment.html",
+    "title": "Hello",
+    "section": "",
+    "text": "For the data, right-click, “save/download file as…”\nOpen the data\nComplete all of the tasks associated with that data and keep track of your answers / images\nOnce you are done, go on Canvas and answer the questions related to the assignment\n\nthe Canvas assignment is timed; if you open it prior to completing the tasks you will run out of time\n\n\nSkills used:\n\n\n\nMy awkward Google Sheets video tutorials are here"
+  },
+  {
+    "objectID": "assignment/07-assignment.html#instructions",
+    "href": "assignment/07-assignment.html#instructions",
+    "title": "Hello",
+    "section": "",
+    "text": "For the data, right-click, “save/download file as…”\nOpen the data\nComplete all of the tasks associated with that data and keep track of your answers / images\nOnce you are done, go on Canvas and answer the questions related to the assignment\n\nthe Canvas assignment is timed; if you open it prior to completing the tasks you will run out of time\n\n\nSkills used:\n\n\n\nMy awkward Google Sheets video tutorials are here"
+  },
+  {
+    "objectID": "assignment/01-assignment.html",
+    "href": "assignment/01-assignment.html",
+    "title": "Hello",
+    "section": "",
+    "text": "For the data, right-click, “save/download file as…”\nOpen the data\nComplete all of the tasks associated with that data and keep track of your answers / images\nOnce you are done, go on Canvas and answer the questions related to the assignment\n\nthe Canvas assignment is timed; if you open it prior to completing the tasks you will run out of time\n\n\nSkills used:\n\n\n\nMy awkward Google Sheets video tutorials are here"
+  },
+  {
+    "objectID": "assignment/01-assignment.html#instructions",
+    "href": "assignment/01-assignment.html#instructions",
+    "title": "Hello",
+    "section": "",
+    "text": "For the data, right-click, “save/download file as…”\nOpen the data\nComplete all of the tasks associated with that data and keep track of your answers / images\nOnce you are done, go on Canvas and answer the questions related to the assignment\n\nthe Canvas assignment is timed; if you open it prior to completing the tasks you will run out of time\n\n\nSkills used:\n\n\n\nMy awkward Google Sheets video tutorials are here"
+  },
+  {
+    "objectID": "assignment/06-assignment.html",
+    "href": "assignment/06-assignment.html",
+    "title": "Hello",
+    "section": "",
+    "text": "For the data, right-click, “save/download file as…”\nOpen the data\nComplete all of the tasks associated with that data and keep track of your answers / images\nOnce you are done, go on Canvas and answer the questions related to the assignment\n\nthe Canvas assignment is timed; if you open it prior to completing the tasks you will run out of time\n\n\nSkills used:\n\n\n\nMy awkward Google Sheets video tutorials are here"
+  },
+  {
+    "objectID": "assignment/06-assignment.html#instructions",
+    "href": "assignment/06-assignment.html#instructions",
+    "title": "Hello",
+    "section": "",
+    "text": "For the data, right-click, “save/download file as…”\nOpen the data\nComplete all of the tasks associated with that data and keep track of your answers / images\nOnce you are done, go on Canvas and answer the questions related to the assignment\n\nthe Canvas assignment is timed; if you open it prior to completing the tasks you will run out of time\n\n\nSkills used:\n\n\n\nMy awkward Google Sheets video tutorials are here"
+  },
+  {
+    "objectID": "index.html#what-is-this-class-about",
+    "href": "index.html#what-is-this-class-about",
+    "title": "Syllabus",
+    "section": "What is this class about?",
+    "text": "What is this class about?\nThis is an undergraduate course on the study of civil wars, political violence, and other forms of armed conflict. Each week will be organized around a different topic related to the study of civil wars, including why civil wars break out, the tactics insurgents and states use during wars, what happens when third-parties intervene, whether negotiations can effectively end wars, and other key questions in the conflict literature.\nIn addition to reading, we will also spend a significant amount of time in this class working with data on political violence. We will explore general patterns and trends, think about how to measure different concepts related to political violence, and see to what extent different theories of political violence are supported by evidence.\nBy the end of this course, you will be able to:\n\nIdentify structural and historical drivers of violence\nThink about civil war as a strategic process involving states, civilians, and armed groups\nExplore, analyze, and interpret data bearing on political violence\n\n\n\n\n\n\n\nNote\n\n\n\nThe class assumes no prior experience with data but you will need regular access to a computer."
+  },
+  {
+    "objectID": "index.html#what-materials-do-i-need-for-this-course",
+    "href": "index.html#what-materials-do-i-need-for-this-course",
+    "title": "Syllabus",
+    "section": "What materials do I need for this course?",
+    "text": "What materials do I need for this course?\n\nWhere do I find the readings?\nBook chapters and other non-easily accessible readings will be linked on this site. You will have to find journal articles and easily accessible readings on your own (a valuable skill!). Googling the article is often enough, otherwise Google Scholar and being either on campus wi-fi or on the library VPN should do the trick. If you’re stuck the TAs will be happy to help.\n\n\nGoogle Sheets\nAll homework requiring data will be done in Google Sheets or Excel. Google Sheets is free to use with a Google account, and I will do all data analysis tutorials in Google Sheets. However, you can easily follow along with whatever program you prefer.\n\n\nPodcasts\nYou should listen to podcasts, although I won’t grade you on it. Here are some of my favorite podcasts that frequently discuss politics and history in Latin America:\n\nWOLA\nThe Daily\nRevolutions\nLa Silla Vacia (for Spanish speakers)"
+  },
+  {
+    "objectID": "index.html#how-can-i-get-help-or-contact-the-instructors",
+    "href": "index.html#how-can-i-get-help-or-contact-the-instructors",
+    "title": "Syllabus",
+    "section": "How can I get help or contact the instructors?",
+    "text": "How can I get help or contact the instructors?\nFor big questions – stuck on the homework, question about a grade, confusion/questions about the reading – the best thing is to come to our office hours. You will get better help from us during office hours than over email.\nFor small and/or urgent questions – my grade is missing, you believe there is an error in something we uploaded, etc. – the best thing is to email. In your emails, please:\n\nBe professional (include a subject line, a greeting, e.g., “Dear Prof. XYZ,”)\nBe brief (I won’t be offended!)"
+  },
+  {
+    "objectID": "index.html#frequently-answered-no-questions-fanq",
+    "href": "index.html#frequently-answered-no-questions-fanq",
+    "title": "Syllabus",
+    "section": "Frequently Answered No Questions (FANQ)",
+    "text": "Frequently Answered No Questions (FANQ)\nThis is an important list of questions that students frequently ask where the answer is ‘no’.\n\nDo you record lecture? I do not record lecture.\nCan I record your lecture? You may not record my lecture.\nI had to miss class, do I need to let you know? I don’t take attendance, so you do not need to let me know.\nCan I have your lecture notes in addition to your slides? You may not have any additional notes.\nWill you make us a study guide? I will not make you a study guide.\nAre there extra practice tests / practice questions? There are no extra practice tests / questions.\nCan I correct what I got wrong on the homework / test and resubmit for credit? You may not resubmit homework / test for credit.\nCan I take the exam earlier / later than scheduled? You may not take exams earlier / later than scheduled.\nIt is week X, can I turn in a missing assignment from week X - N? You may not turn in an assignment from previous weeks.\nI had to miss class, can you catch me up on what I missed? I will not catch you up on what you missed.\nThe homework was due Wednesday, but when I went to turn it in that evening, something happened that was out of my control and I couldn’t turn it in. Can I turn it in now without missing points? You may not turn it in now without missing points.\nWill there be extra credit? There may be, but I will not pre-commit to extra credit opportunities."
+  },
+  {
+    "objectID": "index.html#counseling-psychiatry-services",
+    "href": "index.html#counseling-psychiatry-services",
+    "title": "Syllabus",
+    "section": "Counseling & Psychiatry Services",
+    "text": "Counseling & Psychiatry Services\nLife at Davis can be complicated and challenging. You might feel overwhelmed, experience anxiety or depression, or struggle with relationships or family responsibilities. UC Davis Counseling Services provide confidential support for students who are struggling with mental health and emotional challenges. Please do not hesitate to contact them for assistance—getting help is a smart and good thing to do."
+  },
+  {
+    "objectID": "index.html#assignments-and-grades",
+    "href": "index.html#assignments-and-grades",
+    "title": "Syllabus",
+    "section": "Assignments and grades",
+    "text": "Assignments and grades\nYou can find descriptions for all the assignments on the assignments page.\n\n\n\n\n\n\n\nAssignment\nPercent\n\n\n\n\nProblem sets (8)\n50%\n\n\nMidterm\n25%\n\n\nFinal\n25%\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGrade\nRange\nGrade\nRange\n\n\n\n\nA\n93–100%\nC\n73–76%\n\n\nA−\n90–92%\nC−\n70–72%\n\n\nB+\n87–89%\nD+\n67–69%\n\n\nB\n83–86%\nD\n63–66%\n\n\nB−\n80–82%\nD−\n60–62%\n\n\nC+\n77–79%\nF\n&lt; 60%"
+  },
+  {
+    "objectID": "index.html#the-art-of-war",
+    "href": "index.html#the-art-of-war",
+    "title": "Syllabus",
+    "section": "The art of war",
+    "text": "The art of war\nWar is a common subject of art (like the painting up top). Look through some famous paintings of war. Draw a quick sketch of the painting of your choice on scratch paper, including your name and the name of the painting / art piece. Bring it to me in class. I’ll round your final grade up to the nearest whole number; you’ve got until the end of week 2 of class to do this."
+  },
+  {
+    "objectID": "index.html#credits",
+    "href": "index.html#credits",
+    "title": "Syllabus",
+    "section": "Credits",
+    "text": "Credits\nThis course draws on code, content, ideas, inspirations and much more from work by Andrew Heiss, Kieran Healy, Laia Balcells, and others who have made their courses publicly available."
+  }
+]
