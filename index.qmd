@@ -67,7 +67,7 @@ By the end of this course, you will be able to:
 
 
 ::: {.callout-note}
-The class assumes no prior experience with data but you will need regular access to a computer.
+The class assumes no prior experience working with data
 :::
 
 
