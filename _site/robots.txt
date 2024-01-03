@@ -1,1 +1,1 @@
-Sitemap: https://cool-macaron-bac165.netlify.app/sitemap.xml
+Sitemap: https://civwar.juanftellez.com/sitemap.xml
