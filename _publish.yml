@@ -1,0 +1,4 @@
+- source: project
+  netlify:
+    - id: 774373ef-4cb9-4a3c-ac86-3531c44c252d
+      url: 'https://cool-macaron-bac165.netlify.app'
