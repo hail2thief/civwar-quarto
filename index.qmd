@@ -23,7 +23,7 @@ sidebar: false
 ::: {.g-col-12 .g-col-md-4 .contact-policy}
 ### Teaching assistants
 
-- {{< fa user-graduate >}}  &nbsp; **Julian Haddad** <br> {{< fa clock >}} &nbsp; Tu 9am-11am <br> {{< fa university >}} &nbsp; Kerr 663 <br> {{< fa envelope >}} &nbsp; bldavis@ucdavis.edu
+- {{< fa user-graduate >}}  &nbsp; **Julian Haddad** <br> {{< fa clock >}} &nbsp; Tu 9am-11am <br> {{< fa university >}} &nbsp; Kerr 663 <br> {{< fa envelope >}} &nbsp; jahaddad@ucdavis.edu
 - {{< fa user-graduate >}}  &nbsp; **Seung-Hwan (Sam) Hong** <br> {{< fa clock >}} &nbsp; M 9am-11am <br> {{< fa university >}} &nbsp; Kerr 577 <br> {{< fa envelope >}} &nbsp; samhong@ucdavis.edu
 :::
 
