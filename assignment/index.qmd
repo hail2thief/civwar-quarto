@@ -12,10 +12,6 @@ knitr::include_graphics(here::here("images", "saddam.jpeg"))
 
 
 
-## Preparation
-
-You will succeed in this class if you (1) attend lecture, (2) attend section, and (3) do the problem sets.
-
 
 ## Problem sets
 
