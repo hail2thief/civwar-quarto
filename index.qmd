@@ -132,8 +132,8 @@ This is an important list of questions that students frequently ask where the an
 - *Can I have your lecture notes in addition to your slides?*
    You may not have any additional notes.
 
-- *Will you make us a study guide?*
-   I will not make you a study guide.
+- *Will there be a study guide?*
+   There will not be a study guide. Make one!
 
 - *Are there extra practice tests / practice questions?*
    There are no extra practice tests / questions. 
@@ -145,13 +145,13 @@ This is an important list of questions that students frequently ask where the an
    You may not take exams earlier / later than scheduled.
 
 - *It is week X, can I turn in a missing assignment from week X - N?*
-   You may not turn in an assignment from previous weeks.
+   You may not turn in an assignment from previous weeks. See the [assignments](/assignment/index.qmd) page for more details.
 
 - *I had to miss class, can you catch me up on what I missed?*
    I will not catch you up on what you missed.
 
 - *The homework was due Wednesday, but when I went to turn it in that evening, something happened that was out of my control and I couldn’t turn it in. Can I turn it in now without missing points?*
-    You may not turn it in now without missing points.
+    You may not turn it in now without missing points. See the [assignments](/assignment/index.qmd) page for more details.
 
 - *Will there be extra credit?*
     There may be, but I will not pre-commit to extra credit opportunities.
@@ -224,4 +224,4 @@ War is a common subject of art (like the painting up top). Look through some fam
 
 ## Credits
 
-This course draws on code, content, ideas, inspirations and much more from work by Andrew Heiss, Kieran Healy, Laia Balcells, and others who have made their courses publicly available.
+This course draws on code, content, ideas and much more from work by Andrew Heiss, Kieran Healy, Laia Balcells, and others who have made their courses publicly available.

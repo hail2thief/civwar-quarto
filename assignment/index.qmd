@@ -8,12 +8,6 @@ knitr::include_graphics(here::here("images", "saddam.jpeg"))
 ```
 
 
-
-
-
-
-
-
 # Assignments
 
 
@@ -25,7 +19,7 @@ You will succeed in this class if you (1) attend lecture, (2) attend section, an
 
 ## Problem sets
 
-To practice working with data you will complete problem sets throughout the quarter. Feel free to work together on the problem sets but **you must turn in your own answers to Canvas.** You cannot work in groups of more than **three** people.
+To practice working with data you will complete problem sets throughout the quarter. Feel free to work together on the problem sets but **you must turn in your own answers to Canvas.** You cannot work in groups of more than **two** people.
 
 
 ## Exams

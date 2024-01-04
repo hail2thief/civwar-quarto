@@ -7,8 +7,12 @@ title: "How do wars end?"
 
 ## Required
 
-{{< fa file-pdf >}}&ensp;[@luttwak:1999]
-{{< fa file-pdf >}}&ensp;[@tepperman:2002]
+- {{< fa file-pdf >}}&ensp;[@luttwak:1999]
+
+- {{< fa file-pdf >}}&ensp;[@tepperman:2002]
+
+- {{< fa file-pdf >}}&ensp;[@atran:axelrod:2008]
+
 
 ## Recommended
 

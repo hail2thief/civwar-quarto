@@ -8,7 +8,7 @@ title: "How wars are fought"
 ## Required
 
 - {{< fa file-pdf >}}&ensp; Chapter 7 in [@kalyvas:2006]
-- {{< fa file-pdf >}}&ensp;[@weinstein:2005]
+- {{< fa file-pdf >}}&ensp; Chapter 1 in [@weinstein:2007]
 - {{< fa file-pdf >}}&ensp;[@cohen:2013]
 
 ## Recommended

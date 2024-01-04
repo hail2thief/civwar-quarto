@@ -7,7 +7,7 @@ title: "What is civil war?"
 
 ## Required
 
-- The [syllabus](/syllabus.qmd) and [assignments](/assignment/index.qmd) pages for this class
+- The [syllabus](/index.qmd) and [assignments](/assignment/index.qmd) pages for this class
 - {{< fa file-pdf >}}&ensp;[@kalyvas:balcells:2010]
 - {{< fa file-pdf >}}&ensp;[@kalyvas:2018]
 

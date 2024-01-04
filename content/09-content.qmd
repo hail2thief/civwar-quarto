@@ -8,6 +8,10 @@ title: "Ethnic conflict in Ethiopia"
 ## Required
 
 
+- {{< fa file-pdf >}}&ensp;[@tronvoll:2022]
+- {{< fa file-pdf >}}&ensp;[@sambanis:schulhofer-wohl:2009]
+
+
 ## Recommended
 
 

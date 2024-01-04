@@ -51,11 +51,11 @@ topics = tribble(~week, ~title,
         "Week 02", "Why do people rebel? Grievances, ethnicity",
         "Week 03", "Why do people rebel? Resources",
         "Week 04", "How are wars fought? Insurgency",
-        "Week 05", 'Midterm exam <i class="fa-solid fa-star"></i> + film',
+        "Week 05", 'Midterm exam on Feb 6th <i class="fa-solid fa-star"></i> + in-class film',
         "Week 06", "How are wars fought? Counterinsurgency",
         "Week 07", "Case study: forced displacement in Colombia",
         "Week 08", "Case study: civilian resistance in Peru",
-        "Week 09", "Case study: ethnic partition in Ethiopia",
+        "Week 09", "Case study: ethnic conflict in Ethiopia",
         "Week 10", "How do wars end? Negotiated settlements",
         "Week 11", "Conclusions")
 

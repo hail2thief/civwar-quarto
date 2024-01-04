@@ -8,7 +8,7 @@ title: "Civilian resistance in Peru"
 ## Required
 
 
-- {{< fa book >}}&ensp;[Ch. 4 and Ch. 5, @serna:2012]
+- {{< fa book >}}&ensp;[Ch. 4 and Ch. 5, @laserna:2012]
 
 
 ## Recommended
