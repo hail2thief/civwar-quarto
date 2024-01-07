@@ -16,15 +16,15 @@ sidebar: false
 - {{< fa user >}} &nbsp; [{{< var instructor.name >}}]({{< var instructor.url >}})
 - {{< fa university >}} &nbsp; {{< var instructor.office >}}
 - {{< fa envelope >}} &nbsp; {{< var instructor.email >}}
-- {{< fa clock >}} &nbsp; Th 11:00am-1:00pm
+- {{< fa clock >}} &nbsp; OH: Th 11:00am-1:00pm
 :::
 
 
 ::: {.g-col-12 .g-col-md-4 .contact-policy}
 ### Teaching assistants
 
-- {{< fa user-graduate >}}  &nbsp; **Julian Haddad** <br> {{< fa clock >}} &nbsp; Tu 9am-11am <br> {{< fa university >}} &nbsp; Kerr 663 <br> {{< fa envelope >}} &nbsp; jahaddad@ucdavis.edu
-- {{< fa user-graduate >}}  &nbsp; **Seung-Hwan (Sam) Hong** <br> {{< fa clock >}} &nbsp; M 9am-11am <br> {{< fa university >}} &nbsp; Kerr 577 <br> {{< fa envelope >}} &nbsp; samhong@ucdavis.edu
+- {{< fa user-graduate >}}  &nbsp; **Julian Haddad** <br> {{< fa clock >}} &nbsp; OH: Tu 11am-1pm <br> {{< fa university >}} &nbsp; Kerr 663 <br> {{< fa envelope >}} &nbsp; jahaddad@ucdavis.edu
+- {{< fa user-graduate >}}  &nbsp; **Seung-Hwan (Sam) Hong** <br> {{< fa clock >}} &nbsp; OH: M 9am-11am <br> {{< fa university >}} &nbsp; Kerr 577 <br> {{< fa envelope >}} &nbsp; samhong@ucdavis.edu
 :::
 
 ::: {.g-col-12 .g-col-sm-6 .g-col-md-4}
