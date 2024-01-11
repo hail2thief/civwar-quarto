@@ -8,7 +8,7 @@
 
 <meta name="description" content="Course site for my civil wars class.">
 
-<title>Civil wars - Hello</title>
+<title>Civil wars - What is civil war?</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -55,7 +55,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../html/tenso-berkeley.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-sidebar docked nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -80,7 +80,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Schedule</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../assignment/index.html" rel="" target="">
+    <a class="nav-link active" href="../assignment/index.html" rel="" target="" aria-current="page">
  <span class="menu-text">Assignments</span></a>
   </li>  
 </ul>
@@ -89,10 +89,50 @@ ul.task-list li input[type="checkbox"] {
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../assignment/index.html">Overview</a></li><li class="breadcrumb-item"><a href="../assignment/01-assignment.html">What is civil war?</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Overview</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../assignment/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../assignment/01-assignment.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">What is civil war?</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -100,6 +140,8 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#instructions" id="toc-instructions" class="nav-link active" data-scroll-target="#instructions">Instructions</a></li>
+  <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a></li>
+  <li><a href="#questions" id="toc-questions" class="nav-link" data-scroll-target="#questions">Questions</a></li>
   </ul>
 </nav>
     </div>
@@ -108,7 +150,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Hello</h1>
+<h1 class="title">What is civil war?</h1>
 </div>
 
 
@@ -136,9 +178,119 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>Skills used:</p>
 <ul>
-<li></li>
+<li>Sorting data</li>
+<li>Counting categories</li>
+<li>Cross-tabs</li>
+<li>Creating variables</li>
 </ul>
 <p><a href="https://www.dropbox.com/sh/rsj9qm67se619pm/AAD1wPt84O8yaIfSPcwN9edua?dl=0">My awkward Google Sheets video tutorials are here</a></p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You must complete all of the tasks here BEFORE opening the Canvas quiz; otherwise, you will run out of time!</p>
+</div>
+</div>
+</section>
+<section id="data" class="level2">
+<h2 data-anchor-id="data">Data</h2>
+<p>You’re going to work with the data from the Kalyvas and Balcells article we read. The dataset contains information on major civil wars around the world for a select time period.</p>
+<ul>
+<li>The data: <i class="fas fa-download"></i> <a href="https://www.dropbox.com/scl/fi/rpqb5sryxp5wqeivjqui2/balcells-kalyvas.csv?rlkey=jysyuzvj4xvhv6yzpn1jiepdq&amp;dl=1">Kalyvas and Balcells</a></li>
+</ul>
+<div class="cell" data-layout-align="center">
+<table class="table table-sm table-striped small">
+<colgroup>
+<col style="width: 43%">
+<col style="width: 44%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Variable</th>
+<th style="text-align: center;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">countryname</td>
+<td style="text-align: center;">Country where civil war takes place</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">year/month_start</td>
+<td style="text-align: center;">Year/month war began</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">year/month_end</td>
+<td style="text-align: center;">Year/month war ended (if at all)</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">conflict_name</td>
+<td style="text-align: center;">Name of conflict</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">region</td>
+<td style="text-align: center;">World region</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">gdp_capita</td>
+<td style="text-align: center;">GDP per capita (logged)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">rough_terrain</td>
+<td style="text-align: center;">Percent of country covered in rough terrain</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">military_personnel_percapita</td>
+<td style="text-align: center;">Military personnel, in thousands</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">marxist</td>
+<td style="text-align: center;">Is rebellion Marxist?</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">technologyrebellion</td>
+<td style="text-align: center;">What kind of civil war is it?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">ethnicwar</td>
+<td style="text-align: center;">Is this an ethnic civil war?</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="questions" class="level2">
+<h2 data-anchor-id="questions">Questions</h2>
+<p>Using the dataset, answer the following questions:</p>
+<ol type="1">
+<li><p>Choose a civil war of each <strong>type</strong> in the dataset and look it up on Wikipedia. Provide a non-technical, 2 sentence description of each war. (total = 3 wars, 2 sentences each). (2 points)</p></li>
+<li><p>Sort the data. Which country had the largest army per capita involved in a civil war? (1 point)</p></li>
+</ol>
+<ol start="3" type="1">
+<li>Count the number of civil wars by region. Which region has the highest number of recorded civil wars? (1 point)</li>
+</ol>
+<ol start="4" type="1">
+<li>Cross-tabulate the number of civil wars across <code>warfare technology</code> and whether or not it’s an <code>ethnic</code> conflict. How many civil wars are both “conventional” and ethnically motivated? (1 point)</li>
+</ol>
+<ol start="5" type="1">
+<li>Create a variable that tells you how long each civil war has lasted, using only the years column (year ended - year started. Note: don’t worry about civil wars that don’t have a start or end date, you can ignore this issue). In which country did the <em>THIRD</em> longest lasting civil war take place? (1 point)</li>
+</ol>
+<ol start="6" type="1">
+<li>Filter this analysis down so you’re only looking at Latin America. What is the SECOND longest conflict in this region? (1 point)</li>
+</ol>
+<ol start="7" type="1">
+<li><p>We we will frequently talk about civil wars “starting” and “ending” in this class, but figuring out exactly <em>when</em> this happens is tricky. If you were to design a rule for deciding when a civil war has <strong>begun</strong>, what would that rule be? What would you have to observe, exactly, to say that a war has broken out? (3 points)</p>
+<ol type="A">
+<li><p>describe your rule, make it as specific as possible. For example: “<em>We can say that a civil war has begun when X, Y, and Z happens…</em>”</p></li>
+<li><p>Identify some “edge cases” that will cause trouble for that rule. 4-5 sentences.</p></li>
+</ol></li>
+</ol>
 
 
 </section>
