@@ -123,14 +123,14 @@
     "href": "content/02-content.html",
     "title": "Why do people rebel? Grievances and identity",
     "section": "",
-    "text": "Book chapters can be found here\n\n\n\n  Chapter 1 in Elisabeth J. Wood, Insurgent Collective Action and Civil War in El Salvador (Cambridge University Press, 2003).\n Barry R. Posen, “The Security Dilemma and Ethnic Conflict,” Survival 35, no. 1 (1993): 27–47.\n  Chapter 3 in Patrick Cockburn, The Age of Jihad: Islamic State and the Great War for the Middle East (Verso Books, 2016)."
+    "text": "Book chapters can be found here\n\n\n\n  Chapter 1 in Elisabeth J. Wood, Insurgent Collective Action and Civil War in El Salvador (Cambridge University Press, 2003).\n Barry R. Posen, “The Security Dilemma and Ethnic Conflict,” Survival 35, no. 1 (1993): 27–47.\n  Chapter 3 in Patrick Cockburn, The Age of Jihad: Islamic State and the Great War for the Middle East (Verso Books, 2016).\n\nCockburn The Age of Jihad. is a journalist who has covered wars in the MENA for years. In this book, he is writing a sort of diary (with some hindsight bias) of his coverage of the US invasion of Iraq.\n\n\n\nWe’re working with these manifestos. Please note some of these contain extremely offensive content. The people/groups included are:\n\nRumiyah, the ISIS magazine\nThe New Irish Republican Army\nOsama bin Laden “Letter to America”\nSouth Carolina terrorist, Dylann Roof\nManifesto of the Christchurch mosque terrorist attack\nManifesto of the 2019 el Paso, Walmart terrorist attack\nElliot Rodger, the “incel” manifesto\nEco-extremist group in Mexico, Individualistas Tendiendo a lo Salvaje"
   },
   {
     "objectID": "content/02-content.html#required",
     "href": "content/02-content.html#required",
     "title": "Why do people rebel? Grievances and identity",
     "section": "",
-    "text": "Chapter 1 in Elisabeth J. Wood, Insurgent Collective Action and Civil War in El Salvador (Cambridge University Press, 2003).\n Barry R. Posen, “The Security Dilemma and Ethnic Conflict,” Survival 35, no. 1 (1993): 27–47.\n  Chapter 3 in Patrick Cockburn, The Age of Jihad: Islamic State and the Great War for the Middle East (Verso Books, 2016)."
+    "text": "Chapter 1 in Elisabeth J. Wood, Insurgent Collective Action and Civil War in El Salvador (Cambridge University Press, 2003).\n Barry R. Posen, “The Security Dilemma and Ethnic Conflict,” Survival 35, no. 1 (1993): 27–47.\n  Chapter 3 in Patrick Cockburn, The Age of Jihad: Islamic State and the Great War for the Middle East (Verso Books, 2016).\n\nCockburn The Age of Jihad. is a journalist who has covered wars in the MENA for years. In this book, he is writing a sort of diary (with some hindsight bias) of his coverage of the US invasion of Iraq."
   },
   {
     "objectID": "content/01-content.html",
@@ -418,5 +418,12 @@
     "title": "What is civil war?",
     "section": "Questions",
     "text": "Questions\nUsing the dataset, answer the following questions:\n\nChoose a civil war of each type in the dataset and look it up on Wikipedia. Provide a non-technical, 2 sentence description of each war. (total = 3 wars, 2 sentences each). (2 points)\nSort the data. Which country had the largest army per capita involved in a civil war? (1 point)\n\n\nCount the number of civil wars by region. Which region has the highest number of recorded civil wars? (1 point)\n\n\nCross-tabulate the number of civil wars across warfare technology and whether or not it’s an ethnic conflict. How many civil wars are both “conventional” and ethnically motivated? (1 point)\n\n\nCreate a variable that tells you how long each civil war has lasted, using only the years column (year ended - year started. Note: don’t worry about civil wars that don’t have a start or end date, you can ignore this issue). In which country did the THIRD longest lasting civil war take place? (1 point)\n\n\nFilter this analysis down so you’re only looking at Latin America. What is the SECOND longest conflict in this region? (1 point)\n\n\nWe we will frequently talk about civil wars “starting” and “ending” in this class, but figuring out exactly when this happens is tricky. If you were to design a rule for deciding when a civil war has begun, what would that rule be? What would you have to observe, exactly, to say that a war has broken out? (3 points)\n\ndescribe your rule, make it as specific as possible. For example: “We can say that a civil war has begun when X, Y, and Z happens…”\nIdentify some “edge cases” that will cause trouble for that rule. 4-5 sentences."
+  },
+  {
+    "objectID": "content/02-content.html#class-activity",
+    "href": "content/02-content.html#class-activity",
+    "title": "Why do people rebel? Grievances and identity",
+    "section": "",
+    "text": "We’re working with these manifestos. Please note some of these contain extremely offensive content. The people/groups included are:\n\nRumiyah, the ISIS magazine\nThe New Irish Republican Army\nOsama bin Laden “Letter to America”\nSouth Carolina terrorist, Dylann Roof\nManifesto of the Christchurch mosque terrorist attack\nManifesto of the 2019 el Paso, Walmart terrorist attack\nElliot Rodger, the “incel” manifesto\nEco-extremist group in Mexico, Individualistas Tendiendo a lo Salvaje"
   }
 ]

@@ -13,6 +13,30 @@ title: "Why do people rebel? Grievances and identity"
 - {{< fa file-pdf >}}&ensp;[@posen:1993]
 - {{< fa book >}}&ensp; Chapter 3 in [@cockburn:2016]
 
+@cockburn:2016 is a journalist who has covered wars in the MENA for years. In this book, he is writing a sort of diary (with some hindsight bias) of his coverage of the US invasion of Iraq. 
+
+
+## Class activity
+
+
+We're working with [these manifestos](https://www.dropbox.com/sh/648s8i2itdjfriy/AACZrJxTdwPXFMDTkya6Gb_La?dl=0). Please note some of these contain extremely offensive content. The people/groups included are: 
+
+- Rumiyah, the [ISIS magazine](https://www.jstor.org/stable/resrep37748#metadata_info_tab_contents)
+
+- The [New Irish Republican Army](https://en.wikipedia.org/wiki/New_Irish_Republican_Army)
+
+- [Osama bin Laden](https://en.wikipedia.org/wiki/Osama_bin_Laden) "Letter to America"
+
+- [South Carolina terrorist, Dylann Roof](https://en.wikipedia.org/wiki/Dylann_Roof)
+
+- Manifesto of the [Christchurch mosque terrorist attack](https://en.wikipedia.org/wiki/Christchurch_mosque_shootings)
+    
+- Manifesto of the [2019 el Paso, Walmart terrorist attack](https://en.wikipedia.org/wiki/2019_El_Paso_shooting)
+
+- Elliot Rodger, the "incel" [manifesto](https://en.wikipedia.org/wiki/2014_Isla_Vista_killings)
+
+- Eco-extremist group in Mexico, [Individualistas Tendiendo a lo Salvaje](https://en.wikipedia.org/wiki/Individualists_Tending_to_the_Wild)
+
 
 ## Recommended
 
