@@ -8,7 +8,7 @@
 
 <meta name="description" content="Course site for my civil wars class.">
 
-<title>Civil wars - Hello</title>
+<title>Civil wars - Why do people rebel? Grievances</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -100,6 +100,9 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#instructions" id="toc-instructions" class="nav-link active" data-scroll-target="#instructions">Instructions</a></li>
+  <li><a href="#task-1-manifestos" id="toc-task-1-manifestos" class="nav-link" data-scroll-target="#task-1-manifestos">Task 1: Manifestos</a></li>
+  <li><a href="#task-2-ethnic-power-relations" id="toc-task-2-ethnic-power-relations" class="nav-link" data-scroll-target="#task-2-ethnic-power-relations">Task 2: Ethnic power relations</a></li>
+  <li><a href="#questions" id="toc-questions" class="nav-link" data-scroll-target="#questions">Questions</a></li>
   </ul>
 </nav>
     </div>
@@ -108,7 +111,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Hello</h1>
+<h1 class="title">Why do people rebel? Grievances</h1>
 </div>
 
 
@@ -136,14 +139,134 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>Skills used:</p>
 <ul>
-<li></li>
+<li>filtering data</li>
+<li>counting categories, percents</li>
+<li>summary statistics</li>
+<li>grouped summary, statistic</li>
 </ul>
 <p><a href="https://www.dropbox.com/sh/rsj9qm67se619pm/AAD1wPt84O8yaIfSPcwN9edua?dl=0">My awkward Google Sheets video tutorials are here</a></p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You must complete all of the tasks here BEFORE opening the Canvas quiz; otherwise, you will run out of time!</p>
+</div>
+</div>
+</section>
+<section id="task-1-manifestos" class="level2">
+<h2 data-anchor-id="task-1-manifestos">Task 1: Manifestos</h2>
+<p>Pick two manifestos from the list below and skim them. The manifestos themselves can be found at <a href="https://www.dropbox.com/sh/648s8i2itdjfriy/AACZrJxTdwPXFMDTkya6Gb_La?dl=0">this link</a>. Please note some of these contain extremely offensive content. The people/groups included are:</p>
+<ul>
+<li><p>Rumiyah, the <a href="https://www.jstor.org/stable/resrep37748#metadata_info_tab_contents">ISIS magazine</a></p></li>
+<li><p>The <a href="https://en.wikipedia.org/wiki/New_Irish_Republican_Army">New Irish Republican Army</a></p></li>
+<li><p><a href="https://en.wikipedia.org/wiki/Osama_bin_Laden">Osama bin Laden</a> “Letter to America”</p></li>
+<li><p><a href="https://en.wikipedia.org/wiki/Dylann_Roof">South Carolina terrorist, Dylann Roof</a></p></li>
+<li><p>Manifesto of the <a href="https://en.wikipedia.org/wiki/Christchurch_mosque_shootings">Christchurch mosque terrorist attack</a></p></li>
+<li><p>Manifesto of the <a href="https://en.wikipedia.org/wiki/2019_El_Paso_shooting">2019 el Paso, Walmart terrorist attack</a></p></li>
+<li><p>Elliot Rodger, the “incel” <a href="https://en.wikipedia.org/wiki/2014_Isla_Vista_killings">manifesto</a></p></li>
+<li><p>Eco-extremist group in Mexico, <a href="https://en.wikipedia.org/wiki/Individualists_Tending_to_the_Wild">Individualistas Tendiendo a lo Salvaje</a></p></li>
+</ul>
+<ol type="1">
+<li>In two paragraphs, describe the following. How would you say these groups/people motivate and explain their actions? Do the two manifestos you picked do so similarly or in different ways? Include at least two quotes as examples. (5 points)</li>
+</ol>
+</section>
+<section id="task-2-ethnic-power-relations" class="level2">
+<h2 data-anchor-id="task-2-ethnic-power-relations">Task 2: Ethnic power relations</h2>
+<p>You’re going to work with data from the Ethnic Power Relations (EPR) dataset. The dataset contains information on politically relevant ethnic groups around the world for a select period of time.</p>
+<ul>
+<li>The data: <i class="fas fa-download"></i> <a href="https://www.dropbox.com/scl/fi/6kkbuz25u8redtq5tr82h/EPR-2021.csv?rlkey=le25pido52duo8wcp3n74yiwz&amp;dl=1">EPR dataset</a></li>
+</ul>
+<div class="cell" data-layout-align="center">
+<table class="table table-sm table-striped small">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Variable</th>
+<th style="text-align: center;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">statename</td>
+<td style="text-align: center;">Country</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">from</td>
+<td style="text-align: center;">Starting year for time period</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">to</td>
+<td style="text-align: center;">Ending year for time period</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">group</td>
+<td style="text-align: center;">Name of ethnic group</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">size</td>
+<td style="text-align: center;">Group size as a % of total population in that time period</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">status</td>
+<td style="text-align: center;">Access to state power in that time period</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">reg_aut</td>
+<td style="text-align: center;">Does group have regional autonomy in this period?</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>These are the relevant variables in the dataset, the other ones you can ignore</p>
+</div>
+</div>
+</section>
+<section id="questions" class="level2">
+<h2 data-anchor-id="questions">Questions</h2>
+<p>Using the dataset, answer the following questions:</p>
+<ol start="2" type="1">
+<li>Count the number of groups by <code>status</code>. What PERCENT of groups across the whole dataset are categorized as “powerless”? Note: It is OK to treat each row as a different “group”/observation. Don’t worry about “double-counting” groups, it’s OK if you do. If you don’t know what I mean by this you are probably OK to begin with. (1 point)</li>
+</ol>
+<ol start="3" type="1">
+<li><p>Look through some of the groups that are categorized as “powerless” in the dataset. In your opinion, is being a group that is “powerless” enough to generate grievances? Or can a group be “powerless” and not be aggrieved? (2 points)</p></li>
+<li><p>Filter the data so you are only looking at Iraq between 1990 and 2003. What <code>size</code> (as a PERCENT) was the most powerful ethnic group in this country during this period? (1 point)</p></li>
+</ol>
+<ol start="5" type="1">
+<li>Calculate the average ethnic group size, broken down by whether or not the group has regional autonomy. About how much smaller, on average, are groups with regional autonomy than groups without? Report as a <strong>percent point</strong> difference (e.g., 20% - 15% = 5%). (1 point)</li>
+</ol>
+<ol start="6" type="1">
+<li>Filter so you are only looking at ethnic groups that have held monopoly power and are less than 50% of the population<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. Create a variable that tells you how long each of these groups has been in power. Which group has had monopoly power for the longest time period in this dataset? Name of the group exactly as it appears in the data. (1 point).</li>
+</ol>
 
 
 </section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Note: to filter a quantity, use “<em>filter by condition</em>”<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

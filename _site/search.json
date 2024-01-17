@@ -93,16 +93,16 @@
   {
     "objectID": "assignment/02-assignment.html",
     "href": "assignment/02-assignment.html",
-    "title": "Hello",
+    "title": "Why do people rebel? Grievances",
     "section": "",
-    "text": "For the data, right-click, “save/download file as…”\nOpen the data\nComplete all of the tasks associated with that data and keep track of your answers / images\nOnce you are done, go on Canvas and answer the questions related to the assignment\n\nthe Canvas assignment is timed; if you open it prior to completing the tasks you will run out of time\n\n\nSkills used:\n\n\n\nMy awkward Google Sheets video tutorials are here"
+    "text": "For the data, right-click, “save/download file as…”\nOpen the data\nComplete all of the tasks associated with that data and keep track of your answers / images\nOnce you are done, go on Canvas and answer the questions related to the assignment\n\nthe Canvas assignment is timed; if you open it prior to completing the tasks you will run out of time\n\n\nSkills used:\n\nfiltering data\ncounting categories, percents\nsummary statistics\ngrouped summary, statistic\n\nMy awkward Google Sheets video tutorials are here\n\n\n\n\n\n\nWarning\n\n\n\nYou must complete all of the tasks here BEFORE opening the Canvas quiz; otherwise, you will run out of time!"
   },
   {
     "objectID": "assignment/02-assignment.html#instructions",
     "href": "assignment/02-assignment.html#instructions",
-    "title": "Hello",
+    "title": "Why do people rebel? Grievances",
     "section": "",
-    "text": "For the data, right-click, “save/download file as…”\nOpen the data\nComplete all of the tasks associated with that data and keep track of your answers / images\nOnce you are done, go on Canvas and answer the questions related to the assignment\n\nthe Canvas assignment is timed; if you open it prior to completing the tasks you will run out of time\n\n\nSkills used:\n\n\n\nMy awkward Google Sheets video tutorials are here"
+    "text": "For the data, right-click, “save/download file as…”\nOpen the data\nComplete all of the tasks associated with that data and keep track of your answers / images\nOnce you are done, go on Canvas and answer the questions related to the assignment\n\nthe Canvas assignment is timed; if you open it prior to completing the tasks you will run out of time\n\n\nSkills used:\n\nfiltering data\ncounting categories, percents\nsummary statistics\ngrouped summary, statistic\n\nMy awkward Google Sheets video tutorials are here\n\n\n\n\n\n\nWarning\n\n\n\nYou must complete all of the tasks here BEFORE opening the Canvas quiz; otherwise, you will run out of time!"
   },
   {
     "objectID": "assignment/04-assignment.html",
@@ -425,5 +425,33 @@
     "title": "Why do people rebel? Grievances and identity",
     "section": "",
     "text": "We’re working with these manifestos. Please note some of these contain extremely offensive content. The people/groups included are:\n\nRumiyah, the ISIS magazine\nThe New Irish Republican Army\nOsama bin Laden “Letter to America”\nSouth Carolina terrorist, Dylann Roof\nManifesto of the Christchurch mosque terrorist attack\nManifesto of the 2019 el Paso, Walmart terrorist attack\nElliot Rodger, the “incel” manifesto\nEco-extremist group in Mexico, Individualistas Tendiendo a lo Salvaje"
+  },
+  {
+    "objectID": "assignment/02-assignment.html#task-1-manifestos",
+    "href": "assignment/02-assignment.html#task-1-manifestos",
+    "title": "Why do people rebel? Grievances",
+    "section": "Task 1: Manifestos",
+    "text": "Task 1: Manifestos\nPick two manifestos from the list below and skim them. The manifestos themselves can be found at this link. Please note some of these contain extremely offensive content. The people/groups included are:\n\nRumiyah, the ISIS magazine\nThe New Irish Republican Army\nOsama bin Laden “Letter to America”\nSouth Carolina terrorist, Dylann Roof\nManifesto of the Christchurch mosque terrorist attack\nManifesto of the 2019 el Paso, Walmart terrorist attack\nElliot Rodger, the “incel” manifesto\nEco-extremist group in Mexico, Individualistas Tendiendo a lo Salvaje\n\n\nIn two paragraphs, describe the following. How would you say these groups/people motivate and explain their actions? Do the two manifestos you picked do so similarly or in different ways? Include at least two quotes as examples. (5 points)"
+  },
+  {
+    "objectID": "assignment/02-assignment.html#task-2-ethnic-power-relations",
+    "href": "assignment/02-assignment.html#task-2-ethnic-power-relations",
+    "title": "Why do people rebel? Grievances",
+    "section": "Task 2: Ethnic power relations",
+    "text": "Task 2: Ethnic power relations\nYou’re going to work with data from the Ethnic Power Relations (EPR) dataset. The dataset contains information on politically relevant ethnic groups around the world for a select period of time.\n\nThe data:  EPR dataset\n\n\n\n\n\n\n\n\n\nVariable\nDescription\n\n\n\n\nstatename\nCountry\n\n\nfrom\nStarting year for time period\n\n\nto\nEnding year for time period\n\n\ngroup\nName of ethnic group\n\n\nsize\nGroup size as a % of total population in that time period\n\n\nstatus\nAccess to state power in that time period\n\n\nreg_aut\nDoes group have regional autonomy in this period?\n\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nThese are the relevant variables in the dataset, the other ones you can ignore"
+  },
+  {
+    "objectID": "assignment/02-assignment.html#questions",
+    "href": "assignment/02-assignment.html#questions",
+    "title": "Why do people rebel? Grievances",
+    "section": "Questions",
+    "text": "Questions\nUsing the dataset, answer the following questions:\n\nCount the number of groups by status. What PERCENT of groups across the whole dataset are categorized as “powerless”? Note: It is OK to treat each row as a different “group”/observation. Don’t worry about “double-counting” groups, it’s OK if you do. If you don’t know what I mean by this you are probably OK to begin with. (1 point)\n\n\nLook through some of the groups that are categorized as “powerless” in the dataset. In your opinion, is being a group that is “powerless” enough to generate grievances? Or can a group be “powerless” and not be aggrieved? (2 points)\nFilter the data so you are only looking at Iraq between 1990 and 2003. What size (as a PERCENT) was the most powerful ethnic group in this country during this period? (1 point)\n\n\nCalculate the average ethnic group size, broken down by whether or not the group has regional autonomy. About how much smaller, on average, are groups with regional autonomy than groups without? Report as a percent point difference (e.g., 20% - 15% = 5%). (1 point)\n\n\nFilter so you are only looking at ethnic groups that have held monopoly power and are less than 50% of the population1. Create a variable that tells you how long each of these groups has been in power. Which group has had monopoly power for the longest time period in this dataset? Name of the group exactly as it appears in the data. (1 point)."
+  },
+  {
+    "objectID": "assignment/02-assignment.html#footnotes",
+    "href": "assignment/02-assignment.html#footnotes",
+    "title": "Why do people rebel? Grievances",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nNote: to filter a quantity, use “filter by condition”↩︎"
   }
 ]
