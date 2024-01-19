@@ -10,7 +10,7 @@ title: "Why do people rebel? Grievances and identity"
 ## Required
 
 - {{< fa book >}}&ensp; Chapter 1 in [@wood:2003]
-- {{< fa file-pdf >}}&ensp;[@posen:1993]
+- {{< fa file-pdf >}}&ensp;[@posen:1993b]
 - {{< fa book >}}&ensp; Chapter 3 in [@cockburn:2016]
 
 @cockburn:2016 is a journalist who has covered wars in the MENA for years. In this book, he is writing a sort of diary (with some hindsight bias) of his coverage of the US invasion of Iraq. 
@@ -44,6 +44,6 @@ title: "Why do people rebel? Grievances and identity"
 # Slides
 
 * [Tuesday slides here](https://www.dropbox.com/scl/fi/1rcxeoyoq910qkpcwzxln/02-grievances.pdf?rlkey=rbbd93ra9xt6kpr8aqj4gvlv8&dl=0)
-* [Thursday slides here]()
+* [Thursday slides here](https://www.dropbox.com/scl/fi/y23yhm0uc2dcg64eoxbcd/02-identity.pdf?rlkey=a4c454wrz3w1m52jchl006p2y&dl=0)
 
 
