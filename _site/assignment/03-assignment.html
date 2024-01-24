@@ -8,7 +8,7 @@
 
 <meta name="description" content="Course site for my civil wars class.">
 
-<title>Civil wars - Hello</title>
+<title>Civil wars - Why do people rebel? Opportunity</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -51,11 +51,13 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../html/tenso-berkeley.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-sidebar docked nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -80,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Schedule</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../assignment/index.html" rel="" target="">
+    <a class="nav-link active" href="../assignment/index.html" rel="" target="" aria-current="page">
  <span class="menu-text">Assignments</span></a>
   </li>  
 </ul>
@@ -89,10 +91,62 @@ ul.task-list li input[type="checkbox"] {
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../assignment/index.html">Overview</a></li><li class="breadcrumb-item"><a href="../assignment/03-assignment.html">Why do people rebel? Opportunity</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Overview</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../assignment/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../assignment/01-assignment.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">What is civil war?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../assignment/02-assignment.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Why do people rebel? Grievances</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../assignment/03-assignment.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Why do people rebel? Opportunity</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -100,6 +154,8 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#instructions" id="toc-instructions" class="nav-link active" data-scroll-target="#instructions">Instructions</a></li>
+  <li><a href="#task-1-the-geography-of-war" id="toc-task-1-the-geography-of-war" class="nav-link" data-scroll-target="#task-1-the-geography-of-war">Task 1: The geography of war</a></li>
+  <li><a href="#task-2-rebel-contraband" id="toc-task-2-rebel-contraband" class="nav-link" data-scroll-target="#task-2-rebel-contraband">Task 2: Rebel contraband</a></li>
   </ul>
 </nav>
     </div>
@@ -108,7 +164,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Hello</h1>
+<h1 class="title">Why do people rebel? Opportunity</h1>
 </div>
 
 
@@ -136,9 +192,68 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>Skills used:</p>
 <ul>
-<li></li>
+<li>filtering data</li>
+<li>summary statistics (note: towards the end I discuss “dummy” [0,1] variables)</li>
+<li>grouped summary, statistic</li>
+<li>plotting</li>
 </ul>
 <p><a href="https://www.dropbox.com/sh/rsj9qm67se619pm/AAD1wPt84O8yaIfSPcwN9edua?dl=0">My awkward Google Sheets video tutorials are here</a></p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You must complete all of the tasks here BEFORE opening the Canvas quiz; otherwise, you will run out of time!</p>
+</div>
+</div>
+</section>
+<section id="task-1-the-geography-of-war" class="level2">
+<h2 data-anchor-id="task-1-the-geography-of-war">Task 1: The geography of war</h2>
+<p>You’re going to work with a random sample from the Uppsala Conflict Data Program at The Department of Peace and Conflict Research, Uppsala University in Oslo, Norway. The dataset is called the Geo-referenced Event Dataset (GED) which provides detailed geo-referenced information on violent events around the world.</p>
+<ul>
+<li>Download this: <i class="fas fa-download"></i> <a href="https://www.dropbox.com/s/6tthe5o22lgglkp/ucdp-ged-small.csv?dl=1">UCDP GED Dataset</a></li>
+</ul>
+<p>We’re going to use this geo-coded data to map all the violent events in a country in a year of your choosing. Here’s how to do this:</p>
+<ul>
+<li><p>Look through the data a bit</p></li>
+<li><p>filter the data to a year and country of your choosing, being careful that your selection does not result in too few rows (you want at least 100 rows)</p></li>
+<li><p>select only these columns: <code>type_of_violence</code>, <code>latitude</code>, <code>longitude</code>, <code>best_death_estimate</code></p></li>
+<li><p>paste them into a new spreadsheet, then File –&gt; Download that spreadsheet as a <code>.csv</code> file (in Excel you would “save as” -&gt; file format -&gt; .csv)</p></li>
+<li><p>Go to this <a href="https://www.gpsvisualizer.com/map_input?form=data">very ugly yet masterful website</a> and on the left, upload your csv file under “File #1”</p>
+<ul>
+<li><p>Look at the “data point options” section of that same page</p></li>
+<li><p>set <code>colorize this field</code> to custom field and then write in “type_of_violence”</p></li>
+<li><p>set the “resize using this field” option to “custom field” and then write in “best_death_estimate”</p></li>
+<li><p>finally, bottom left, hit “draw the map”</p></li>
+<li><p>Screencap the map so you can turn it in</p></li>
+</ul></li>
+</ul>
+<ol type="1">
+<li>Spend some time looking at the map you have generated, you can also click on the points. It helps to have Google Maps open in a separate tab to get a better sense for what you are looking at. Now, reflect on what you are seeing. Which country did you pick? Where are these attacks concentrated? How do they relate to the country’s geography? Where are they in relation to the capital, to its borders? Are there patterns in the number of deaths, or the type of violence? Describe what you see in 2-3 paragraphs. (5 points)</li>
+</ol>
+</section>
+<section id="task-2-rebel-contraband" class="level2">
+<h2 data-anchor-id="task-2-rebel-contraband">Task 2: Rebel contraband</h2>
+<p>How do rebels fund their movements? You are going to work with the <a href="https://www.dropbox.com/scl/fi/iu755ks5lcgow7gr43uzo/contraband.csv?rlkey=f3z2gn0ub9oqkfuilcsbf64jj&amp;dl=1">Rebel Contraband Dataset</a>. Each observation in this dataset is a year in which a rebel group was engaged in conflict with the state. We refer to each row as a <em>conflict-year</em>.</p>
+<p>Using the dataset, answer the following questions:</p>
+<ol start="2" type="1">
+<li>Across the whole dataset, approximately what percent of conflict-years relied on extortion? (1 point)</li>
+</ol>
+<ol start="3" type="1">
+<li>Calculate the percent of conflict-years that relied on the extortion of alluvial diamonds, broken down by country. In which country was this funding strategy the most common? (1 point)</li>
+</ol>
+<ol start="4" type="1">
+<li>How have coca smuggling trends changed over time? Use a pivot table to find the percent of conflicts with coca smuggling <em>for each year</em> in the data. Plot the results as a line graph and screencap the image (you will upload). (1 point)</li>
+</ol>
+<ol start="4" type="1">
+<li><p>How have coca smuggling trends changed over time? Briefly interpret the graph. (1 point)</p></li>
+<li><p>Do groups that abduct their members rely on smuggling at higher or lower rates than groups that don’t abduct? Calculate the percent of rebel groups that use smuggling, comparing groups that do and don’t rely on abduction. What is the difference in smuggling use between groups that use abduction and those that don’t? Report as a difference in percentage points (<span class="math inline">\(\%Smuggling_{abduction=yes} - \%Smuggling_{abduction=no}\)</span>) (1 point)</p></li>
+</ol>
 
 
 </section>

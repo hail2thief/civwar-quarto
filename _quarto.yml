@@ -36,6 +36,8 @@ website:
         contents:
           - assignment/index.qmd
           - assignment/01-assignment.qmd
+          - assignment/02-assignment.qmd
+          - assignment/03-assignment.qmd
   
   - title: "Content"
     style: "docked"
