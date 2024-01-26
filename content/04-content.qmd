@@ -10,11 +10,11 @@ title: "How wars are fought"
 
 ## Required
 
-- {{< fa file-pdf >}}&ensp; Chapters 1-3 in [@taber:1965]
+- {{< fa file-pdf >}}&ensp; Chapters 1-3 in [@taber:1965]. 📅 Read for Tuesday.
     
     - *[Robert Taber](https://en.wikipedia.org/wiki/Robert_Taber_(author)) was a journalist who covered the Cuban Revolution and agitated in favor of the revolution led by Castro, Guevara, and others. As you will see in his writing, he is by no means pretending to be objective about these conflicts, but he has interesting things to say about how these wars are fought and their internal logic.*
 
-- {{< fa file-pdf >}}&ensp; Chapter 1 in [@weinstein:2007]
+- {{< fa file-pdf >}}&ensp; Chapter 1 in [@weinstein:2007]. 📅 Read for Thursday.
 
 ## Recommended
 
