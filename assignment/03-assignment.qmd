@@ -66,7 +66,7 @@ You're going to work with a random sample from the Uppsala Conflict Data Program
 - Download this: <i class="fas fa-download"></i> [UCDP GED Dataset](https://www.dropbox.com/s/6tthe5o22lgglkp/ucdp-ged-small.csv?dl=1)
 
 
-```{r, warning=FALSE, echo=FALSE, message=FALSE, results='asis'}
+```{r, warning=FALSE, echo=FALSE, eval = TRUE, message=FALSE, results='asis'}
 library(tidyverse)
 # dictionary
 tribble(~Variable, ~Description, 
@@ -179,7 +179,8 @@ df |>
 
 
 
-```{r, echo=FALSE,message=FALSE,warning=FALSE,results="asis"}
+```{r, echo=FALSE,eval = TRUE, message=FALSE,warning=FALSE,results="asis"}
+library(tibble)
 tribble(~Variable, ~Description, 
         "country", "Country",
         "year",  "Year",
@@ -192,5 +193,5 @@ tribble(~Variable, ~Description,
         "external_support", "Did group receive external support from foreign government?\n(1 = yes, 0 = no)",
         "forcedrecruit", "Did group forcibly recruit members?\n(1 = yes, 0 = no)",
         "abduction", "Did group abduct new members?\n(1 = yes, 0 = no)") %>% 
-  pandoc.table()
+  pander::pandoc.table()
 ```

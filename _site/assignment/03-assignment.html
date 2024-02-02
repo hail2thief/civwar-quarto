@@ -218,6 +218,82 @@ Warning
 <ul>
 <li>Download this: <i class="fas fa-download"></i> <a href="https://www.dropbox.com/s/6tthe5o22lgglkp/ucdp-ged-small.csv?dl=1">UCDP GED Dataset</a></li>
 </ul>
+<div class="cell" data-layout-align="center">
+<table class="table table-sm table-striped small">
+<colgroup>
+<col style="width: 30%">
+<col style="width: 40%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Variable</th>
+<th style="text-align: center;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">id</td>
+<td style="text-align: center;">Unique event identifer</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">year</td>
+<td style="text-align: center;">Year event began</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">month</td>
+<td style="text-align: center;">Month event began</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">day</td>
+<td style="text-align: center;">Day event began</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">country</td>
+<td style="text-align: center;">Country of event</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">type_of_violence</td>
+<td style="text-align: center;">UCDP violence type</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">conflict_name</td>
+<td style="text-align: center;">Name of conflict</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">side_a</td>
+<td style="text-align: center;">Side A</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">side_b</td>
+<td style="text-align: center;">Side B</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">source_article</td>
+<td style="text-align: center;">Article event came from</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">latitude</td>
+<td style="text-align: center;">Latitude</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">longitude</td>
+<td style="text-align: center;">Longitude</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">low_death_estimate</td>
+<td style="text-align: center;">Low estimate of number of deaths</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">high_death_estimate</td>
+<td style="text-align: center;">High estimate of number of deaths</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">best_death_estimate</td>
+<td style="text-align: center;">Best estimate</td>
+</tr>
+</tbody>
+</table>
+</div>
 <p>We’re going to use this geo-coded data to map all the violent events in a country in a year of your choosing. Here’s how to do this:</p>
 <ul>
 <li><p>Look through the data a bit</p></li>
@@ -254,6 +330,66 @@ Warning
 <li><p>How have coca smuggling trends changed over time? Briefly interpret the graph. (1 point)</p></li>
 <li><p>Do groups that abduct their members rely on smuggling at higher or lower rates than groups that don’t abduct? Calculate the percent of rebel groups that use smuggling, comparing groups that do and don’t rely on abduction. What is the difference in smuggling use between groups that use abduction and those that don’t? Report as a difference in percentage points (<span class="math inline">\(\%Smuggling_{abduction=yes} - \%Smuggling_{abduction=no}\)</span>) (1 point)</p></li>
 </ol>
+<div class="cell" data-layout-align="center">
+<table class="table table-sm table-striped small">
+<colgroup>
+<col style="width: 26%">
+<col style="width: 44%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Variable</th>
+<th style="text-align: center;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">country</td>
+<td style="text-align: center;">Country</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">year</td>
+<td style="text-align: center;">Year</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">sidea</td>
+<td style="text-align: center;">Side A in conflict (UCDP)</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">sideb</td>
+<td style="text-align: center;">Side B in conflict (UCDP)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">region</td>
+<td style="text-align: center;">Region of the world</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">extortion</td>
+<td style="text-align: center;">Did group use extortion? (1 = yes, 0 = no)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">smuggling</td>
+<td style="text-align: center;">Did group use smuggling (1 = yes, 0 = no)</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">RESOURCE_ACTION</td>
+<td style="text-align: center;">Did group use ACTION to acquire RESOURCE? (1 = yes, 0 = no)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">external_support</td>
+<td style="text-align: center;">Did group receive external support from foreign government? (1 = yes, 0 = no)</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">forcedrecruit</td>
+<td style="text-align: center;">Did group forcibly recruit members? (1 = yes, 0 = no)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">abduction</td>
+<td style="text-align: center;">Did group abduct new members? (1 = yes, 0 = no)</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 
 </section>
