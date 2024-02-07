@@ -1,8 +1,33 @@
 ---
-title: "Hello"
+title: "Counterinsurgency"
+menu:
+  assignment:
+    parent: Assignments
+    weight: 4
 ---
 
+
+
+
+```{r setup, include=FALSE}
+# set knit options
+knitr::opts_chunk$set(
+  fig.width=9, 
+  fig.height=5, 
+  fig.retina=3,
+  fig.align="center",
+  out.width = "100%",
+  cache = FALSE,
+  echo = FALSE,
+  eval = FALSE,
+  message = FALSE, 
+  warning = FALSE
+)
+
+```
+
 ## Instructions
+
 
 
 - For the data, right-click, "save/download file as..."
@@ -13,11 +38,106 @@ title: "Hello"
 
 
 
+
+
 Skills used: 
 
-- 
+- Creating new variables
+- Counting categories
 
 
 [My awkward Google Sheets video tutorials are here](https://www.dropbox.com/sh/rsj9qm67se619pm/AAD1wPt84O8yaIfSPcwN9edua?dl=0)
 
 
+
+::: {.callout-warning}
+You must complete all of the tasks here BEFORE opening the Canvas quiz; otherwise, you will run out of time!
+:::
+
+
+
+## Task 1: Combat Obscura
+
+
+1. Connect the film we watched in class, *Combat Obscura*, to two of the readings we've covered in class so far. What parallels do you see? What is striking or interesting to you about the film? ~250 words. (5 points).
+
+::: {.callout-note}
+If you weren't able to attend lecture, or would like to review the film, it is available on Kanopy through UC Davis.
+:::
+
+
+
+## Task 2: US casualties
+
+
+
+Let's look at this data on American casualties in the Iraq and Afghanistan wars (variable dictionary below). Each row here is a soldier who died in one of these two wars. 
+
+- Download this: <i class="fas fa-download"></i> [iCasualties data](https://www.dropbox.com/scl/fi/n5ha5rnqzoksm8yviovy0/casualties.csv?rlkey=w0syedcrxd8zyr45czh9a6ep8&dl=1)
+
+
+2. Pick a random row/observation — look up the soldier online and see what you can find. What happened to this person? Who were they? (2 point) 
+
+```{r}
+library(tidyverse)
+df = read_csv("https://www.dropbox.com/scl/fi/n5ha5rnqzoksm8yviovy0/casualties.csv?rlkey=w0syedcrxd8zyr45czh9a6ep8&dl=1")
+```
+
+
+
+3. About what percent of casualties are the result of non-hostile actions (things like accidents, friendly fire, etc.)? Look at the `source` variable. (1 point)
+
+
+```{r}
+df |> group_by(source) |> 
+  tally() |> 
+  mutate(percent = n / sum(n) * 100) |> 
+  filter(source == "non-hostile")
+```
+
+
+
+4. What was the most common `cause` of death for US soldiers? (1 point)
+
+
+```{r}
+df |> group_by(cause) |> 
+  tally() |> 
+  arrange(desc(n))
+```
+
+
+
+8. Figure out how to use the `MONTH` function in excel / sheets to create a new column that tells you in what month the person died, based on the date of death variable. In what month of the year were the most American casualties registered?
+
+
+```{r}
+df |> 
+  mutate(month = month(date, label = TRUE)) |> 
+  group_by(month) |> 
+  tally() |> 
+  arrange(desc(n)) |> 
+  filter(n == max(n))
+```
+
+
+```{r, echo=FALSE,message=FALSE,warning=FALSE,results="asis",eval=TRUE}
+library(tidyverse)
+library(pander)
+tribble(~Variable, ~Description, 
+        "date", "Date of death",
+        "name", "Name of soldier",
+        "rank", "Rank of soldier",
+        "nationality", "Nationality of soldier",
+        "branch", "Branch of military",
+        "age", "Age at death",
+        "country", "Country (Iraq or Afghanistan)",
+        "province", "Province where soldier died",
+        "where", "City/locale where soldier died",
+        "source", "Source of death (hostile or non-hostile)",
+        "cause", "Cause of death",
+        "state", "Home state of soldier",
+        "city", "Home city/town of soldier",
+        "state_pop_2010", "Population in state (2010)") %>% 
+  pandoc.table()
+```

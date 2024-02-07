@@ -8,7 +8,7 @@
 
 <meta name="description" content="Course site for my civil wars class.">
 
-<title>Civil wars - Hello</title>
+<title>Civil wars - Counterinsurgency</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -100,6 +100,8 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#instructions" id="toc-instructions" class="nav-link active" data-scroll-target="#instructions">Instructions</a></li>
+  <li><a href="#task-1-combat-obscura" id="toc-task-1-combat-obscura" class="nav-link" data-scroll-target="#task-1-combat-obscura">Task 1: Combat Obscura</a></li>
+  <li><a href="#task-2-us-casualties" id="toc-task-2-us-casualties" class="nav-link" data-scroll-target="#task-2-us-casualties">Task 2: US casualties</a></li>
   </ul>
 </nav>
     </div>
@@ -108,7 +110,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Hello</h1>
+<h1 class="title">Counterinsurgency</h1>
 </div>
 
 
@@ -136,9 +138,120 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>Skills used:</p>
 <ul>
-<li></li>
+<li>Creating new variables</li>
+<li>Counting categories</li>
 </ul>
 <p><a href="https://www.dropbox.com/sh/rsj9qm67se619pm/AAD1wPt84O8yaIfSPcwN9edua?dl=0">My awkward Google Sheets video tutorials are here</a></p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You must complete all of the tasks here BEFORE opening the Canvas quiz; otherwise, you will run out of time!</p>
+</div>
+</div>
+</section>
+<section id="task-1-combat-obscura" class="level2">
+<h2 data-anchor-id="task-1-combat-obscura">Task 1: Combat Obscura</h2>
+<ol type="1">
+<li>Connect the film we watched in class, <em>Combat Obscura</em>, to two of the readings we’ve covered in class so far. What parallels do you see? What is striking or interesting to you about the film? ~250 words. (5 points).</li>
+</ol>
+</section>
+<section id="task-2-us-casualties" class="level2">
+<h2 data-anchor-id="task-2-us-casualties">Task 2: US casualties</h2>
+<p>Let’s look at this data on American casualties in the Iraq and Afghanistan wars (variable dictionary below). Each row here is a soldier who died in one of these two wars.</p>
+<ul>
+<li>Download this: <i class="fas fa-download"></i> <a href="https://www.dropbox.com/scl/fi/n5ha5rnqzoksm8yviovy0/casualties.csv?rlkey=w0syedcrxd8zyr45czh9a6ep8&amp;dl=1">iCasualties data</a></li>
+</ul>
+<ol start="2" type="1">
+<li>Pick a random row/observation — look up the soldier online and see what you can find. What happened to this person? Who were they? (2 point)</li>
+</ol>
+<ol start="3" type="1">
+<li>About what percent of casualties are the result of non-hostile actions (things like accidents, friendly fire, etc.)? Look at the <code>source</code> variable. (1 point)</li>
+</ol>
+<ol start="4" type="1">
+<li>What was the most common <code>cause</code> of death for US soldiers? (1 point)</li>
+</ol>
+<ol start="8" type="1">
+<li>Figure out how to use the <code>MONTH</code> function in excel / sheets to create a new column that tells you in what month the person died, based on the date of death variable. In what month of the year were the most American casualties registered?</li>
+</ol>
+<div class="cell" data-layout-align="center">
+<table class="table table-sm table-striped small">
+<colgroup>
+<col style="width: 23%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Variable</th>
+<th style="text-align: center;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">date</td>
+<td style="text-align: center;">Date of death</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">name</td>
+<td style="text-align: center;">Name of soldier</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">rank</td>
+<td style="text-align: center;">Rank of soldier</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">nationality</td>
+<td style="text-align: center;">Nationality of soldier</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">branch</td>
+<td style="text-align: center;">Branch of military</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">age</td>
+<td style="text-align: center;">Age at death</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">country</td>
+<td style="text-align: center;">Country (Iraq or Afghanistan)</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">province</td>
+<td style="text-align: center;">Province where soldier died</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">where</td>
+<td style="text-align: center;">City/locale where soldier died</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">source</td>
+<td style="text-align: center;">Source of death (hostile or non-hostile)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">cause</td>
+<td style="text-align: center;">Cause of death</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">state</td>
+<td style="text-align: center;">Home state of soldier</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">city</td>
+<td style="text-align: center;">Home city/town of soldier</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">state_pop_2010</td>
+<td style="text-align: center;">Population in state (2010)</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 
 </section>
