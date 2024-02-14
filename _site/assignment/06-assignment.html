@@ -8,7 +8,7 @@
 
 <meta name="description" content="Course site for my civil wars class.">
 
-<title>Civil wars - Hello</title>
+<title>Civil wars - The war of the flea</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -100,6 +100,7 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#instructions" id="toc-instructions" class="nav-link active" data-scroll-target="#instructions">Instructions</a></li>
+  <li><a href="#the-vietnam-war" id="toc-the-vietnam-war" class="nav-link" data-scroll-target="#the-vietnam-war">The Vietnam War</a></li>
   </ul>
 </nav>
     </div>
@@ -108,7 +109,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Hello</h1>
+<h1 class="title">The war of the flea</h1>
 </div>
 
 
@@ -136,9 +137,108 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>Skills used:</p>
 <ul>
-<li></li>
+<li>grouped summary counts</li>
+<li>grouped summary statistics</li>
 </ul>
 <p><a href="https://www.dropbox.com/sh/rsj9qm67se619pm/AAD1wPt84O8yaIfSPcwN9edua?dl=0">My awkward Google Sheets video tutorials are here</a></p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You must complete all of the tasks here BEFORE opening the Canvas quiz; otherwise, you will run out of time!</p>
+</div>
+</div>
+</section>
+<section id="the-vietnam-war" class="level2">
+<h2 data-anchor-id="the-vietnam-war">The Vietnam War</h2>
+<p>Here, you’ll be working with hamlet level data on territorial control, selective violence, and indiscriminate violence during the Vietnam War. Each row is a hamlet in a given month in the year 1969. Using the data (variable dictionary below), answer the following questions.</p>
+<ul>
+<li>Download this: <i class="fas fa-download"></i> <a href="https://www.dropbox.com/scl/fi/iq9jmh9gycjkal58wyr2c/vietnam.csv?rlkey=imdm954j7n9c6j01rvqlxv89n&amp;dl=1">Vietnam HES data</a></li>
+</ul>
+<ol type="1">
+<li>What was the Strategic Hamlet Program during the Vietnam War? Look it up, describe in your own words, four to five sentences. Tell us what the program <em>did</em> and what its intended <em>objective</em> was. (4 points)</li>
+</ol>
+<ol start="2" type="1">
+<li>HOW MANY bomb sorties were launched, in total, against the most attacked hamlet in Vietnam? (1 point)</li>
+</ol>
+<ol start="3" type="1">
+<li>Calculate the PERCENT of observations in each control category. Overall, who had more control, the rebels, or the government? (1 point)</li>
+</ol>
+<ol start="4" type="1">
+<li>About HOW MANY MORE bomb sorties, in total, were aimed at places that had full rebel control than places where the government had full control? (1 point)</li>
+</ol>
+<ol start="5" type="1">
+<li>How common was the use of selective violence during the war? Take the average of selective violence across areas of control (note: remember what the average of a 0/1 variable tells you!). Where was it most or least common? How common would you say it was overall? Reference specific quantities in your answer. (2 points)</li>
+</ol>
+<ol start="6" type="1">
+<li>Do anything else you want with the data. Describe what you did and what you found. (2 points)</li>
+</ol>
+<div class="cell" data-layout-align="center">
+<table class="table table-sm table-striped small">
+<colgroup>
+<col style="width: 26%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Variable</th>
+<th style="text-align: center;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">hamlet_id</td>
+<td style="text-align: center;">9-digit HES identifier</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">month</td>
+<td style="text-align: center;">Month</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">selective_terror</td>
+<td style="text-align: center;">Did Vietcong use selective violence? (1 = yes, 0 = no)</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">control</td>
+<td style="text-align: center;">Who controlled hamlet? (1 = full state, 2 = partial state, 3 = contested, 4 = partial rebel, 5 = full rebel)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">bombed</td>
+<td style="text-align: center;">How many bombing sorties in hamlet?</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">urban</td>
+<td style="text-align: center;">Is hamlet mostly urban? (1 = yes, 0 = no)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">pop</td>
+<td style="text-align: center;">Hamlet population</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">border</td>
+<td style="text-align: center;">Distance to closest international border</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">dev_index</td>
+<td style="text-align: center;">Development index (note: this is an index so the exact numbers are not interpretable. Lower numbers = less developed, larger numbers = more developed.)</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">buddhist</td>
+<td style="text-align: center;">Predominantly Buddhist hamlet? (1 = yes, 0 = no)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">vietnamese</td>
+<td style="text-align: center;">Predominantly Vietnamese hamlet? (1 = yes, 0 = no)</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 
 </section>
