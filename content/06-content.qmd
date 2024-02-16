@@ -18,9 +18,10 @@ title: "Counterinsurgency"
 - [@valentino:etal:2004]
 - [@berman:etal:2011]
 - [@condra:shapiro:2012]
-- [@bdm:2005a]
-- [@bdm:2005]
-- [@bdm:dickson:2007]
 
 
 
+# Slides
+
+* [Tuesday slides here](https://www.dropbox.com/scl/fi/rge2blc4y5rl8vkiqfvhx/05-coin.pdf?rlkey=9kfe4n41gnox3r3ehsnte1u9v&dl=0)
+* [Thursday slides here](https://www.dropbox.com/scl/fi/9kbtreyh7vz35f8wnp9p5/05-coin-audience.pdf?rlkey=iya9sj7o2crsp5m1jotcc041w&dl=0)
