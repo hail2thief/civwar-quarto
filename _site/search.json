@@ -296,16 +296,16 @@
   {
     "objectID": "assignment/07-assignment.html",
     "href": "assignment/07-assignment.html",
-    "title": "Hello",
+    "title": "Displacement",
     "section": "",
-    "text": "For the data, right-click, “save/download file as…”\nOpen the data\nComplete all of the tasks associated with that data and keep track of your answers / images\nOnce you are done, go on Canvas and answer the questions related to the assignment\n\nthe Canvas assignment is timed; if you open it prior to completing the tasks you will run out of time\n\n\nSkills used:\n\n\n\nMy awkward Google Sheets video tutorials are here"
+    "text": "For the data, right-click, “save/download file as…”\nOpen the data\nComplete all of the tasks associated with that data and keep track of your answers / images\nOnce you are done, go on Canvas and answer the questions related to the assignment\n\nthe Canvas assignment is timed; if you open it prior to completing the tasks you will run out of time\n\n\nSkills used:\n\nSummary statistics\nPlotting\nCreating variables\n\nMy awkward Google Sheets video tutorials are here\n\n\n\n\n\n\nWarning\n\n\n\nYou must complete all of the tasks here BEFORE opening the Canvas quiz; otherwise, you will run out of time!"
   },
   {
     "objectID": "assignment/07-assignment.html#instructions",
     "href": "assignment/07-assignment.html#instructions",
-    "title": "Hello",
+    "title": "Displacement",
     "section": "",
-    "text": "For the data, right-click, “save/download file as…”\nOpen the data\nComplete all of the tasks associated with that data and keep track of your answers / images\nOnce you are done, go on Canvas and answer the questions related to the assignment\n\nthe Canvas assignment is timed; if you open it prior to completing the tasks you will run out of time\n\n\nSkills used:\n\n\n\nMy awkward Google Sheets video tutorials are here"
+    "text": "For the data, right-click, “save/download file as…”\nOpen the data\nComplete all of the tasks associated with that data and keep track of your answers / images\nOnce you are done, go on Canvas and answer the questions related to the assignment\n\nthe Canvas assignment is timed; if you open it prior to completing the tasks you will run out of time\n\n\nSkills used:\n\nSummary statistics\nPlotting\nCreating variables\n\nMy awkward Google Sheets video tutorials are here\n\n\n\n\n\n\nWarning\n\n\n\nYou must complete all of the tasks here BEFORE opening the Canvas quiz; otherwise, you will run out of time!"
   },
   {
     "objectID": "assignment/01-assignment.html",
@@ -509,5 +509,19 @@
     "title": "The war of the flea",
     "section": "The Vietnam War",
     "text": "The Vietnam War\nHere, you’ll be working with hamlet level data on territorial control, selective violence, and indiscriminate violence during the Vietnam War. Each row is a hamlet in a given month in the year 1969. Using the data (variable dictionary below), answer the following questions.\n\nDownload this:  Vietnam HES data\n\n\nWhat was the Strategic Hamlet Program during the Vietnam War? Look it up, describe in your own words, four to five sentences. Tell us what the program did and what its intended objective was. (4 points)\n\n\nHOW MANY bomb sorties were launched, in total, against the most attacked hamlet in Vietnam? (1 point)\n\n\nCalculate the PERCENT of observations in each control category. Overall, who had more control, the rebels, or the government? (1 point)\n\n\nAbout HOW MANY MORE bomb sorties, in total, were aimed at places that had full rebel control than places where the government had full control? (1 point)\n\n\nHow common was the use of selective violence during the war? Take the average of selective violence across areas of control (note: remember what the average of a 0/1 variable tells you!). Where was it most or least common? How common would you say it was overall? Reference specific quantities in your answer. (2 points)\n\n\nDo anything else you want with the data. Describe what you did and what you found. (2 points)\n\n\n\n\n\n\n\n\n\nVariable\nDescription\n\n\n\n\nhamlet_id\n9-digit HES identifier\n\n\nmonth\nMonth\n\n\nselective_terror\nDid Vietcong use selective violence? (1 = yes, 0 = no)\n\n\ncontrol\nWho controlled hamlet? (1 = full state, 2 = partial state, 3 = contested, 4 = partial rebel, 5 = full rebel)\n\n\nbombed\nHow many bombing sorties in hamlet?\n\n\nurban\nIs hamlet mostly urban? (1 = yes, 0 = no)\n\n\npop\nHamlet population\n\n\nborder\nDistance to closest international border\n\n\ndev_index\nDevelopment index (note: this is an index so the exact numbers are not interpretable. Lower numbers = less developed, larger numbers = more developed.)\n\n\nbuddhist\nPredominantly Buddhist hamlet? (1 = yes, 0 = no)\n\n\nvietnamese\nPredominantly Vietnamese hamlet? (1 = yes, 0 = no)"
+  },
+  {
+    "objectID": "assignment/07-assignment.html#displacement-around-the-world",
+    "href": "assignment/07-assignment.html#displacement-around-the-world",
+    "title": "Displacement",
+    "section": "Displacement around the world",
+    "text": "Displacement around the world\nYou are going to work with data on the number of refugees around the world from the United Nations High Commissioner for Refugees. We are also going to look at data on deportations from the European Union (source: Eurostat).\n\n UNHR refugee numbers (UNHR OVERALL)\n Refugee country of origin (ORIGIN)\n Refugee country of destination (HOST)\n European Union deportation figures (EU DEPORT)\n\n\n\n\nDescription of columns, types of refugees\n\n\ndata\nmeaning\n\n\n\n\nrefugees_under_unhc_rs_mandate\nRefugees under UNHCR mandate\n\n\nasylum_seekers\nAsylum-seekers\n\n\nid_ps_of_concern_to_unhcr\nInternally displaced people of concern to UNHCR\n\n\nvenezuelans_displaced_abroad\nVenezuelans displaced abroad\n\n\npalestine\nPalestinian refugees\n\n\n\n\n\n\n\n\nLook at UNHCR OVERALL. How many TOTAL refugees exist in the world in the year 2020? (1 point)\n\n2a. Look at UNHCR OVERALL. Make a time series plot with year on the x-axis and the trends for each type of refugee category on the y-axis. Each “type” of refugee in the data should be its own line. Save the image to upload. (1 point)\n2b. In a few sentences, describe the trends you observe in the image. (1 point)\n\nCreate a new variable that tells you what percent of all refugees are IDPs. What is the first year in which IDPs constitute more than 50% of all refugees? (1 point)\n\n\nLook at HOST. For the latest year for which there is data, what country is the second largest recipient of asylum seekers? (1 point)\n\n\nDo some googling. Why is this country receiving so many asylum applicants? (1 point)\n\n\nLook at the data on deportations from the European Union. Create a variable that tells you how much deportations grew or shrunk from 2011 to 2020 for each country. What is the AVERAGE change in deportation from 2011 to 2020 across the European Union? (1 point)"
+  },
+  {
+    "objectID": "assignment/07-assignment.html#stories-of-displacement",
+    "href": "assignment/07-assignment.html#stories-of-displacement",
+    "title": "Displacement",
+    "section": "Stories of displacement",
+    "text": "Stories of displacement\n\nYou can find many stories on the internet of people who have been displaced or are living as refugees in different parts of the world. Find one of these stories and, in 5-6 sentences, tell us about the person, what happened to them, and where they are now. Include the url to the story in your entry. (4 points)"
   }
 ]

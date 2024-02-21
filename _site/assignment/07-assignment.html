@@ -8,7 +8,7 @@
 
 <meta name="description" content="Course site for my civil wars class.">
 
-<title>Civil wars - Hello</title>
+<title>Civil wars - Displacement</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -50,6 +50,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+
+<script src="../site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="../site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="../html/tenso-berkeley.css">
@@ -100,6 +103,8 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#instructions" id="toc-instructions" class="nav-link active" data-scroll-target="#instructions">Instructions</a></li>
+  <li><a href="#displacement-around-the-world" id="toc-displacement-around-the-world" class="nav-link" data-scroll-target="#displacement-around-the-world">Displacement around the world</a></li>
+  <li><a href="#stories-of-displacement" id="toc-stories-of-displacement" class="nav-link" data-scroll-target="#stories-of-displacement">Stories of displacement</a></li>
   </ul>
 </nav>
     </div>
@@ -108,7 +113,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Hello</h1>
+<h1 class="title">Displacement</h1>
 </div>
 
 
@@ -136,9 +141,94 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>Skills used:</p>
 <ul>
-<li></li>
+<li>Summary statistics</li>
+<li>Plotting</li>
+<li>Creating variables</li>
 </ul>
 <p><a href="https://www.dropbox.com/sh/rsj9qm67se619pm/AAD1wPt84O8yaIfSPcwN9edua?dl=0">My awkward Google Sheets video tutorials are here</a></p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You must complete all of the tasks here BEFORE opening the Canvas quiz; otherwise, you will run out of time!</p>
+</div>
+</div>
+</section>
+<section id="displacement-around-the-world" class="level2">
+<h2 data-anchor-id="displacement-around-the-world">Displacement around the world</h2>
+<p>You are going to work with data on the number of refugees around the world from the United Nations High Commissioner for Refugees. We are also going to look at data on deportations from the European Union (source: Eurostat).</p>
+<ul>
+<li><p><i class="fas fa-download"></i> <a href="https://www.dropbox.com/scl/fi/r3470e5fci18zj9rt8kwj/unhr-overall.csv?rlkey=4cju5geci2noaae2bi8j1dici&amp;dl=1">UNHR refugee numbers (UNHR OVERALL)</a></p></li>
+<li><p><i class="fas fa-download"></i> <a href="https://www.dropbox.com/scl/fi/gcrb3i1rgx7372ohn3axc/origin.csv?rlkey=loc6kl6074py8hpx97jl1zhpv&amp;dl=1">Refugee country of origin (ORIGIN)</a></p></li>
+<li><p><i class="fas fa-download"></i> <a href="https://www.dropbox.com/scl/fi/b2ydio9d1zs7qtavh1aut/host.csv?rlkey=wnndmfnothxwaddw50fizubha&amp;dl=1">Refugee country of destination (HOST)</a></p></li>
+<li><p><i class="fas fa-download"></i> <a href="https://www.dropbox.com/scl/fi/il416tqnnf2j5xu66gciq/eu_deport.csv?rlkey=gluojb8tua0g0ma9g2qauf85a&amp;dl=1">European Union deportation figures (EU DEPORT)</a></p></li>
+</ul>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<table data-quarto-postprocess="true" class="table table-sm table-striped small">
+<caption>Description of columns, types of refugees</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">data</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">refugees_under_unhc_rs_mandate</td>
+<td style="text-align: left;">Refugees under UNHCR mandate</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">asylum_seekers</td>
+<td style="text-align: left;">Asylum-seekers</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">id_ps_of_concern_to_unhcr</td>
+<td style="text-align: left;">Internally displaced people of concern to UNHCR</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">venezuelans_displaced_abroad</td>
+<td style="text-align: left;">Venezuelans displaced abroad</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">palestine</td>
+<td style="text-align: left;">Palestinian refugees</td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+</div>
+<ol type="1">
+<li>Look at <code>UNHCR OVERALL</code>. How many TOTAL refugees exist in the world in the year 2020? (1 point)</li>
+</ol>
+<p>2a. Look at <code>UNHCR OVERALL</code>. Make a time series plot with year on the x-axis and the trends for each type of refugee category on the y-axis. Each “type” of refugee in the data should be its own line. Save the image to upload. (1 point)</p>
+<p>2b. In a few sentences, describe the trends you observe in the image. (1 point)</p>
+<ol start="3" type="1">
+<li>Create a new variable that tells you what percent of all refugees are IDPs. What is the first year in which IDPs constitute more than 50% of all refugees? (1 point)</li>
+</ol>
+<ol start="4" type="1">
+<li>Look at <code>HOST</code>. For the latest year for which there is data, what country is the second largest recipient of asylum seekers? (1 point)</li>
+</ol>
+<ol start="5" type="1">
+<li>Do some googling. <em>Why</em> is this country receiving so many asylum applicants? (1 point)</li>
+</ol>
+<ol start="6" type="1">
+<li>Look at the data on deportations from the European Union. Create a variable that tells you how much deportations grew or shrunk from 2011 to 2020 for each country. What is the AVERAGE change in deportation from 2011 to 2020 across the European Union? (1 point)</li>
+</ol>
+</section>
+<section id="stories-of-displacement" class="level2">
+<h2 data-anchor-id="stories-of-displacement">Stories of displacement</h2>
+<ol start="7" type="1">
+<li>You can find many stories on the internet of people who have been displaced or are living as refugees in different parts of the world. Find one of these stories and, in 5-6 sentences, tell us about the person, what happened to them, and where they are now. Include the url to the story in your entry. (4 points)</li>
+</ol>
 
 
 </section>
