@@ -1,23 +1,66 @@
 ---
-title: "Hello"
+title: "The Shining Path"
+menu:
+  assignment:
+    parent: Assignments
+    weight: 7
 ---
+
+
+
+
+```{r setup, include=FALSE}
+# set knit options
+knitr::opts_chunk$set(
+  fig.width=9, 
+  fig.height=5, 
+  fig.retina=3,
+  fig.align="center",
+  out.width = "100%",
+  cache = FALSE,
+  echo = FALSE,
+  eval = FALSE,
+  message = FALSE, 
+  warning = FALSE
+)
+
+```
 
 ## Instructions
 
 
-- For the data, right-click, "save/download file as..."
-- Open the data
-- Complete all of the tasks associated with that data and keep track of your answers / images
-- **Once you are done**, go on Canvas and answer the questions related to the assignment
-    - the Canvas assignment is **timed**; if you open it prior to completing the tasks you will run out of time
+
+
+::: {.callout-warning}
+You must complete all of the tasks here BEFORE opening the Canvas quiz; otherwise, you will run out of time!
+:::
+
+
+## A modern MLM group
+
+
+There are modern day groups in the United States that have either been inspired by or share similar ideological roots to the Shining Path. One such group is the "Red Guards", who have chapters in a few different cities of the United States. 
+
+These groups are mostly secretive so we don't know that much about how they work or what they do. However, in a surprising turn of events, a number of disgruntled members of a Red Guard group [made a website](https://maoistcultexposed.wordpress.com/cr-cpusa-expose/) where they claim to "expose" the inner workings of their organization and leak some primary documents. Keep in mind: these are disgruntled members (they claim the organization is a "cult"), and we cannot verify everything they are saying. Take what you read with a grain of salt. 
+
+
+Read through the website and Google the group some to answer the following questions:
+
+
+1. Why do they call themselves the "Red Guards"? What is that name a reference to? What does that tell us about their ideology? Explain in 3-4 sentences. (2 points)
 
 
 
-Skills used: 
-
-- 
+2. Using direct quotes from the website (see: "Defining Terms"): what did the group's ideology consist of? What were its political goals? Explain in 4-6 sentences. (3 points)
 
 
-[My awkward Google Sheets video tutorials are here](https://www.dropbox.com/sh/rsj9qm67se619pm/AAD1wPt84O8yaIfSPcwN9edua?dl=0)
+
+
+3. How was the organization structured internally? What were the different positions / roles that members had? Use direct quotes from the site (see: "Leadership and organization"). Explain in 4-6 sentences. (3 points)
+
+
+4. There is a point at which the disgruntled members claim that the organization ultimately collapses due to internal tensions / disagreements. What were these tensions/disagreements? What instigated this collapse (see: "Timeline")? Use direct quotes from the site. Discuss in 4-6 sentences. (3 points)
+
+
 
 

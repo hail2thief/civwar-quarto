@@ -83,7 +83,7 @@ labs = tibble::tibble(data = c("refugees_under_unhc_rs_mandate",
                       "Venezuelans displaced abroad", 
                       "Palestinian refugees"))
 
-kableExtra::kbl(labs, caption = "Description of columns, types of refugees")
+kableExtra::kbl(labs, caption = "Description of columns, type displaced person")
 ```
 
 
@@ -175,7 +175,7 @@ write_csv(us, file = "../files/datasets/us_deport.csv")
 
 
 
-1. Look at `UNHCR OVERALL`. How many TOTAL refugees exist in the world in the year 2020? (1 point)
+1. Look at `UNHCR OVERALL`. How many TOTAL displaced people exist in the world in the year 2020? (1 point)
 
 
 ```{r}
@@ -191,7 +191,7 @@ df |>
 
 
 
-2a. Look at `UNHCR OVERALL`. Make a time series plot with year on the x-axis and the trends for each type of refugee category on the y-axis. Each "type" of refugee in the data should be its own line. Save the image to upload. (1 point)
+2a. Look at `UNHCR OVERALL`. Make a time series plot with year on the x-axis and the trends for each type of displaced person category on the y-axis. Each "type" of displaced person in the data should be its own line. Save the image to upload. (1 point)
 
 
 ```{r}
@@ -208,7 +208,7 @@ df |>
 
 
 
-3. Create a new variable that tells you what percent of all refugees are IDPs. What is the first year in which IDPs constitute more than 50% of all refugees? (1 point)
+3. Create a new variable that tells you what percent of all displaced people are IDPs. What is the first year in which IDPs constitute more than 50% of all displaced people? (1 point)
 
 
 ```{r}
