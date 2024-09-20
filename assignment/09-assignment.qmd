@@ -40,130 +40,130 @@ knitr::opts_chunk$set(
 
 
 
-Skills used: 
+<!-- Skills used:  -->
 
-- counting categories
-- filtering data
-- grouped summary counts
-- constructing variables
-
-
-[My awkward Google Sheets video tutorials are here](https://www.dropbox.com/sh/rsj9qm67se619pm/AAD1wPt84O8yaIfSPcwN9edua?dl=0)
+<!-- - counting categories -->
+<!-- - filtering data -->
+<!-- - grouped summary counts -->
+<!-- - constructing variables -->
 
 
-
-::: {.callout-warning}
-You must complete all of the tasks here BEFORE opening the Canvas quiz; otherwise, you will run out of time!
-:::
+<!-- [My awkward Google Sheets video tutorials are here](https://www.dropbox.com/sh/rsj9qm67se619pm/AAD1wPt84O8yaIfSPcwN9edua?dl=0) -->
 
 
 
-## Popular opinion in Ethiopia
-
-
-Here we are going to work with survey data from the Ethiopia wave of Afrobarometer. Each row in this dataset is a person who answered the survey. To keep things simple, I've subsetted the data to only respondents from the four major ethnic groups in the country. 
-
-
-- Download this: <i class="fas fa-download"></i> [Ethiopia Afrobarometer subset](https://www.dropbox.com/scl/fi/waw4z31ax01y8m5jj9lu7/ethiopia-afrobarom.csv?rlkey=9tq49zlvkh3g4va70ra9d1pq6&dl=1)
-
-
-```{r}
-library(tidyverse)
-df = read_csv("https://www.dropbox.com/scl/fi/waw4z31ax01y8m5jj9lu7/ethiopia-afrobarom.csv?rlkey=9tq49zlvkh3g4va70ra9d1pq6&dl=1")
-
-```
-
-
-1. One of the questions in the survey pertains to a controversy about the national emblem at the center of the Ethiopian flag (the blue star) and whether it should be removed or kept. Google around. What is the emblem? And why is it controversial? (3 points) 
-
-
-2. How do Ethiopians feel, in general, about their system of ethnic federalism? Calculate the PERCENT of respondents who gave each answer to the `ethnic_federalism` question. What percent agree or strongly agree with keeping the system "as is"? (1 point)
-
-```{r}
-df |> 
-  group_by(ethnic_federalism) |> 
-  tally() |> 
-  mutate(percent = n/sum(n) * 100) |> 
-  filter(str_detect(ethnic_federalism, "1")) |> 
-  pull(percent) |> 
-  sum()
-```
-
-
-3. Perform the same calculation as above, but grouped by the respondent `ethnicity`. Which ethnic group has the largest percent of people who agree or strongly agree with keeping the system as is? (1 point)
-
-
-```{r}
-df |> 
-  group_by(ethnicity, ethnic_federalism) |> 
-  tally() |> 
-  mutate(percent = n/sum(n) * 100) |> 
-  filter(str_detect(ethnic_federalism, "1")) |>
-  group_by(ethnicity) |> 
-  summarise(percent = sum(percent)) |> 
-  filter(percent == max(percent))
-```
-
-
-4. Why would this be? Discuss, based on lecture and readings, why this group would favor keeping the system as is. (2 points)
-
-
-5. What percent of people in our survey live in a state that matches their ethnicity? Figure out how to use `IF` to construct a variable that equals 1 if the person lives in a region that matches their ethnicity (e.g., an Oromo who lives in the Oromo region) and 0 otherwise. The average of this variable will tell you what PROPORTION of respondents live in a region that matches their ethnicity. (1 point)
-
-```{r}
-df |> 
-  select(ethnicity, region) |> 
-  mutate(lives_internal = region == ethnicity) |> 
-  summarise(mean = mean(lives_internal)*100)
-```
-
-
-6. What PERCENT of people speak the most commonly spoken language in the sample? (1 point)
-
-```{r}
-df |> 
-  group_by(lang) |> 
-  tally() |> 
-  mutate(percent = n / sum(n) * 100) |> 
-  filter(percent == max(percent))
-```
-
-
-7. Among the three constitutional amendments being considered (right to secession, changing the flag, and adding new languages), which has the FEWEST respondents who either oppose or strongly oppose? In other words, which amendment is the least unpopular? (1 point)
-
-```{r}
-df |> 
-  group_by(new_languages) |> 
-  tally() |> 
-  mutate(percent = n / sum(n) * 100) |> 
-  filter((new_languages) %in% c("Oppose", "Strongly oppose")) |> 
-  pull(percent) |> 
-  sum()
-```
+<!-- ::: {.callout-warning} -->
+<!-- You must complete all of the tasks here BEFORE opening the Canvas quiz; otherwise, you will run out of time! -->
+<!-- ::: -->
 
 
 
+<!-- ## Popular opinion in Ethiopia -->
 
-```{r, echo=FALSE,message=FALSE,warning=FALSE,results="asis",eval=TRUE}
-library(tidyverse)
-library(pander)
-tibble::tribble(
-            ~original,                                                                                                ~labels,
-             "urbrur",                                                                 "Urban or Rural Primary Sampling Unit",
-                "age",                                                                                              "Q1. Age",
-               "lang",                                                                          "Q2. Language spoken in home",
-             "region",                                                                                   "Province or region",
-          "ethnicity",                                                       "Q81. Ethnic community, cultural group or tribe",
-   "democracy_status",                                                                     "Q37. Satisfaction with democracy",
-     "democracy_good",                                                                           "Q21. Support for democracy",
-         "compromise",                               "Q31. Election winner pursues preferred policies (statement 1) vs compromise w/others (statement 2)",
-         "federalism",                                   "Q76b-ETH. Federalism is best form of government (statement 1) vs is too divisive (statement 2)",
-  "ethnic_federalism",                                  "Q76c-ETH. Keep ethnic federalism (statement 1) vs change to geographic federalism (statement 2)",
-     "ethnic_parties", "Q76d-ETH. Better to have smaller, ethnic based political parties (statement 1) vs have larger multi-ethnic parties (statement 2)",
-    "secession_right",                                                               "Q77a-ETH. Article 39 should be removed",
-           "new_flag",                                       "Q77c-ETH. National emblem on Ethiopian flag should be removed.",
-      "new_languages",                      "Q77d-ETH. Languages besides Amharic should be working languages of federal govt"
-  ) %>% 
-  pandoc.table()
-```
+
+<!-- Here we are going to work with survey data from the Ethiopia wave of Afrobarometer. Each row in this dataset is a person who answered the survey. To keep things simple, I've subsetted the data to only respondents from the four major ethnic groups in the country.  -->
+
+
+<!-- - Download this: <i class="fas fa-download"></i> [Ethiopia Afrobarometer subset](https://www.dropbox.com/scl/fi/waw4z31ax01y8m5jj9lu7/ethiopia-afrobarom.csv?rlkey=9tq49zlvkh3g4va70ra9d1pq6&dl=1) -->
+
+
+<!-- ```{r} -->
+<!-- library(tidyverse) -->
+<!-- df = read_csv("https://www.dropbox.com/scl/fi/waw4z31ax01y8m5jj9lu7/ethiopia-afrobarom.csv?rlkey=9tq49zlvkh3g4va70ra9d1pq6&dl=1") -->
+
+<!-- ``` -->
+
+
+<!-- 1. One of the questions in the survey pertains to a controversy about the national emblem at the center of the Ethiopian flag (the blue star) and whether it should be removed or kept. Google around. What is the emblem? And why is it controversial? (3 points)  -->
+
+
+<!-- 2. How do Ethiopians feel, in general, about their system of ethnic federalism? Calculate the PERCENT of respondents who gave each answer to the `ethnic_federalism` question. What percent agree or strongly agree with keeping the system "as is"? (1 point) -->
+
+<!-- ```{r} -->
+<!-- df |>  -->
+<!--   group_by(ethnic_federalism) |>  -->
+<!--   tally() |>  -->
+<!--   mutate(percent = n/sum(n) * 100) |>  -->
+<!--   filter(str_detect(ethnic_federalism, "1")) |>  -->
+<!--   pull(percent) |>  -->
+<!--   sum() -->
+<!-- ``` -->
+
+
+<!-- 3. Perform the same calculation as above, but grouped by the respondent `ethnicity`. Which ethnic group has the largest percent of people who agree or strongly agree with keeping the system as is? (1 point) -->
+
+
+<!-- ```{r} -->
+<!-- df |>  -->
+<!--   group_by(ethnicity, ethnic_federalism) |>  -->
+<!--   tally() |>  -->
+<!--   mutate(percent = n/sum(n) * 100) |>  -->
+<!--   filter(str_detect(ethnic_federalism, "1")) |> -->
+<!--   group_by(ethnicity) |>  -->
+<!--   summarise(percent = sum(percent)) |>  -->
+<!--   filter(percent == max(percent)) -->
+<!-- ``` -->
+
+
+<!-- 4. Why would this be? Discuss, based on lecture and readings, why this group would favor keeping the system as is. (2 points) -->
+
+
+<!-- 5. What percent of people in our survey live in a state that matches their ethnicity? Figure out how to use `IF` to construct a variable that equals 1 if the person lives in a region that matches their ethnicity (e.g., an Oromo who lives in the Oromo region) and 0 otherwise. The average of this variable will tell you what PROPORTION of respondents live in a region that matches their ethnicity. (1 point) -->
+
+<!-- ```{r} -->
+<!-- df |>  -->
+<!--   select(ethnicity, region) |>  -->
+<!--   mutate(lives_internal = region == ethnicity) |>  -->
+<!--   summarise(mean = mean(lives_internal)*100) -->
+<!-- ``` -->
+
+
+<!-- 6. What PERCENT of people speak the most commonly spoken language in the sample? (1 point) -->
+
+<!-- ```{r} -->
+<!-- df |>  -->
+<!--   group_by(lang) |>  -->
+<!--   tally() |>  -->
+<!--   mutate(percent = n / sum(n) * 100) |>  -->
+<!--   filter(percent == max(percent)) -->
+<!-- ``` -->
+
+
+<!-- 7. Among the three constitutional amendments being considered (right to secession, changing the flag, and adding new languages), which has the FEWEST respondents who either oppose or strongly oppose? In other words, which amendment is the least unpopular? (1 point) -->
+
+<!-- ```{r} -->
+<!-- df |>  -->
+<!--   group_by(new_languages) |>  -->
+<!--   tally() |>  -->
+<!--   mutate(percent = n / sum(n) * 100) |>  -->
+<!--   filter((new_languages) %in% c("Oppose", "Strongly oppose")) |>  -->
+<!--   pull(percent) |>  -->
+<!--   sum() -->
+<!-- ``` -->
+
+
+
+
+<!-- ```{r, echo=FALSE,message=FALSE,warning=FALSE,results="asis",eval=TRUE} -->
+<!-- library(tidyverse) -->
+<!-- library(pander) -->
+<!-- tibble::tribble( -->
+<!--             ~original,                                                                                                ~labels, -->
+<!--              "urbrur",                                                                 "Urban or Rural Primary Sampling Unit", -->
+<!--                 "age",                                                                                              "Q1. Age", -->
+<!--                "lang",                                                                          "Q2. Language spoken in home", -->
+<!--              "region",                                                                                   "Province or region", -->
+<!--           "ethnicity",                                                       "Q81. Ethnic community, cultural group or tribe", -->
+<!--    "democracy_status",                                                                     "Q37. Satisfaction with democracy", -->
+<!--      "democracy_good",                                                                           "Q21. Support for democracy", -->
+<!--          "compromise",                               "Q31. Election winner pursues preferred policies (statement 1) vs compromise w/others (statement 2)", -->
+<!--          "federalism",                                   "Q76b-ETH. Federalism is best form of government (statement 1) vs is too divisive (statement 2)", -->
+<!--   "ethnic_federalism",                                  "Q76c-ETH. Keep ethnic federalism (statement 1) vs change to geographic federalism (statement 2)", -->
+<!--      "ethnic_parties", "Q76d-ETH. Better to have smaller, ethnic based political parties (statement 1) vs have larger multi-ethnic parties (statement 2)", -->
+<!--     "secession_right",                                                               "Q77a-ETH. Article 39 should be removed", -->
+<!--            "new_flag",                                       "Q77c-ETH. National emblem on Ethiopian flag should be removed.", -->
+<!--       "new_languages",                      "Q77d-ETH. Languages besides Amharic should be working languages of federal govt" -->
+<!--   ) %>%  -->
+<!--   pandoc.table() -->
+<!-- ``` -->
 

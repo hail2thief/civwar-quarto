@@ -1,13 +1,16 @@
 # libraries
 library(tidyverse)
-
+library(calendar)
 
 # set the hard dates
-start_day = "2024-01-06"
-end_day = "2024-03-14"
-final = "2024-03-21"
-midterm = "2024-02-08"
-meets_on = c("Tue", "Thu")
+start_day = "2024-09-25"
+end_day = "2024-12-06"
+final = "2024-12-10 10:30 AM"
+midterm = "2024-10-28"
+breaks = c("2024-11-11")
+meets_on = c("Mon", "Wed")
+class_time = "13:40:00"
+meeting_room = "The Grove (Surge III) 1309"
 
 # create class schedule
 
@@ -19,11 +22,12 @@ schedule = tibble(dates = seq(from = ymd(start_day),
   # filter to meeting days
   filter(day %in% meets_on) |> 
   # filter out breaks
-  #filter(!dates %in% ymd(breaks)) |> 
+  filter(!dates %in% ymd(breaks)) |> 
   # add weeks
   mutate(week = isoweek(dates), 
-         week = week - (min(week) - 1), 
-         week = str_pad(week, width = 2, pad = "0"))
+         week = week - (min(week)), 
+         week = str_pad(week, width = 2, pad = "0")) |> 
+  mutate(dates = ymd_hms(paste(dates, class_time)))
 
 
 # set homework weeks
@@ -41,23 +45,23 @@ schedule = schedule |>
          assignment = ifelse(week %in% homework_on$week, 
                              paste0("/assignment/", str_extract(week, "\\d+"), "-assignment"),
                              NA)) |> 
-  select(week, date = 2, day2 = 3, content, assignment)
+  select(week, date = sym(meets_on[1]), day2 = sym(meets_on[2]), content, assignment)
 
 
 
 # merge in topics
 topics = tribble(~week, ~title,
-        "Week 01", "Hello + what are civil wars?",
+        "Week 00", "Hello",
+        "Week 01", "What are civil wars?",
         "Week 02", "Why do people rebel? Grievances, ethnicity",
         "Week 03", "Why do people rebel? Resources",
         "Week 04", "How are wars fought? Insurgency",
-        "Week 05", 'Midterm exam on Feb 6th <i class="fa-solid fa-star"></i> + in-class film',
+        "Week 05", 'Midterm exam <i class="fa-solid fa-star"></i> + in-class film',
         "Week 06", "How are wars fought? Counterinsurgency",
         "Week 07", "Case study: forced displacement in Colombia",
         "Week 08", "Case study: civilian resistance in Peru",
         "Week 09", "Case study: ethnic conflict in Ethiopia",
-        "Week 10", "How do wars end? Negotiated settlements",
-        "Week 11", "Conclusions")
+        "Week 10", "How do wars end? Negotiated settlements")
 
 
 # finish up
@@ -65,6 +69,38 @@ schedule = schedule |>
   left_join(topics, by = "week") |> 
   # add in exams
   add_row(week = "", 
-          title = 'Final exam at 3:30pm <i class="fa-solid fa-star"></i>', date = ymd(final))
+          title = 'Final exam at 3:30pm <i class="fa-solid fa-star"></i>', 
+          date = ymd_hm(final))
 
 write_csv(schedule, "data/schedule.csv")
+
+
+
+# make ical
+schedule_long = schedule |> 
+  # make schedule long
+  pivot_longer(cols = c(date, day2), names_to = "type", values_to = "value") |> 
+  select(title, value) |> 
+  drop_na() |> 
+  mutate(title = paste0("POL126F24: ", title))
+
+dtstamp <- ic_char_datetime(now("UTC"), zulu = TRUE)
+
+ical = schedule_long |>
+  mutate(id = row_number()) |>
+  group_by(id) |>
+  nest() |>
+  mutate(ical = map(data,
+                    ~ic_event(start = .$value[[1]],
+                              end = .$value[[1]] + 90*60,
+                              summary = .$title[[1]],
+                              more_properties = TRUE,
+                              event_properties = c("DTSTAMP" = dtstamp,
+                                                   "LOCATION" = meeting_room)))) |>
+  ungroup() |>
+  select(-id, -data) |>
+  unnest(ical) |> 
+  ical()
+
+
+calendar::ic_write(ical, "data/schedule.ics")    

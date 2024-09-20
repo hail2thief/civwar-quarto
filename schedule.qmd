@@ -42,8 +42,8 @@ format_days = function(date, day2)
 format_schedule = function(schedule_file)
 {
   schedule = read_csv(schedule_file, show_col_types = FALSE) |> 
-    mutate(date = ymd(date),
-           day2 = ymd(day2)) |> 
+    mutate(date = as.Date(date),
+           day2 = as.Date(day2)) |> 
     mutate(week = ifelse(is.na(week), " ", week)) |> 
     mutate(col_date = format_days(date, day2)) |> 
     mutate(var_title = ifelse(!is.na(content),
@@ -71,8 +71,9 @@ format_schedule = function(schedule_file)
 
 
 tbl = format_schedule(schedule_file = "data/schedule.csv") |> 
+  # hide stuff that hasn't happened yet
   mutate(col_assignment = ifelse(week %in% 
-                                   c("Week 01", "Week 02", "Week 03", "Week 05", "Week 06", "Week 07", "Week 08", "Week 09"), col_assignment, '<font color="#e9ecef"><i class="fa-solid fa-pen-ruler fa-lg"></i></font>')) |> 
+                                   c(""), col_assignment, '<font color="#e9ecef"><i class="fa-solid fa-pen-ruler fa-lg"></i></font>')) |> 
   select(`  ` = week, ` ` = col_date, Topic = col_title, Content = col_content, 
          Assignment = col_assignment) |> 
   kbl(escape = FALSE, align = "rrlcc", table.attr = 'class="schedule-table"')%>% 

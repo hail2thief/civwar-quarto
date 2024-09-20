@@ -20,7 +20,7 @@ To practice working with data you will complete problem sets throughout the quar
 
 ## Exams
 
-We will hold midterm and final exams. The exams will be in-person. The format will either be multiple choice (scantrons) or written (blue books) or a combination of the two.
+We will hold midterm and final exams. The exams will be in-person. The format will either be multiple choice (**red** scantrons) or written (blue books) or a combination of the two.
 
 
 # The rules
@@ -33,10 +33,10 @@ Be nice. Don't cheat. The [Code of Academic Conduct](https://ossja.ucdavis.edu/c
 
 ## ChatGPT (and other LLMs)
 
-The world is still figuring out how to deal with large language models (LLMs) like ChatGPT. My view is that ChatGPT is not functionally different from searching online forums, Google, etc., for help with how to complete tasks. Looking up how to do things online is *good practice*, so I don't want to discourage that.  
+The world is still figuring out how to deal with large language models (LLMs) like ChatGPT. My view is that ChatGPT is not functionally different from searching online forums, Google, etc., for help with how to complete tasks. Looking up how to do things online is *fine*. Here are the rules for this course:  
 
 * **what is allowed**. You are allowed to use ChatGPT to figure out how to complete **data analysis** tasks (e.g., how do I make a barplot in Excel?). 
-* **what is not allowed**. You are not allowed to pass off ChatGPT's **writing** as if it was your own (e.g., submitting ChatGPT's interpretation of some graph or data pattern). 
+* **what is not allowed**. You are not allowed to pass off ChatGPT's writing **as if it was your own** (e.g., submitting ChatGPT's interpretation of some graph or data pattern) or submit ChatGPT data analysis output **as if it was your own** (e.g., pasting a graph you didn't make yourself). 
 * **Be careful**. In my experience, these machines can give answers that are way off. Plus, if you over rely on them and don't develop an understanding of the material, you'll likely suffer during the in-class exams. 
 
 

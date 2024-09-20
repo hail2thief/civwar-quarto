@@ -40,132 +40,132 @@ knitr::opts_chunk$set(
 
 
 
-Skills used: 
+<!-- Skills used:  -->
 
-- filtering data
-- counting categories, percents
-- summary statistics
-- grouped summary, statistic
+<!-- - filtering data -->
+<!-- - counting categories, percents -->
+<!-- - summary statistics -->
+<!-- - grouped summary, statistic -->
 
-[My awkward Google Sheets video tutorials are here](https://www.dropbox.com/sh/rsj9qm67se619pm/AAD1wPt84O8yaIfSPcwN9edua?dl=0)
-
-
-
-::: {.callout-warning}
-You must complete all of the tasks here BEFORE opening the Canvas quiz; otherwise, you will run out of time!
-:::
+<!-- [My awkward Google Sheets video tutorials are here](https://www.dropbox.com/sh/rsj9qm67se619pm/AAD1wPt84O8yaIfSPcwN9edua?dl=0) -->
 
 
 
-## Task 1: Manifestos
-
-
-Pick two manifestos from the list below and skim them. The manifestos themselves can be found at [this link](https://www.dropbox.com/sh/648s8i2itdjfriy/AACZrJxTdwPXFMDTkya6Gb_La?dl=0). Please note some of these contain extremely offensive content. The people/groups included are:
-
-- Rumiyah, the [ISIS magazine](https://www.jstor.org/stable/resrep37748#metadata_info_tab_contents)
-
-- The [New Irish Republican Army](https://en.wikipedia.org/wiki/New_Irish_Republican_Army)
-
-- [Osama bin Laden](https://en.wikipedia.org/wiki/Osama_bin_Laden) "Letter to America"
-
-- [South Carolina terrorist, Dylann Roof](https://en.wikipedia.org/wiki/Dylann_Roof)
-
-- Manifesto of the [Christchurch mosque terrorist attack](https://en.wikipedia.org/wiki/Christchurch_mosque_shootings)
-
-- Manifesto of the [2019 el Paso, Walmart terrorist attack](https://en.wikipedia.org/wiki/2019_El_Paso_shooting)
-
-- Elliot Rodger, the "incel" [manifesto](https://en.wikipedia.org/wiki/2014_Isla_Vista_killings)
-
-- Eco-extremist group in Mexico, [Individualistas Tendiendo a lo Salvaje](https://en.wikipedia.org/wiki/Individualists_Tending_to_the_Wild)
+<!-- ::: {.callout-warning} -->
+<!-- You must complete all of the tasks here BEFORE opening the Canvas quiz; otherwise, you will run out of time! -->
+<!-- ::: -->
 
 
 
-1. In two paragraphs, describe the following. How would you say these groups/people motivate and explain their actions? Do the two manifestos you picked do so similarly or in different ways? Include at least two quotes as examples. (5 points)
+<!-- ## Task 1: Manifestos -->
+
+
+<!-- Pick two manifestos from the list below and skim them. The manifestos themselves can be found at [this link](https://www.dropbox.com/sh/648s8i2itdjfriy/AACZrJxTdwPXFMDTkya6Gb_La?dl=0). Please note some of these contain extremely offensive content. The people/groups included are: -->
+
+<!-- - Rumiyah, the [ISIS magazine](https://www.jstor.org/stable/resrep37748#metadata_info_tab_contents) -->
+
+<!-- - The [New Irish Republican Army](https://en.wikipedia.org/wiki/New_Irish_Republican_Army) -->
+
+<!-- - [Osama bin Laden](https://en.wikipedia.org/wiki/Osama_bin_Laden) "Letter to America" -->
+
+<!-- - [South Carolina terrorist, Dylann Roof](https://en.wikipedia.org/wiki/Dylann_Roof) -->
+
+<!-- - Manifesto of the [Christchurch mosque terrorist attack](https://en.wikipedia.org/wiki/Christchurch_mosque_shootings) -->
+
+<!-- - Manifesto of the [2019 el Paso, Walmart terrorist attack](https://en.wikipedia.org/wiki/2019_El_Paso_shooting) -->
+
+<!-- - Elliot Rodger, the "incel" [manifesto](https://en.wikipedia.org/wiki/2014_Isla_Vista_killings) -->
+
+<!-- - Eco-extremist group in Mexico, [Individualistas Tendiendo a lo Salvaje](https://en.wikipedia.org/wiki/Individualists_Tending_to_the_Wild) -->
 
 
 
-## Task 2: Ethnic power relations
+<!-- 1. In two paragraphs, describe the following. How would you say these groups/people motivate and explain their actions? Do the two manifestos you picked do so similarly or in different ways? Include at least two quotes as examples. (5 points) -->
 
 
 
-You're going to work with data from the Ethnic Power Relations (EPR) dataset. The dataset contains information on politically relevant ethnic groups around the world for a select period of time. 
-
-
-- The data: <i class="fas fa-download"></i> [EPR dataset](https://www.dropbox.com/scl/fi/6kkbuz25u8redtq5tr82h/EPR-2021.csv?rlkey=le25pido52duo8wcp3n74yiwz&dl=1)
-
-
-```{r, warning=FALSE, echo=FALSE, message=FALSE, results='asis', eval=TRUE}
-library(tidyverse)
-# dictionary
-tribble(~Variable, ~Description, 
-        "statename", "Country",
-        "from", "Starting year for time period",
-        "to", "Ending year for time period",
-        "group", "Name of ethnic group",
-        "size", "Group size as a % of total population in that time period",
-        "status", "Access to state power in that time period",
-        "reg_aut", "Does group have regional autonomy in this period?") %>% 
-  pander::pandoc.table()
-
-```
-
-
-::: {.callout-note}
-These are the relevant variables in the dataset, the other ones you can ignore
-:::
+<!-- ## Task 2: Ethnic power relations -->
 
 
 
-## Questions
+<!-- You're going to work with data from the Ethnic Power Relations (EPR) dataset. The dataset contains information on politically relevant ethnic groups around the world for a select period of time.  -->
 
 
-Using the dataset, answer the following questions:
+<!-- - The data: <i class="fas fa-download"></i> [EPR dataset](https://www.dropbox.com/scl/fi/6kkbuz25u8redtq5tr82h/EPR-2021.csv?rlkey=le25pido52duo8wcp3n74yiwz&dl=1) -->
 
 
-2. Count the number of groups by `status`. What PERCENT of groups across the whole dataset are categorized as "powerless"? Note: It is OK to treat each row as a different "group"/observation. Don't worry about "double-counting" groups, it's OK if you do. If you don't know what I mean by this you are probably OK to begin with. (1 point)
+<!-- ```{r, warning=FALSE, echo=FALSE, message=FALSE, results='asis', eval=TRUE} -->
+<!-- library(tidyverse) -->
+<!-- # dictionary -->
+<!-- tribble(~Variable, ~Description,  -->
+<!--         "statename", "Country", -->
+<!--         "from", "Starting year for time period", -->
+<!--         "to", "Ending year for time period", -->
+<!--         "group", "Name of ethnic group", -->
+<!--         "size", "Group size as a % of total population in that time period", -->
+<!--         "status", "Access to state power in that time period", -->
+<!--         "reg_aut", "Does group have regional autonomy in this period?") %>%  -->
+<!--   pander::pandoc.table() -->
+
+<!-- ``` -->
 
 
-```{r}
-library(tidyverse)
-df = read_csv("https://www.dropbox.com/scl/fi/6kkbuz25u8redtq5tr82h/EPR-2021.csv?rlkey=le25pido52duo8wcp3n74yiwz&dl=1")
-
-df |> group_by(status) |> 
-  tally() |> 
-  mutate(percent = n / sum(n) * 100) |> 
-  filter(status == "POWERLESS")
-```
-
-
-3. Look through some of the groups that are categorized as "powerless" in the dataset. In your opinion, is being a group that is "powerless" enough to generate grievances? Or can a group be "powerless" and not be aggrieved? (2 points)
+<!-- ::: {.callout-note} -->
+<!-- These are the relevant variables in the dataset, the other ones you can ignore -->
+<!-- ::: -->
 
 
 
-4. Filter the data so you are only looking at Iraq between 1990 and 2003. What `size` (as a PERCENT) was the most powerful ethnic group in this country during this period? (1 point)
+<!-- ## Questions -->
 
 
-```{r}
-df |> filter(statename == "Iraq") |> 
-  filter(from >= 1990, to <= 2003) |> 
-  filter(status == "MONOPOLY") |> 
-  pull(size) * 100
-```
+<!-- Using the dataset, answer the following questions: -->
 
 
-5. Calculate the average ethnic group size, broken down by whether or not the group has regional autonomy. About how much smaller, on average, are groups with regional autonomy than groups without? Report as a **percent point** difference (e.g., 20% - 15% = 5%). (1 point)
+<!-- 2. Count the number of groups by `status`. What PERCENT of groups across the whole dataset are categorized as "powerless"? Note: It is OK to treat each row as a different "group"/observation. Don't worry about "double-counting" groups, it's OK if you do. If you don't know what I mean by this you are probably OK to begin with. (1 point) -->
 
 
-```{r}
-df |> group_by(reg_aut) |> summarise(mean = mean(size))
+<!-- ```{r} -->
+<!-- library(tidyverse) -->
+<!-- df = read_csv("https://www.dropbox.com/scl/fi/6kkbuz25u8redtq5tr82h/EPR-2021.csv?rlkey=le25pido52duo8wcp3n74yiwz&dl=1") -->
 
-(0.12749986-0.05844198) * 100
-```
+<!-- df |> group_by(status) |>  -->
+<!--   tally() |>  -->
+<!--   mutate(percent = n / sum(n) * 100) |>  -->
+<!--   filter(status == "POWERLESS") -->
+<!-- ``` -->
 
 
-6. Filter so you are only looking at ethnic groups that have held monopoly power and are less than 50% of the population^[Note: to filter a quantity, use "*filter by condition*"]. Create a variable that tells you how long each of these groups has been in power. Which group has had monopoly power for the longest time period in this dataset? Name of the group exactly as it appears in the data. (1 point). 
+<!-- 3. Look through some of the groups that are categorized as "powerless" in the dataset. In your opinion, is being a group that is "powerless" enough to generate grievances? Or can a group be "powerless" and not be aggrieved? (2 points) -->
 
-```{r}
-df |> filter(status == "MONOPOLY", size <= .5) |>
-  mutate(duration = to - from) |> 
-  filter(duration == max(duration))
-```
+
+
+<!-- 4. Filter the data so you are only looking at Iraq between 1990 and 2003. What `size` (as a PERCENT) was the most powerful ethnic group in this country during this period? (1 point) -->
+
+
+<!-- ```{r} -->
+<!-- df |> filter(statename == "Iraq") |>  -->
+<!--   filter(from >= 1990, to <= 2003) |>  -->
+<!--   filter(status == "MONOPOLY") |>  -->
+<!--   pull(size) * 100 -->
+<!-- ``` -->
+
+
+<!-- 5. Calculate the average ethnic group size, broken down by whether or not the group has regional autonomy. About how much smaller, on average, are groups with regional autonomy than groups without? Report as a **percent point** difference (e.g., 20% - 15% = 5%). (1 point) -->
+
+
+<!-- ```{r} -->
+<!-- df |> group_by(reg_aut) |> summarise(mean = mean(size)) -->
+
+<!-- (0.12749986-0.05844198) * 100 -->
+<!-- ``` -->
+
+
+<!-- 6. Filter so you are only looking at ethnic groups that have held monopoly power and are less than 50% of the population^[Note: to filter a quantity, use "*filter by condition*"]. Create a variable that tells you how long each of these groups has been in power. Which group has had monopoly power for the longest time period in this dataset? Name of the group exactly as it appears in the data. (1 point).  -->
+
+<!-- ```{r} -->
+<!-- df |> filter(status == "MONOPOLY", size <= .5) |> -->
+<!--   mutate(duration = to - from) |>  -->
+<!--   filter(duration == max(duration)) -->
+<!-- ``` -->
 

@@ -7,20 +7,17 @@ title: "What is civil war?"
 
 ## Required
 
-- The [syllabus](/index.qmd) and [assignments](/assignment/index.qmd) pages for this class
-- {{< fa file-pdf >}}&ensp;[@kalyvas:balcells:2010]
-- {{< fa file-pdf >}}&ensp;[@kalyvas:2018]
+
+* For Tuesday, read @kalyvas:balcells:2010
+
+* For Thursday, read @kalyvas:2018 and skim the Wikipedia page of [Quintus Fabius Maximus Verrucosus](https://en.wikipedia.org/wiki/Quintus_Fabius_Maximus_Verrucosus)
 
 
-## Recommended
 
-- {{< fa file-pdf >}}&ensp; Amelia Hoover Green's reading guide: [here](https://www.ameliahoovergreen.com/uploads/9/3/0/9/93091546/writing-guide.pdf)
-
-- {{< fa file-pdf >}}&ensp; Michael Nelson's [reading guide](https://cs.brynmawr.edu/cs383-cta/website/assets/readings/How_to_Read_Journal_Articles_Like_a_Professor.pdf)
 
 # Slides
 
-
-* [Slides here](https://www.dropbox.com/scl/fi/kwebj38y2p6mixrbzrdv0/01-civwar.pdf?rlkey=cm7p08qg7ial0eaw5pahwoscp&dl=0)
+TBD
+<!-- * [Slides here](https://www.dropbox.com/scl/fi/kwebj38y2p6mixrbzrdv0/01-civwar.pdf?rlkey=cm7p08qg7ial0eaw5pahwoscp&dl=0) -->
 
 

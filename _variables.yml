@@ -11,13 +11,13 @@ instructor:
 
 course:
   number: "POL126"
-  semester: "Winter 2024"
-  days: "Tue/Thu"
+  semester: "Fall 2024"
+  days: "Mon/Wed"
   github: https://github.com/hail2thief/civwar
   time: "1:40PM - 3:00PM"
-  location: "Olson Hall 6"
-  dates: "Jan 6th-March 22nd, 2024"
-  url: "https://lapol.juanftellez.com"
+  location: "The Grove (Surge III) 1309"
+  dates: "9/25--12/06"
+  url: "https://civwar.juanftellez.com/"
   copyright_year: "2024"
 
 university:

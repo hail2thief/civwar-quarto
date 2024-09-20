@@ -13,11 +13,11 @@ title: "Hello"
 
 
 
-Skills used: 
+<!-- Skills used:  -->
 
-- 
+<!-- -  -->
 
 
-[My awkward Google Sheets video tutorials are here](https://www.dropbox.com/sh/rsj9qm67se619pm/AAD1wPt84O8yaIfSPcwN9edua?dl=0)
+<!-- [My awkward Google Sheets video tutorials are here](https://www.dropbox.com/sh/rsj9qm67se619pm/AAD1wPt84O8yaIfSPcwN9edua?dl=0) -->
 
 

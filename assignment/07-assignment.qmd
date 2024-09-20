@@ -40,214 +40,214 @@ knitr::opts_chunk$set(
 
 
 
-Skills used: 
+<!-- Skills used:  -->
 
-- Summary statistics
-- Plotting
-- Creating variables
+<!-- - Summary statistics -->
+<!-- - Plotting -->
+<!-- - Creating variables -->
 
 
-[My awkward Google Sheets video tutorials are here](https://www.dropbox.com/sh/rsj9qm67se619pm/AAD1wPt84O8yaIfSPcwN9edua?dl=0)
+<!-- [My awkward Google Sheets video tutorials are here](https://www.dropbox.com/sh/rsj9qm67se619pm/AAD1wPt84O8yaIfSPcwN9edua?dl=0) -->
 
 
 
-::: {.callout-warning}
-You must complete all of the tasks here BEFORE opening the Canvas quiz; otherwise, you will run out of time!
-:::
+<!-- ::: {.callout-warning} -->
+<!-- You must complete all of the tasks here BEFORE opening the Canvas quiz; otherwise, you will run out of time! -->
+<!-- ::: -->
 
 
-## Displacement around the world
+<!-- ## Displacement around the world -->
 
 
-You are going to work with data on the number of refugees around the world from the United Nations High Commissioner for Refugees. We are also going to look at data on deportations from the European Union (source: Eurostat).
+<!-- You are going to work with data on the number of refugees around the world from the United Nations High Commissioner for Refugees. We are also going to look at data on deportations from the European Union (source: Eurostat). -->
 
-- <i class="fas fa-download"></i> [UNHR refugee numbers (UNHR OVERALL)](https://www.dropbox.com/scl/fi/r3470e5fci18zj9rt8kwj/unhr-overall.csv?rlkey=4cju5geci2noaae2bi8j1dici&dl=1)
+<!-- - <i class="fas fa-download"></i> [UNHR refugee numbers (UNHR OVERALL)](https://www.dropbox.com/scl/fi/r3470e5fci18zj9rt8kwj/unhr-overall.csv?rlkey=4cju5geci2noaae2bi8j1dici&dl=1) -->
 
-- <i class="fas fa-download"></i> [Refugee country of origin (ORIGIN)](https://www.dropbox.com/scl/fi/gcrb3i1rgx7372ohn3axc/origin.csv?rlkey=loc6kl6074py8hpx97jl1zhpv&dl=1)
+<!-- - <i class="fas fa-download"></i> [Refugee country of origin (ORIGIN)](https://www.dropbox.com/scl/fi/gcrb3i1rgx7372ohn3axc/origin.csv?rlkey=loc6kl6074py8hpx97jl1zhpv&dl=1) -->
 
-- <i class="fas fa-download"></i> [Refugee country of destination (HOST)](https://www.dropbox.com/scl/fi/b2ydio9d1zs7qtavh1aut/host.csv?rlkey=wnndmfnothxwaddw50fizubha&dl=1)
+<!-- - <i class="fas fa-download"></i> [Refugee country of destination (HOST)](https://www.dropbox.com/scl/fi/b2ydio9d1zs7qtavh1aut/host.csv?rlkey=wnndmfnothxwaddw50fizubha&dl=1) -->
 
-- <i class="fas fa-download"></i> [European Union deportation figures (EU DEPORT)](https://www.dropbox.com/scl/fi/il416tqnnf2j5xu66gciq/eu_deport.csv?rlkey=gluojb8tua0g0ma9g2qauf85a&dl=1)
+<!-- - <i class="fas fa-download"></i> [European Union deportation figures (EU DEPORT)](https://www.dropbox.com/scl/fi/il416tqnnf2j5xu66gciq/eu_deport.csv?rlkey=gluojb8tua0g0ma9g2qauf85a&dl=1) -->
 
 
-```{r, eval = TRUE}
-# clean up names
-labs = tibble::tibble(data = c("refugees_under_unhc_rs_mandate", 
-                       "asylum_seekers", 
-                       "id_ps_of_concern_to_unhcr",
-                       "venezuelans_displaced_abroad", 
-                       "palestine"), 
-              meaning = c("Refugees under UNHCR mandate", 
-                      "Asylum-seekers", 
-                      "Internally displaced people of concern to UNHCR", 
-                      "Venezuelans displaced abroad", 
-                      "Palestinian refugees"))
+<!-- ```{r, eval = TRUE} -->
+<!-- # clean up names -->
+<!-- labs = tibble::tibble(data = c("refugees_under_unhc_rs_mandate",  -->
+<!--                        "asylum_seekers",  -->
+<!--                        "id_ps_of_concern_to_unhcr", -->
+<!--                        "venezuelans_displaced_abroad",  -->
+<!--                        "palestine"),  -->
+<!--               meaning = c("Refugees under UNHCR mandate",  -->
+<!--                       "Asylum-seekers",  -->
+<!--                       "Internally displaced people of concern to UNHCR",  -->
+<!--                       "Venezuelans displaced abroad",  -->
+<!--                       "Palestinian refugees")) -->
 
-kableExtra::kbl(labs, caption = "Description of columns, type displaced person")
-```
+<!-- kableExtra::kbl(labs, caption = "Description of columns, type displaced person") -->
+<!-- ``` -->
 
 
-```{r, eval = FALSE}
-library(tidyverse)
+<!-- ```{r, eval = FALSE} -->
+<!-- library(tidyverse) -->
 
 
-# read palestinians
-palestine = read_csv("/Users/juan/Dropbox/papers/wb-displace-review/data/palestine.csv") %>% 
-  janitor::clean_names() %>% 
-  select(year, palestine = total)
+<!-- # read palestinians -->
+<!-- palestine = read_csv("/Users/juan/Dropbox/papers/wb-displace-review/data/palestine.csv") %>%  -->
+<!--   janitor::clean_names() %>%  -->
+<!--   select(year, palestine = total) -->
 
-# read overall unhr data
-overall = read_csv("/Users/juan/Dropbox/papers/wb-displace-review/data/unhr-overall.csv") %>% 
-  janitor::clean_names() %>% 
-  select(year, refugees_under_unhc_rs_mandate:venezuelans_displaced_abroad) %>% 
-  # replace venezulan NAs with 0
-  mutate(venezuelans_displaced_abroad = 
-           replace_na(venezuelans_displaced_abroad, 0)) %>% 
-  left_join(palestine, by = "year")
+<!-- # read overall unhr data -->
+<!-- overall = read_csv("/Users/juan/Dropbox/papers/wb-displace-review/data/unhr-overall.csv") %>%  -->
+<!--   janitor::clean_names() %>%  -->
+<!--   select(year, refugees_under_unhc_rs_mandate:venezuelans_displaced_abroad) %>%  -->
+<!--   # replace venezulan NAs with 0 -->
+<!--   mutate(venezuelans_displaced_abroad =  -->
+<!--            replace_na(venezuelans_displaced_abroad, 0)) %>%  -->
+<!--   left_join(palestine, by = "year") -->
 
 
 
 
 
-# spit out csv
-write_csv(overall, file = "../files/datasets/unhr-overall.csv")
+<!-- # spit out csv -->
+<!-- write_csv(overall, file = "../files/datasets/unhr-overall.csv") -->
 
 
-country = read_csv("/Users/juan/Dropbox/papers/wb-displace-review/data/unhr-country.csv") %>% 
-  janitor::clean_names() %>% 
-  select(year, country_of_origin, 
-         refugees_under_unhc_rs_mandate, asylum_seekers, 
-         id_ps_of_concern_to_unhcr)
+<!-- country = read_csv("/Users/juan/Dropbox/papers/wb-displace-review/data/unhr-country.csv") %>%  -->
+<!--   janitor::clean_names() %>%  -->
+<!--   select(year, country_of_origin,  -->
+<!--          refugees_under_unhc_rs_mandate, asylum_seekers,  -->
+<!--          id_ps_of_concern_to_unhcr) -->
 
-write_csv(country, file = "../files/datasets/origin.csv")
+<!-- write_csv(country, file = "../files/datasets/origin.csv") -->
 
-host = read_csv("/Users/juan/Dropbox/papers/wb-displace-review/data/unhr-host.csv") %>% 
-  janitor::clean_names() %>% 
-  select(year, country_of_asylum, 
-         refugees_under_unhc_rs_mandate, asylum_seekers, 
-         id_ps_of_concern_to_unhcr)
+<!-- host = read_csv("/Users/juan/Dropbox/papers/wb-displace-review/data/unhr-host.csv") %>%  -->
+<!--   janitor::clean_names() %>%  -->
+<!--   select(year, country_of_asylum,  -->
+<!--          refugees_under_unhc_rs_mandate, asylum_seekers,  -->
+<!--          id_ps_of_concern_to_unhcr) -->
 
-write_csv(host, file = "../files/datasets/host.csv")
+<!-- write_csv(host, file = "../files/datasets/host.csv") -->
 
-# EU deportation data
-eu = readxl::read_excel("/Users/juan/Dropbox/papers/wb-displace-review/data/EU_deportations.xlsx", sheet = "Sheet 1", skip = 10) %>% 
-  # clean up the data
-  select(-contains("...")) %>% 
-  rename(country = TIME) %>% 
-  slice(-c(1:3)) |> 
-  mutate(across(-country, as.numeric)) |> 
-  mutate(country = ifelse(str_detect(country, "Germany"), "Germany", country))
+<!-- # EU deportation data -->
+<!-- eu = readxl::read_excel("/Users/juan/Dropbox/papers/wb-displace-review/data/EU_deportations.xlsx", sheet = "Sheet 1", skip = 10) %>%  -->
+<!--   # clean up the data -->
+<!--   select(-contains("...")) %>%  -->
+<!--   rename(country = TIME) %>%  -->
+<!--   slice(-c(1:3)) |>  -->
+<!--   mutate(across(-country, as.numeric)) |>  -->
+<!--   mutate(country = ifelse(str_detect(country, "Germany"), "Germany", country)) -->
 
-write_csv(eu, file = "../files/datasets/eu_deport.csv")
+<!-- write_csv(eu, file = "../files/datasets/eu_deport.csv") -->
 
-# pulled this table from the DHS yearbook statistics: 
-# https://www.dhs.gov/immigration-statistics/yearbook/2019/table39
-us = tibble::tribble(
-   ~year, ~removals, ~returns,
-   2019L,     359885,    171445,
-   2018L,     328716,    159940,
-   2017L,     287093,    100695,
-  2016L,     331717,    106458,
-   2015L,     325328,    129661,
-   2014L,     405090,    163843,
-   2013L,     432228,    178976,
-   2012L,     415607,    231107,
-   2011L,     390423,    322047,
-   2010L,     382449,    471798,
-   2009L,     379739,    582567,
-   2008L,     359795,    811263,
-   2007L,     319382,    891390,
-   2006L,     280974,   1043381,
-   2005L,     246431,   1096920,
-   2004L,     240665,   1166576,
-   2003L,     211098,    945294,
-   2002L,     165168,   1012116,
-   2001L,     189026,   1349371,
-   2000L,     188467,   1675876
-  ) %>% 
-  mutate(country = "United States")
+<!-- # pulled this table from the DHS yearbook statistics:  -->
+<!-- # https://www.dhs.gov/immigration-statistics/yearbook/2019/table39 -->
+<!-- us = tibble::tribble( -->
+<!--    ~year, ~removals, ~returns, -->
+<!--    2019L,     359885,    171445, -->
+<!--    2018L,     328716,    159940, -->
+<!--    2017L,     287093,    100695, -->
+<!--   2016L,     331717,    106458, -->
+<!--    2015L,     325328,    129661, -->
+<!--    2014L,     405090,    163843, -->
+<!--    2013L,     432228,    178976, -->
+<!--    2012L,     415607,    231107, -->
+<!--    2011L,     390423,    322047, -->
+<!--    2010L,     382449,    471798, -->
+<!--    2009L,     379739,    582567, -->
+<!--    2008L,     359795,    811263, -->
+<!--    2007L,     319382,    891390, -->
+<!--    2006L,     280974,   1043381, -->
+<!--    2005L,     246431,   1096920, -->
+<!--    2004L,     240665,   1166576, -->
+<!--    2003L,     211098,    945294, -->
+<!--    2002L,     165168,   1012116, -->
+<!--    2001L,     189026,   1349371, -->
+<!--    2000L,     188467,   1675876 -->
+<!--   ) %>%  -->
+<!--   mutate(country = "United States") -->
 
 
-write_csv(us, file = "../files/datasets/us_deport.csv")
+<!-- write_csv(us, file = "../files/datasets/us_deport.csv") -->
 
-```
+<!-- ``` -->
 
 
 
 
-1. Look at `UNHCR OVERALL`. How many TOTAL displaced people exist in the world in the year 2020? (1 point)
+<!-- 1. Look at `UNHCR OVERALL`. How many TOTAL displaced people exist in the world in the year 2020? (1 point) -->
 
 
-```{r}
-library(tidyverse)
-df = read_csv("https://www.dropbox.com/scl/fi/r3470e5fci18zj9rt8kwj/unhr-overall.csv?rlkey=4cju5geci2noaae2bi8j1dici&dl=1")
-df |> 
-  rowwise() %>% 
-  mutate(sum = sum(c_across(-year))) |> 
-  ungroup() |> 
-  filter(year == max(year)) |> 
-  pull(sum)
-```
+<!-- ```{r} -->
+<!-- library(tidyverse) -->
+<!-- df = read_csv("https://www.dropbox.com/scl/fi/r3470e5fci18zj9rt8kwj/unhr-overall.csv?rlkey=4cju5geci2noaae2bi8j1dici&dl=1") -->
+<!-- df |>  -->
+<!--   rowwise() %>%  -->
+<!--   mutate(sum = sum(c_across(-year))) |>  -->
+<!--   ungroup() |>  -->
+<!--   filter(year == max(year)) |>  -->
+<!--   pull(sum) -->
+<!-- ``` -->
 
 
 
-2a. Look at `UNHCR OVERALL`. Make a time series plot with year on the x-axis and the trends for each type of displaced person category on the y-axis. Each "type" of displaced person in the data should be its own line. Save the image to upload. (1 point)
+<!-- 2a. Look at `UNHCR OVERALL`. Make a time series plot with year on the x-axis and the trends for each type of displaced person category on the y-axis. Each "type" of displaced person in the data should be its own line. Save the image to upload. (1 point) -->
 
 
-```{r}
-df |> 
-  pivot_longer(-year) |> 
-  ggplot(aes(x = year, y = value, color = name)) + 
-  geom_line()
-```
+<!-- ```{r} -->
+<!-- df |>  -->
+<!--   pivot_longer(-year) |>  -->
+<!--   ggplot(aes(x = year, y = value, color = name)) +  -->
+<!--   geom_line() -->
+<!-- ``` -->
 
 
 
-2b. In a few sentences, describe the trends you observe in the image. (1 point)
+<!-- 2b. In a few sentences, describe the trends you observe in the image. (1 point) -->
 
 
 
 
-3. Create a new variable that tells you what percent of all displaced people are IDPs. What is the first year in which IDPs constitute more than 50% of all displaced people? (1 point)
+<!-- 3. Create a new variable that tells you what percent of all displaced people are IDPs. What is the first year in which IDPs constitute more than 50% of all displaced people? (1 point) -->
 
 
-```{r}
-df |> 
-  mutate(total = refugees_under_unhc_rs_mandate + asylum_seekers + id_ps_of_concern_to_unhcr + venezuelans_displaced_abroad + palestine,
-         idps_pct = id_ps_of_concern_to_unhcr / total * 100) |> 
-  filter(idps_pct > 50) |> 
-  filter(year == min(year))
-```
+<!-- ```{r} -->
+<!-- df |>  -->
+<!--   mutate(total = refugees_under_unhc_rs_mandate + asylum_seekers + id_ps_of_concern_to_unhcr + venezuelans_displaced_abroad + palestine, -->
+<!--          idps_pct = id_ps_of_concern_to_unhcr / total * 100) |>  -->
+<!--   filter(idps_pct > 50) |>  -->
+<!--   filter(year == min(year)) -->
+<!-- ``` -->
 
 
-4. Look at `HOST`. For the latest year for which there is data, what country is the second largest recipient of asylum seekers? (1 point)
+<!-- 4. Look at `HOST`. For the latest year for which there is data, what country is the second largest recipient of asylum seekers? (1 point) -->
 
-```{r}
-df = read_csv("https://www.dropbox.com/scl/fi/b2ydio9d1zs7qtavh1aut/host.csv?rlkey=wnndmfnothxwaddw50fizubha&dl=1")
-df |> 
-  filter(year == max(year)) |> 
-  slice_max(order_by = asylum_seekers, n = 5) |> 
-  slice(2)
-```
+<!-- ```{r} -->
+<!-- df = read_csv("https://www.dropbox.com/scl/fi/b2ydio9d1zs7qtavh1aut/host.csv?rlkey=wnndmfnothxwaddw50fizubha&dl=1") -->
+<!-- df |>  -->
+<!--   filter(year == max(year)) |>  -->
+<!--   slice_max(order_by = asylum_seekers, n = 5) |>  -->
+<!--   slice(2) -->
+<!-- ``` -->
 
 
 
-5. Do some googling. *Why* is this country receiving so many asylum applicants? (1 point)
+<!-- 5. Do some googling. *Why* is this country receiving so many asylum applicants? (1 point) -->
 
-```{r}
-# huge outflow of Venezuelans seeking asylum in Peru in 2020
-```
+<!-- ```{r} -->
+<!-- # huge outflow of Venezuelans seeking asylum in Peru in 2020 -->
+<!-- ``` -->
 
 
 
-6. Look at the data on deportations from the European Union. Create a variable that tells you how much deportations grew or shrunk from 2011 to 2020 for each country. What is the AVERAGE change in deportation from 2011 to 2020 across the European Union? (1 point)
+<!-- 6. Look at the data on deportations from the European Union. Create a variable that tells you how much deportations grew or shrunk from 2011 to 2020 for each country. What is the AVERAGE change in deportation from 2011 to 2020 across the European Union? (1 point) -->
 
-```{r}
-df = read_csv("https://www.dropbox.com/scl/fi/il416tqnnf2j5xu66gciq/eu_deport.csv?rlkey=gluojb8tua0g0ma9g2qauf85a&dl=1")
-df |> 
-  mutate(diff = `2020` - `2011`) |> 
-  summarise(mean(diff, na.rm = TRUE))
-```
+<!-- ```{r} -->
+<!-- df = read_csv("https://www.dropbox.com/scl/fi/il416tqnnf2j5xu66gciq/eu_deport.csv?rlkey=gluojb8tua0g0ma9g2qauf85a&dl=1") -->
+<!-- df |>  -->
+<!--   mutate(diff = `2020` - `2011`) |>  -->
+<!--   summarise(mean(diff, na.rm = TRUE)) -->
+<!-- ``` -->
 
 
 
@@ -255,6 +255,6 @@ df |>
 
 
 
-## Stories of displacement
+<!-- ## Stories of displacement -->
 
-7. You can find many stories on the internet of people who have been displaced or are living as refugees in different parts of the world. Find one of these stories and, in 5-6 sentences, tell us about the person, what happened to them, and where they are now. Include the url to the story in your entry. (4 points)
+<!-- 7. You can find many stories on the internet of people who have been displaced or are living as refugees in different parts of the world. Find one of these stories and, in 5-6 sentences, tell us about the person, what happened to them, and where they are now. Include the url to the story in your entry. (4 points) -->

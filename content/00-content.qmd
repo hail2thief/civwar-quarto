@@ -1,0 +1,18 @@
+---
+title: "Hello"
+---
+
+# Readings
+
+
+## Required
+
+- The [syllabus](/index.qmd) and [assignments](/assignment/index.qmd) pages for this class
+
+
+## Recommended
+
+- {{< fa file-pdf >}}&ensp; Amelia Hoover Green's reading guide: [here](https://www.ameliahoovergreen.com/uploads/9/3/0/9/93091546/writing-guide.pdf)
+
+- {{< fa file-pdf >}}&ensp; Michael Nelson's [reading guide](https://cs.brynmawr.edu/cs383-cta/website/assets/readings/How_to_Read_Journal_Articles_Like_a_Professor.pdf)
+

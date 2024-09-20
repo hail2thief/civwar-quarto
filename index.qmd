@@ -16,15 +16,16 @@ sidebar: false
 - {{< fa user >}} &nbsp; [{{< var instructor.name >}}]({{< var instructor.url >}})
 - {{< fa university >}} &nbsp; {{< var instructor.office >}}
 - {{< fa envelope >}} &nbsp; {{< var instructor.email >}}
-- {{< fa clock >}} &nbsp; OH: Th 11:00am-1:00pm
+- {{< fa clock >}} &nbsp; OH: W 9:45am-11:45am
 :::
 
 
 ::: {.g-col-12 .g-col-md-4 .contact-policy}
 ### Teaching assistants
 
-- {{< fa user-graduate >}}  &nbsp; **Julian Haddad** <br> {{< fa clock >}} &nbsp; OH: Tu 11am-1pm <br> {{< fa university >}} &nbsp; Kerr 663 <br> {{< fa envelope >}} &nbsp; jahaddad@ucdavis.edu
-- {{< fa user-graduate >}}  &nbsp; **Seung-Hwan (Sam) Hong** <br> {{< fa clock >}} &nbsp; OH: M 9am-11am <br> {{< fa university >}} &nbsp; Kerr 577 <br> {{< fa envelope >}} &nbsp; samhong@ucdavis.edu
+- {{< fa user-graduate >}}  &nbsp; **Forrest Owens** <br> {{< fa clock >}} &nbsp; OH: Tu 9am-10am <br> {{< fa university >}} &nbsp; Kerr 568 <br> {{< fa envelope >}} &nbsp; flowens@ucdavis.edu
+- {{< fa user-graduate >}}  &nbsp; **Alexandra (Ally) Lazar** <br> {{< fa clock >}} &nbsp; OH: Tu 2pm-3pm <br> {{< fa university >}} &nbsp; Kerr 575 <br> {{< fa envelope >}} &nbsp; ajlazar@ucdavis.edu
+- {{< fa user-graduate >}}  &nbsp; **Joseph Bonneau** <br> {{< fa clock >}} &nbsp; OH: M 11am-1pm <br> {{< fa university >}} &nbsp; Kerr 575 <br> {{< fa envelope >}} &nbsp; jibonneau@ucdavis.edu
 :::
 
 ::: {.g-col-12 .g-col-sm-6 .g-col-md-4}
@@ -52,7 +53,7 @@ library(pander)
 ## What is this class about? 
 
 
-This is an undergraduate course on the study of civil wars, political violence, and other forms of armed conflict. Each week will be organized around a different topic related to the study of civil wars, including why civil wars break out, the tactics insurgents and states use during wars, what happens when third-parties intervene, whether negotiations can effectively end wars, and other key questions in the conflict literature. 
+This is a course on the study of civil wars, political violence, and other forms of armed conflict. Each week is organized around a topic related to the study of political violence, including why civil wars break out, the tactics insurgents and states use during wars and other big questions in the literature. 
 
 
 In addition to reading, we will also spend a significant amount of time in this class **working with data** on political violence. We will explore general patterns and trends, think about how to measure different concepts related to political violence, and see to what extent different theories of political violence are supported by evidence. 
@@ -65,9 +66,9 @@ By the end of this course, you will be able to:
 3. Explore, analyze, and interpret data bearing on political violence
 
 
-
-::: {.callout-note}
-The class assumes no prior experience working with data
+::: {.callout-warning}
+# Content warning
+Course content may include discussions and materials related to war, terrorism, genocide, torture, and other forms of violence. We will engage with scholarly texts, videos, images, and case studies that may contain graphic descriptions or sensitive content. These materials are necessary for a comprehensive understanding of the subject, but may be emotionally challenging. 
 :::
 
 
@@ -81,21 +82,14 @@ The class assumes no prior experience working with data
 
 Book chapters and other non-easily accessible readings will be linked on this site. You will have to find journal articles and easily accessible readings on your own (a valuable skill!). Googling the article is often enough, otherwise Google Scholar and being either on campus wi-fi or on the library VPN should do the trick. If you're stuck the TAs will be happy to help. 
 
-### Google Sheets
+### What do I need for the data assignments?
 
 All homework requiring data will be done in Google Sheets or Excel. [Google Sheets](http://sheets.google.com/) is free to use with a Google account, and I will do all data analysis tutorials in Google Sheets. However, you can easily follow along with whatever program you prefer.
 
 
-### Podcasts
-
-You should listen to podcasts, although I won't grade you on it. Here are some of my favorite podcasts that frequently discuss politics and history in Latin America:  
-
-
-- [WOLA](https://www.wola.org/format/podcast/)
-- [The Daily](https://www.nytimes.com/column/the-daily)
-- [Revolutions](https://www.revolutionspodcast.com/)
-- [La Silla Vacia (for Spanish speakers)](https://lasillavacia.com/silla-llena/podcasts)
-
+::: {.callout-note}
+The class assumes no prior experience working with data
+:::
 
 
 
@@ -112,12 +106,12 @@ For small and/or urgent questions -- my grade is missing, you believe there is a
 
 
 
-
 ## Frequently Answered No Questions (FANQ)
 
 
 This is an important list of questions that students frequently ask where the answer is 'no'. 
 
+![](images/no-chile.png){width=30%}
 
 
 - *Do you record lecture?*
@@ -127,13 +121,13 @@ This is an important list of questions that students frequently ask where the an
    You may not record my lecture.
    
 - *I had to miss class, do I need to let you know?*
-  I don't take attendance, so you do not need to let me know. 
+  You do not need to let me know. 
 
 - *Can I have your lecture notes in addition to your slides?*
    You may not have any additional notes.
 
 - *Will there be a study guide?*
-   There will not be a study guide. Make one!
+   There will not be a study guide. Making one is a great study exercise!
 
 - *Are there extra practice tests / practice questions?*
    There are no extra practice tests / questions. 
@@ -146,9 +140,6 @@ This is an important list of questions that students frequently ask where the an
 
 - *It is week X, can I turn in a missing assignment from week X - N?*
    You may not turn in an assignment from previous weeks. See the [assignments]() page for more details.
-
-- *I had to miss class, can you catch me up on what I missed?*
-   I will not catch you up on what you missed.
 
 - *The homework was due Wednesday, but when I went to turn it in that evening, something happened that was out of my control and I couldn’t turn it in. Can I turn it in now without missing points?*
     You may not turn it in now without missing points. See the [assignments]() page for more details.
