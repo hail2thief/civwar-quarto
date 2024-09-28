@@ -5,7 +5,7 @@ library(calendar)
 # set the hard dates
 start_day = "2024-09-25"
 end_day = "2024-12-06"
-final = "2024-12-10 10:30 AM"
+final = "2024-12-13 3:30 PM"
 midterm = "2024-10-28"
 breaks = c("2024-11-11")
 meets_on = c("Mon", "Wed")
