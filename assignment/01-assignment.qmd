@@ -39,113 +39,119 @@ knitr::opts_chunk$set(
 
 
 
-<!-- Skills used:  -->
+Skills used:
 
-<!-- - Sorting data -->
-<!-- - Counting categories -->
-<!-- - Cross-tabs -->
-<!-- - Creating variables -->
+- Sorting data
+- Counting categories
+- Cross-tabs
+- Creating variables
 
-<!-- [My awkward Google Sheets video tutorials are here](https://www.dropbox.com/sh/rsj9qm67se619pm/AAD1wPt84O8yaIfSPcwN9edua?dl=0) -->
-
-
-
-<!-- ::: {.callout-warning} -->
-<!-- You must complete all of the tasks here BEFORE opening the Canvas quiz; otherwise, you will run out of time! -->
-<!-- ::: -->
+[My awkward Google Sheets video tutorials are here](https://www.dropbox.com/sh/rsj9qm67se619pm/AAD1wPt84O8yaIfSPcwN9edua?dl=0)
 
 
 
-<!-- ## Data -->
-
-
-<!-- You're going to work with the data from the Kalyvas and Balcells article we read. The dataset contains information on major civil wars around the world for a select time period.  -->
-
-
-<!-- - The data: <i class="fas fa-download"></i> [Kalyvas and Balcells](https://www.dropbox.com/scl/fi/rpqb5sryxp5wqeivjqui2/balcells-kalyvas.csv?rlkey=jysyuzvj4xvhv6yzpn1jiepdq&dl=1) -->
-
-
-<!-- ```{r, warning=FALSE, echo=FALSE, message=FALSE, results='asis', eval=TRUE} -->
-<!-- library(tidyverse) -->
-<!-- # dictionary -->
-<!-- tribble(~Variable, ~Description,  -->
-<!--         "countryname", "Country where civil war takes place", -->
-<!--         "year/month_start", "Year/month war began", -->
-<!--         "year/month_end", "Year/month war ended (if at all)", -->
-<!--         "conflict_name", "Name of conflict", -->
-<!--         "region", "World region", -->
-<!--         "gdp_capita", "GDP per capita (logged)", -->
-<!--         "rough_terrain", "Percent of country covered in rough terrain", -->
-<!--         "military_personnel_percapita", "Military personnel, in thousands", -->
-<!--         "marxist", "Is rebellion Marxist?", -->
-<!--         "technologyrebellion", "What kind of civil war is it?", -->
-<!--         "ethnicwar", "Is this an ethnic civil war?") %>%  -->
-<!--   pander::pandoc.table() -->
-
-<!-- ``` -->
+::: {.callout-warning}
+You must complete all of the tasks here BEFORE opening the Canvas quiz; otherwise, you will run out of time!
+:::
 
 
 
-<!-- ## Questions -->
+## Data
 
 
-<!-- Using the dataset, answer the following questions: -->
+You're going to work with the data from the Kalyvas and Balcells article we read. The dataset contains information on major civil wars around the world for a select time period. Every row here is a civil conflict. 
 
 
-<!-- 1. Choose a civil war of each **type** in the dataset and look it up on Wikipedia. Provide a non-technical, 2 sentence description of each war. (total = 3 wars, 2 sentences each). (2 points) -->
+- The data: <i class="fas fa-download"></i> [Kalyvas and Balcells](https://www.dropbox.com/scl/fi/rpqb5sryxp5wqeivjqui2/balcells-kalyvas.csv?rlkey=jysyuzvj4xvhv6yzpn1jiepdq&dl=1)
 
 
+```{r, warning=FALSE, echo=FALSE, message=FALSE, results='asis', eval=TRUE}
+library(tidyverse)
+# dictionary
+tribble(~Variable, ~Description,
+        "countryname", "Country where civil war takes place",
+        "year/month_start", "Year/month war began",
+        "year/month_end", "Year/month war ended (if at all)",
+        "conflict_name", "Name of conflict",
+        "region", "World region",
+        "gdp_capita", "GDP per capita (logged)",
+        "rough_terrain", "Percent of country covered in rough terrain",
+        "military_personnel_percapita", "Military personnel, in thousands",
+        "marxist", "Is rebellion Marxist?",
+        "technologyrebellion", "What kind of civil war is it?",
+        "ethnicwar", "Is this an ethnic civil war?") %>%
+  pander::pandoc.table()
 
-<!-- 2. Sort the data. Which country had the largest army per capita involved in a civil war? (1 point) -->
-
-<!-- ```{r} -->
-<!-- library(tidyverse) -->
-<!-- df = read_csv("https://www.dropbox.com/scl/fi/rpqb5sryxp5wqeivjqui2/balcells-kalyvas.csv?rlkey=jysyuzvj4xvhv6yzpn1jiepdq&dl=1") -->
-<!-- df |>  -->
-<!--   arrange(desc(military_personnel_percapita)) -->
-<!-- ``` -->
-
-
-
-<!-- 3. Count the number of civil wars by region. Which region has the highest number of recorded civil wars? (1 point) -->
-
-<!-- ```{r, eval = FALSE} -->
-<!-- df$region |> table() -->
-<!-- ``` -->
-
-
-<!-- 4. Cross-tabulate the number of civil wars across `warfare technology` and whether or not it's an `ethnic` conflict. How many civil wars are both "conventional" and ethnically motivated? (1 point) -->
-
-
-<!-- ```{r, eval = FALSE} -->
-<!-- table(df$technologyrebellion, df$ethnicwar) -->
-<!-- ``` -->
+```
 
 
 
-
-<!-- 5. Create a variable that tells you how long each civil war has lasted, using only the years column (year ended - year started. Note: don't worry about civil wars that don't have a start or end date, you can ignore this issue). In which country did the *THIRD* longest lasting civil war take place? (1 point) -->
-
-
-<!-- ```{r} -->
-<!-- df |>  -->
-<!--   mutate(duration = year_end - year_start) |>  -->
-<!--   arrange(desc(duration)) -->
-<!-- ``` -->
+## Questions
 
 
-<!-- 6. Filter this analysis down so you're only looking at Latin America. What is the SECOND longest conflict in this region? (1 point) -->
-
-<!-- ```{r} -->
-<!-- df |>  -->
-<!--   filter(region == "Lamerica") |>  -->
-<!--   mutate(duration = year_end - year_start) |>  -->
-<!--   arrange(desc(duration)) -->
-<!-- ``` -->
+Using the dataset, answer the following questions:
 
 
-<!-- 7. We we will frequently talk about civil wars "starting" and "ending" in this class, but figuring out exactly *when* this happens is tricky. If you were to design a rule for deciding when a civil war has **begun**, what would that rule be? What would you have to observe, exactly, to say that a war has broken out? (3 points) -->
+1. Choose a civil war of each **type** in the dataset and look it up on Wikipedia. Provide a non-technical, 2 sentence description of each war. (total = 3 wars, 2 sentences each). (2 points)
 
-<!--     A) describe your rule, make it as specific as possible. For example: "*We can say that a civil war has begun when X, Y, and Z happens...*" -->
 
-<!--     B) Identify some "edge cases" that will cause trouble for that rule. 4-5 sentences.  -->
+
+2. Sort the data. Which COUNTRY had the largest army per capita involved in a civil war? (1 point)
+
+```{r}
+library(tidyverse)
+df = read_csv("https://www.dropbox.com/scl/fi/rpqb5sryxp5wqeivjqui2/balcells-kalyvas.csv?rlkey=jysyuzvj4xvhv6yzpn1jiepdq&dl=1")
+df |>
+  filter(military_personnel_percapita == max(military_personnel_percapita, na.rm = TRUE)) |> 
+  pull(countryname) |> 
+  unique()
+```
+
+
+
+3. Count the number of civil wars by region. Which REGION has the SECOND highest number of recorded civil wars? (1 point)
+
+```{r, eval = FALSE}
+df$region |> table() |> sort() |> tail(2) |> head(1)
+```
+
+
+4. Create a cross-tab of `warfare technology` and `ethnic` conflict. How many civil wars are both "conventional" and NOT ethnically motivated? (1 point)
+
+
+```{r, eval = FALSE}
+table(df$technologyrebellion, df$ethnicwar)["Conventional", "Non-Ethnic CW"]
+```
+
+
+
+
+5. Create a variable that tells you how long each civil war has lasted, using only the years column (year ended - year started. Note: don't worry about civil wars that don't have a start or end date, you can ignore this issue). In which country did the *THIRD* longest lasting civil war take place? (1 point)
+
+
+```{r}
+df |>
+  mutate(duration = year_end - year_start) |>
+  arrange(desc(duration)) |> 
+  slice(3) |> 
+  pull(countryname)
+```
+
+
+6. Filter this analysis down so you're only looking at sub-Saharan Africa. What is the longest CONFLICT in this region? (1 point)
+
+```{r}
+df |>
+  filter(region == "SubAfrica") |>
+  mutate(duration = year_end - year_start) |>
+  arrange(desc(duration)) |> 
+  slice(1) |> 
+  pull(conflict_name)
+```
+
+
+7. We we will frequently talk about civil wars "starting" and "ending" in this class, but figuring out exactly *when* this happens is tricky. If you were to design a rule for deciding when a civil war has **begun**, what would that rule be? What would you have to observe, exactly, to say that a war has broken out? (3 points)
+
+    A) describe your rule, make it as specific as possible. For example: "*We can say that a civil war has begun when X, Y, and Z happens...*"
+
+    B) Identify some "edge cases" that will cause trouble for that rule. 4-5 sentences.
