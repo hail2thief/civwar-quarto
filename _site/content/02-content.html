@@ -21,7 +21,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -123,12 +143,16 @@ ul.task-list li input[type="checkbox"] {
 <p><a href="https://www.dropbox.com/scl/fo/jxgwe0clhpipx2oyil3uc/h?rlkey=4xyltyrorgngb80pgo9jhszgt&amp;dl=0">Book chapters can be found here</a></p>
 <section id="required" class="level2">
 <h2 data-anchor-id="required">Required</h2>
+<p>For Monday:</p>
 <ul>
-<li><i class="fa-solid fa-book" aria-label="book"></i>  Chapter 1 in <span class="citation" data-cites="wood:2003">Elisabeth J. Wood, <em>Insurgent Collective Action and Civil War in <span>El Salvador</span></em> (Cambridge University Press, 2003).</span></li>
-<li><i class="fa-solid fa-file-pdf" aria-label="file-pdf"></i> <span class="citation" data-cites="posen:1993b">Barry R. Posen, <span>“The Security Dilemma and Ethnic Conflict,”</span> <em>Survival</em> 35, no. 1 (1993): 27–47, doi:<a href="https://doi.org/10.1080/00396339308442672" role="doc-biblioref">10.1080/00396339308442672</a>.</span></li>
-<li><i class="fa-solid fa-book" aria-label="book"></i>  Chapter 3 in <span class="citation" data-cites="cockburn:2016">Patrick Cockburn, <em>The Age of Jihad: <span>Islamic State</span> and the Great War for the <span>Middle East</span></em> (Verso Books, 2016).</span></li>
+<li><i class="fa-solid fa-book" aria-label="book"></i>  Chapter 1 in <span class="citation" data-cites="wood:2003">(<a href="#ref-wood:2003" role="doc-biblioref">Wood 2003</a>)</span></li>
 </ul>
-<p><span class="citation" data-cites="cockburn:2016">Cockburn <em>The Age of Jihad</em>.</span> is a journalist who has covered wars in the MENA for years. In this book, he is writing a sort of diary (with some hindsight bias) of his coverage of the US invasion of Iraq.</p>
+<p>For Wednesday:</p>
+<ul>
+<li><i class="fa-solid fa-file-pdf" aria-label="file-pdf"></i> <span class="citation" data-cites="posen:1993b">(<a href="#ref-posen:1993b" role="doc-biblioref">Posen 1993</a>)</span></li>
+<li><i class="fa-solid fa-book" aria-label="book"></i>  Chapter 3 in <span class="citation" data-cites="cockburn:2016">(<a href="#ref-cockburn:2016" role="doc-biblioref">Cockburn 2016</a>)</span></li>
+</ul>
+<p><span class="citation" data-cites="cockburn:2016">Cockburn (<a href="#ref-cockburn:2016" role="doc-biblioref">2016</a>)</span> is a journalist who has covered wars in the MENA for years. In this book, he is writing a sort of diary (with some hindsight bias) of his coverage of the US invasion of Iraq.</p>
 </section>
 <section id="recommended" class="level2">
 <h2 data-anchor-id="recommended">Recommended</h2>
@@ -139,9 +163,20 @@ ul.task-list li input[type="checkbox"] {
 <p>TBD <!-- * [Tuesday slides here](https://www.dropbox.com/scl/fi/1rcxeoyoq910qkpcwzxln/02-grievances.pdf?rlkey=rbbd93ra9xt6kpr8aqj4gvlv8&dl=0) --> <!-- * [Thursday slides here](https://www.dropbox.com/scl/fi/y23yhm0uc2dcg64eoxbcd/02-identity.pdf?rlkey=a4c454wrz3w1m52jchl006p2y&dl=0) --></p>
 
 
+
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-cockburn:2016" class="csl-entry" role="listitem">
+Cockburn, Patrick. 2016. <em>The Age of Jihad: <span>Islamic State</span> and the Great War for the <span>Middle East</span></em>. Verso Books.
+</div>
+<div id="ref-posen:1993b" class="csl-entry" role="listitem">
+Posen, Barry R. 1993. <span>“The Security Dilemma and Ethnic Conflict.”</span> <em>Survival</em> 35 (1): 27–47. <a href="https://doi.org/10.1080/00396339308442672">https://doi.org/10.1080/00396339308442672</a>.
+</div>
+<div id="ref-wood:2003" class="csl-entry" role="listitem">
+Wood, Elisabeth J. 2003. <em>Insurgent Collective Action and Civil War in <span>El Salvador</span></em>. Cambridge University Press.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

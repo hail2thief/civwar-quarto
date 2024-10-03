@@ -9,7 +9,12 @@ title: "Why do people rebel? Grievances and identity"
 
 ## Required
 
+For Monday:
+
 - {{< fa book >}}&ensp; Chapter 1 in [@wood:2003]
+
+For Wednesday:
+
 - {{< fa file-pdf >}}&ensp;[@posen:1993b]
 - {{< fa book >}}&ensp; Chapter 3 in [@cockburn:2016]
 
