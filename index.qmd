@@ -25,7 +25,7 @@ sidebar: false
 
 - {{< fa user-graduate >}}  &nbsp; **Forrest Owens** <br> {{< fa clock >}} &nbsp; OH: Tu 9am-10am <br> {{< fa university >}} &nbsp; Kerr 568 <br> {{< fa envelope >}} &nbsp; flowens@ucdavis.edu
 - {{< fa user-graduate >}}  &nbsp; **Alexandra (Ally) Lazar** <br> {{< fa clock >}} &nbsp; OH: Tu 2pm-3pm <br> {{< fa university >}} &nbsp; Kerr 575 <br> {{< fa envelope >}} &nbsp; ajlazar@ucdavis.edu
-- {{< fa user-graduate >}}  &nbsp; **Joseph Bonneau** <br> {{< fa clock >}} &nbsp; OH: M 11am-1pm <br> {{< fa university >}} &nbsp; Kerr 575 <br> {{< fa envelope >}} &nbsp; jibonneau@ucdavis.edu
+- {{< fa user-graduate >}}  &nbsp; **Joseph Bonneau** <br> {{< fa clock >}} &nbsp; OH: M 11am-1pm <br> {{< fa university >}} &nbsp; Kerr 677 <br> {{< fa envelope >}} &nbsp; jibonneau@ucdavis.edu
 :::
 
 ::: {.g-col-12 .g-col-sm-6 .g-col-md-4}
