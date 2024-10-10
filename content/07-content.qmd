@@ -8,6 +8,8 @@ title: "Displacement in Colombia"
 ## Required
 
 
+For Wednesday:
+
 - {{< fa file-pdf >}}&ensp;[@tellez:2022]
 - {{< fa file-pdf >}}&ensp;[@lichtenheld:2020]
 

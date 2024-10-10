@@ -21,7 +21,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -122,8 +142,9 @@ ul.task-list li input[type="checkbox"] {
 <h1>Readings</h1>
 <section id="required" class="level2">
 <h2 data-anchor-id="required">Required</h2>
+<p>For Wednesday:</p>
 <ul>
-<li><i class="fa-solid fa-book" aria-label="book"></i> <span class="citation" data-cites="laserna:2012">Ch. 4 and Ch. 5, Miguel Abram La Serna, <em>The <span>Corner</span> of the <span>Living</span>: <span>Ayacucho</span> on the <span>Eve</span> of the <span>Shining Path</span> Insurgency</em> (Univ of North Carolina Press, 2012).</span></li>
+<li><i class="fa-solid fa-book" aria-label="book"></i> <span class="citation" data-cites="laserna:2012">(Ch. 4 and Ch. 5, <a href="#ref-laserna:2012" role="doc-biblioref">La Serna 2012</a>)</span></li>
 </ul>
 </section>
 <section id="recommended" class="level2">
@@ -135,9 +156,14 @@ ul.task-list li input[type="checkbox"] {
 <p>TBD <!-- * [Tuesday slides here](https://www.dropbox.com/scl/fi/nozwglmm35rq21jvaypod/07-peru-I.pdf?rlkey=j85ckekpfd8ydo4jqd1c6rwx4&dl=0) --> <!-- * [Thursday slides here](https://www.dropbox.com/scl/fi/jgsy2mdrqqa5vdlbr3xqx/07-peru-II.pdf?rlkey=5oi3k08tj80i08ln7ec89gszm&dl=0) --></p>
 
 
+
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-laserna:2012" class="csl-entry" role="listitem">
+La Serna, Miguel Abram. 2012. <em>The <span>Corner</span> of the <span>Living</span>: <span>Ayacucho</span> on the <span>Eve</span> of the <span>Shining Path</span> Insurgency</em>. Univ of North Carolina Press.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

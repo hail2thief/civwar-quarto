@@ -8,7 +8,13 @@ title: "Ethnic conflict in Ethiopia"
 ## Required
 
 
+For Monday:
+
 - {{< fa file-pdf >}}&ensp;[@tronvoll:2022]
+
+For Wednesday:
+
+
 - {{< fa file-pdf >}}&ensp;[@sambanis:schulhofer-wohl:2009]
 
 

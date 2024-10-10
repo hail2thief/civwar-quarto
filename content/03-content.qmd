@@ -8,8 +8,13 @@ title: "Why do people rebel? Resources and opportunity"
 ## Required
 
 
+For Monday:
+
 - {{< fa file-pdf >}}&ensp;[@collier:hoeffler:2004]
 - {{< fa file-pdf >}}&ensp;[@dube:vargas:2013]
+
+For Wednesday:
+
 - {{< fa file-pdf >}}&ensp;[@carter:etal:2019]
 
 

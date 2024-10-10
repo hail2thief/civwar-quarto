@@ -7,7 +7,12 @@ title: "Counterinsurgency"
 
 ## Required
 
+For Monday:
+
 - read section "*ASPECTS OF COUNTERINSURGENCY*" in [<i class="fa fa-external-link-square-alt" aria-hidden="true"></i> Counterinsurgency field manual](https://www.hsdl.org/?abstract&did=468442),  (Pages 1:19 through 1:29, look at bottom-right of page)
+
+For Wednesday: 
+
 - {{< fa file-pdf >}}&ensp;[@siegel:2011]
 - {{< fa file-pdf >}}&ensp;[@carey:mitchell:2017]
 

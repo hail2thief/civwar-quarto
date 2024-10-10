@@ -21,7 +21,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -102,7 +122,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#readings" id="toc-readings" class="nav-link active" data-scroll-target="#readings">Readings</a>
   <ul class="collapse">
-  <li><a href="#required" id="toc-required" class="nav-link" data-scroll-target="#required">Required</a></li>
+  <li><a href="#required-tbd" id="toc-required-tbd" class="nav-link" data-scroll-target="#required-tbd">Required (TBD)</a></li>
   <li><a href="#recommended" id="toc-recommended" class="nav-link" data-scroll-target="#recommended">Recommended</a></li>
   </ul></li>
   <li><a href="#slides" id="toc-slides" class="nav-link" data-scroll-target="#slides">Slides</a></li>
@@ -120,12 +140,12 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="readings" class="level1">
 <h1>Readings</h1>
-<section id="required" class="level2">
-<h2 data-anchor-id="required">Required</h2>
+<section id="required-tbd" class="level2">
+<h2 data-anchor-id="required-tbd">Required (TBD)</h2>
 <ul>
-<li><p><i class="fa-solid fa-file-pdf" aria-label="file-pdf"></i> <span class="citation" data-cites="luttwak:1999">Edward N. Luttwak, <span>“Give War a Chance,”</span> <em>Foreign Aff.</em> 78 (1999): 36.</span></p></li>
-<li><p><i class="fa-solid fa-file-pdf" aria-label="file-pdf"></i> <span class="citation" data-cites="tepperman:2002">Jonathan D. Tepperman, <span>“Truth and Consequences,”</span> <em>Foreign Aff.</em> 81 (2002): 128.</span></p></li>
-<li><p><i class="fa-solid fa-file-pdf" aria-label="file-pdf"></i> <span class="citation" data-cites="atran:axelrod:2008">Scott Atran and Robert Axelrod, <span>“Reframing <span>Sacred Values</span>,”</span> <em>Negotiation Journal</em> 24, no. 3 (2008): 221–246.</span></p></li>
+<li><p><i class="fa-solid fa-file-pdf" aria-label="file-pdf"></i> <span class="citation" data-cites="luttwak:1999">(<a href="#ref-luttwak:1999" role="doc-biblioref">Luttwak 1999</a>)</span></p></li>
+<li><p><i class="fa-solid fa-file-pdf" aria-label="file-pdf"></i> <span class="citation" data-cites="tepperman:2002">(<a href="#ref-tepperman:2002" role="doc-biblioref">Tepperman 2002</a>)</span></p></li>
+<li><p><i class="fa-solid fa-file-pdf" aria-label="file-pdf"></i> <span class="citation" data-cites="atran:axelrod:2008">(<a href="#ref-atran:axelrod:2008" role="doc-biblioref">Atran and Axelrod 2008</a>)</span></p></li>
 </ul>
 </section>
 <section id="recommended" class="level2">
@@ -137,9 +157,20 @@ ul.task-list li input[type="checkbox"] {
 <p>TBD <!-- * [Week's slides here](https://www.dropbox.com/scl/fi/429m2v9knrctfmdkuc10h/09-termination.pdf?rlkey=zzalqsi2guw486c6e5nj169v1&dl=0) --></p>
 
 
+
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-atran:axelrod:2008" class="csl-entry" role="listitem">
+Atran, Scott, and Robert Axelrod. 2008. <span>“Reframing <span>Sacred Values</span>.”</span> <em>Negotiation Journal</em> 24 (3): 221–46.
+</div>
+<div id="ref-luttwak:1999" class="csl-entry" role="listitem">
+Luttwak, Edward N. 1999. <span>“Give War a Chance.”</span> <em>Foreign Aff.</em> 78: 36.
+</div>
+<div id="ref-tepperman:2002" class="csl-entry" role="listitem">
+Tepperman, Jonathan D. 2002. <span>“Truth and Consequences.”</span> <em>Foreign Aff.</em> 81: 128.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
