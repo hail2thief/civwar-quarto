@@ -247,7 +247,7 @@ Note
 <h2 data-anchor-id="questions">Questions</h2>
 <p>Using the dataset, answer the following questions:</p>
 <ol start="2" type="1">
-<li>Count the number of groups by <code>status</code>. What PERCENT of groups across the whole dataset are categorized as “powerless”? Note: It is OK to treat each row as a different “group”/observation. Don’t worry about “double-counting” groups, it’s OK if you do. If you don’t know what I mean by this you are probably OK to begin with. (1 point)</li>
+<li>Count the number of rows by <code>status</code>. What PERCENT of rows across the whole dataset are categorized as “powerless”? (1 point)</li>
 </ol>
 <ol start="3" type="1">
 <li><p>Look through some of the groups that are categorized as “powerless” in the dataset. In your opinion, is being a group that is “powerless” enough to generate grievances? Or can a group be “powerless” and not be aggrieved? (2 points)</p></li>
@@ -256,20 +256,17 @@ Note
 <ol start="5" type="1">
 <li>Calculate the average ethnic group size, broken down by whether or not the group has regional autonomy. About how much smaller, on average, are groups with regional autonomy than groups without? Report as a <strong>percent point</strong> difference (e.g., 20% - 15% = 5%). (1 point)</li>
 </ol>
-<ol start="6" type="1">
-<li>Filter so you are only looking at ethnic groups that have held monopoly power and are less than 50% of the population<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. Create a variable that tells you how long each of these groups has been in power. Which group has had monopoly power for the longest time period in this dataset? Name of the group exactly as it appears in the data. (1 point).</li>
-</ol>
+<!-- 6. Filter so you are only looking at ethnic groups that have held monopoly power and are less than 50% of the population^[Note: to filter a quantity, use "*filter by condition*"]. Create a variable that tells you how long each of these groups has been in power. Which group has had monopoly power for the longest time period in this dataset? Name of the group exactly as it appears in the data. (1 point). -->
+<!-- ```{r} -->
+<!-- df |> filter(status == "MONOPOLY", size <= .5) |> -->
+<!--   mutate(duration = to - from) |> -->
+<!--   filter(duration == max(duration)) -->
+<!-- ``` -->
 
 
 </section>
 
-
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-
-<ol>
-<li id="fn1"><p>Note: to filter a quantity, use “<em>filter by condition</em>”<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section></div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
