@@ -40,158 +40,158 @@ knitr::opts_chunk$set(
 
 
 
-<!-- Skills used:  -->
+Skills used:
 
-<!-- - filtering data -->
-<!-- - summary statistics (note: towards the end I discuss "dummy" [0,1] variables) -->
-<!-- - grouped summary, statistic -->
-<!-- - plotting -->
-
-
-<!-- [My awkward Google Sheets video tutorials are here](https://www.dropbox.com/sh/rsj9qm67se619pm/AAD1wPt84O8yaIfSPcwN9edua?dl=0) -->
+- filtering data
+- summary statistics (note: towards the end I discuss "dummy" [0,1] variables)
+- grouped summary, statistic
+- plotting
 
 
-
-<!-- ::: {.callout-warning} -->
-<!-- You must complete all of the tasks here BEFORE opening the Canvas quiz; otherwise, you will run out of time! -->
-<!-- ::: -->
+[My awkward Google Sheets video tutorials are here](https://www.dropbox.com/sh/rsj9qm67se619pm/AAD1wPt84O8yaIfSPcwN9edua?dl=0)
 
 
 
-<!-- ## Task 1: The geography of war -->
-
-
-<!-- You're going to work with a random sample from the Uppsala Conflict Data Program at The Department of Peace and Conflict Research, Uppsala University in Oslo, Norway. The dataset is called the Geo-referenced Event Dataset (GED) which provides detailed geo-referenced information on violent events around the world.  -->
-
-<!-- - Download this: <i class="fas fa-download"></i> [UCDP GED Dataset](https://www.dropbox.com/s/6tthe5o22lgglkp/ucdp-ged-small.csv?dl=1) -->
-
-
-<!-- ```{r, warning=FALSE, echo=FALSE, eval = TRUE, message=FALSE, results='asis'} -->
-<!-- library(tidyverse) -->
-<!-- # dictionary -->
-<!-- tribble(~Variable, ~Description,  -->
-<!--         "id", "Unique event identifer", -->
-<!--         "year", "Year event began", -->
-<!--         "month", "Month event began", -->
-<!--         "day", "Day event began", -->
-<!--         "country", "Country of event", -->
-<!--         "type_of_violence", "UCDP violence type", -->
-<!--         "conflict_name", "Name of conflict", -->
-<!--         "side_a", "Side A", -->
-<!--         "side_b", "Side B", -->
-<!--         "source_article", "Article event came from", -->
-<!--         "latitude", "Latitude", -->
-<!--         "longitude", "Longitude", -->
-<!--         "low_death_estimate", "Low estimate of number of deaths", -->
-<!--         "high_death_estimate", "High estimate of number of deaths", -->
-<!--         "best_death_estimate", "Best estimate") %>%  -->
-<!--   pander::pandoc.table() -->
-
-<!-- ``` -->
+::: {.callout-warning}
+You must complete all of the tasks here BEFORE opening the Canvas quiz; otherwise, you will run out of time!
+:::
 
 
 
-<!-- We're going to use this geo-coded data to map all the violent events in a country in a year of your choosing. Here's how to do this: -->
+## Task 1: The geography of war
 
 
-<!-- - Look through the data a bit -->
+You're going to work with a random sample from the Uppsala Conflict Data Program at The Department of Peace and Conflict Research, Uppsala University in Oslo, Norway. The dataset is called the Geo-referenced Event Dataset (GED) which provides detailed geo-referenced information on violent events around the world.
 
-<!-- - filter the data to a year and country of your choosing, being careful that your selection does not result in too few rows (you want at least 100 rows) -->
-
-<!-- - select only these columns: `type_of_violence`,	`latitude`,	`longitude`,	`best_death_estimate` -->
-
-<!-- - paste them into a new spreadsheet, then File --> Download that spreadsheet as a `.csv` file (in Excel you would "save as" -> file format -> .csv) -->
-
-<!-- - Go to this [very ugly yet masterful website](https://www.gpsvisualizer.com/map_input?form=data) and on the left, upload your csv file under "File #1" -->
-
-<!--     - Look at the "data point options" section of that same page -->
-
-<!--     - set `colorize this field` to custom field and then write in "type_of_violence" -->
-
-<!--     - set the "resize using this field" option to "custom field" and then write in "best_death_estimate" -->
-
-<!--     - finally, bottom left, hit "draw the map" -->
-
-<!--     - Screencap the map so you can turn it in -->
+- Download this: <i class="fas fa-download"></i> [UCDP GED Dataset](https://www.dropbox.com/s/6tthe5o22lgglkp/ucdp-ged-small.csv?dl=1)
 
 
-<!-- 1. Spend some time looking at the map you have generated, you can also click on the points. It helps to have Google Maps open in a separate tab to get a better sense for what you are looking at. Now, reflect on what you are seeing. Which country did you pick? Where are these attacks concentrated? How do they relate to the country's geography? Where are they in relation to the capital, to its borders? Are there patterns in the number of deaths, or the type of violence? Describe what you see in 2-3 paragraphs. (5 points) -->
+```{r, warning=FALSE, echo=FALSE, eval = TRUE, message=FALSE, results='asis'}
+library(tidyverse)
+# dictionary
+tribble(~Variable, ~Description,
+        "id", "Unique event identifer",
+        "year", "Year event began",
+        "month", "Month event began",
+        "day", "Day event began",
+        "country", "Country of event",
+        "type_of_violence", "UCDP violence type",
+        "conflict_name", "Name of conflict",
+        "side_a", "Side A",
+        "side_b", "Side B",
+        "source_article", "Article event came from",
+        "latitude", "Latitude",
+        "longitude", "Longitude",
+        "low_death_estimate", "Low estimate of number of deaths",
+        "high_death_estimate", "High estimate of number of deaths",
+        "best_death_estimate", "Best estimate") %>%
+  pander::pandoc.table()
 
-
-<!-- ## Task 2: Rebel contraband -->
-
-
-<!-- How do rebels fund their movements? You are going to work with the [Rebel Contraband Dataset](https://www.dropbox.com/scl/fi/iu755ks5lcgow7gr43uzo/contraband.csv?rlkey=f3z2gn0ub9oqkfuilcsbf64jj&dl=1). Each observation in this dataset is a year in which a rebel group was engaged in conflict with the state. We refer to each row as a *conflict-year*.  -->
-
-
-<!-- Using the dataset, answer the following questions: -->
-
-
-<!-- 2. Across the whole dataset, approximately what percent of conflict-years relied on extortion? (1 point) -->
-
-
-<!-- ```{r} -->
-<!-- library(tidyverse) -->
-<!-- df = read_csv("https://www.dropbox.com/scl/fi/iu755ks5lcgow7gr43uzo/contraband.csv?rlkey=f3z2gn0ub9oqkfuilcsbf64jj&dl=1") -->
-<!-- mean(df$extortion) * 100 -->
-<!-- ``` -->
-
-
-<!-- 3. Calculate the percent of conflict-years that relied on the extortion of alluvial diamonds, broken down by country. In which country was this funding strategy the most common? (1 point) -->
-
-
-<!-- ```{r} -->
-<!-- df |>  -->
-<!--   group_by(country) |>  -->
-<!--   summarise(mean = mean(diamondsalluvial_extortion) * 100) |>  -->
-<!--   arrange(desc(mean)) -->
-<!-- ``` -->
+```
 
 
 
-<!-- 4. How have coca smuggling trends changed over time? Use a pivot table to find the percent of conflicts with coca smuggling *for each year* in the data. Plot the results as a line graph and screencap the image (you will upload). (1 point) -->
+We're going to use this geo-coded data to map all the violent events in a country in a year of your choosing. Here's how to do this:
 
 
-<!-- ```{r, eval = FALSE} -->
-<!-- df |>  -->
-<!--   group_by(year) |>  -->
-<!--   summarise(mean = mean(coca_smuggling) * 100) |>  -->
-<!--   ggplot(aes(x = year, y = mean)) +  -->
-<!--   geom_line() -->
-<!-- ``` -->
+- Look through the data a bit
+
+- filter the data to a year and country of your choosing, being careful that your selection does not result in too few rows (you want at least 100 rows)
+
+- select only these columns: `type_of_violence`,	`latitude`,	`longitude`,	`best_death_estimate`
+
+- paste them into a new spreadsheet, then File --> Download that spreadsheet as a `.csv` file (in Excel you would "save as" -> file format -> .csv)
+
+- Go to this [very ugly yet masterful website](https://www.gpsvisualizer.com/map_input?form=data) and on the left, upload your csv file under "File #1"
+
+    - Look at the "data point options" section of that same page
+
+    - set `colorize this field` to custom field and then write in "type_of_violence"
+
+    - set the "resize using this field" option to "custom field" and then write in "best_death_estimate"
+
+    - finally, bottom left, hit "draw the map"
+
+    - Screencap the map so you can turn it in
 
 
-<!-- 4. How have coca smuggling trends changed over time? Briefly interpret the graph. (1 point) -->
+1. Spend some time looking at the map you have generated, you can also click on the points. It helps to have Google Maps open in a separate tab to get a better sense for what you are looking at. Now, reflect on what you are seeing. Which country did you pick? Where are these attacks concentrated? How do they relate to the country's geography? Where are they in relation to the capital, to its borders? Are there patterns in the number of deaths, or the type of violence? Describe what you see in 2-3 paragraphs. (5 points)
+
+
+## Task 2: Rebel contraband
+
+
+How do rebels fund their movements? You are going to work with the [Rebel Contraband Dataset](https://www.dropbox.com/scl/fi/iu755ks5lcgow7gr43uzo/contraband.csv?rlkey=f3z2gn0ub9oqkfuilcsbf64jj&dl=1). Each observation in this dataset is a year in which a rebel group was engaged in conflict with the state. We refer to each row as a *conflict-year*.
+
+
+Using the dataset, answer the following questions:
+
+
+2. Approximately what percent of entries in the dataset relied on extortion? (1 point)
+
+
+```{r}
+library(tidyverse)
+df = read_csv("https://www.dropbox.com/scl/fi/iu755ks5lcgow7gr43uzo/contraband.csv?rlkey=f3z2gn0ub9oqkfuilcsbf64jj&dl=1")
+mean(df$extortion) * 100
+```
+
+
+3. Calculate the percent of entries that relied on the extortion of alluvial diamonds, broken down by country. In which country was this funding strategy the most common? (1 point)
+
+
+```{r}
+df |>
+  group_by(country) |>
+  summarise(mean = mean(diamondsalluvial_extortion) * 100) |>
+  arrange(desc(mean))
+```
 
 
 
-<!-- 5. Do groups that abduct their members rely on smuggling at higher or lower rates than groups that don't abduct? Calculate the percent of rebel groups that use smuggling, comparing groups that do and don't rely on abduction. What is the difference in smuggling use between groups that use abduction and those that don't? Report as a difference in percentage points ($\%Smuggling_{abduction=yes} - \%Smuggling_{abduction=no}$) (1 point) -->
-
-<!-- ```{r} -->
-<!-- df |>  -->
-<!--   group_by(abduction) |>  -->
-<!--   summarise(mean(smuggling) * 100) -->
-
-<!-- 55.82873 - 29.03463 -->
-<!-- ``` -->
+4. How have coca smuggling trends changed over time? Use a pivot table to find the percent of entries with coca smuggling *per year* in the data. Plot the results as a line graph and screencap the image (you will upload). (1 point)
 
 
+```{r, eval = FALSE}
+df |>
+  group_by(year) |>
+  summarise(mean = mean(coca_smuggling) * 100) |>
+  ggplot(aes(x = year, y = mean)) +
+  geom_line()
+```
+
+
+4. How have coca smuggling trends changed over time? Briefly interpret the graph. (1 point)
 
 
 
-<!-- ```{r, echo=FALSE,eval = TRUE, message=FALSE,warning=FALSE,results="asis"} -->
-<!-- library(tibble) -->
-<!-- tribble(~Variable, ~Description,  -->
-<!--         "country", "Country", -->
-<!--         "year",  "Year", -->
-<!--         "sidea", "Side A in conflict (UCDP)", -->
-<!--         "sideb", "Side B in conflict (UCDP)", -->
-<!--         "region", "Region of the world", -->
-<!--         "extortion", "Did group use extortion?\n(1 = yes, 0 = no)", -->
-<!--         "smuggling", "Did group use smuggling\n(1 = yes, 0 = no)",  -->
-<!--         "RESOURCE_ACTION", "Did group use ACTION to acquire RESOURCE?\n(1 = yes, 0 = no)", -->
-<!--         "external_support", "Did group receive external support from foreign government?\n(1 = yes, 0 = no)", -->
-<!--         "forcedrecruit", "Did group forcibly recruit members?\n(1 = yes, 0 = no)", -->
-<!--         "abduction", "Did group abduct new members?\n(1 = yes, 0 = no)") %>%  -->
-<!--   pander::pandoc.table() -->
-<!-- ``` -->
+5. Do groups that abduct their members rely on smuggling at higher or lower rates than groups that don't abduct? Calculate the percent of entries in the dataset that use smuggling, comparing groups that do and don't rely on abduction. What is the difference in smuggling use between groups that use abduction and those that don't? Report as a difference in percentage points (e.g., 35% - 20% = 15%). (1 point)
+
+```{r}
+df |>
+  group_by(abduction) |>
+  summarise(mean(smuggling) * 100)
+
+55.82873 - 29.03463
+```
+
+
+
+
+
+```{r, echo=FALSE,eval = TRUE, message=FALSE,warning=FALSE,results="asis"}
+library(tibble)
+tribble(~Variable, ~Description,
+        "country", "Country",
+        "year",  "Year",
+        "sidea", "Side A in conflict (UCDP)",
+        "sideb", "Side B in conflict (UCDP)",
+        "region", "Region of the world",
+        "extortion", "Did group use extortion?\n(1 = yes, 0 = no)",
+        "smuggling", "Did group use smuggling\n(1 = yes, 0 = no)",
+        "RESOURCE_ACTION", "Did group use ACTION to acquire RESOURCE?\n(1 = yes, 0 = no)",
+        "external_support", "Did group receive external support from foreign government?\n(1 = yes, 0 = no)",
+        "forcedrecruit", "Did group forcibly recruit members?\n(1 = yes, 0 = no)",
+        "abduction", "Did group abduct new members?\n(1 = yes, 0 = no)") %>%
+  pander::pandoc.table()
+```
