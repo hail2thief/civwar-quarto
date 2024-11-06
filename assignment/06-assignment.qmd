@@ -40,113 +40,114 @@ knitr::opts_chunk$set(
 
 
 
-<!-- Skills used:  -->
+Skills used:
 
-<!-- - grouped summary counts -->
-<!-- - grouped summary statistics -->
-
-
-<!-- [My awkward Google Sheets video tutorials are here](https://www.dropbox.com/sh/rsj9qm67se619pm/AAD1wPt84O8yaIfSPcwN9edua?dl=0) -->
+- grouped summary counts
+- grouped summary statistics
 
 
-
-<!-- ::: {.callout-warning} -->
-<!-- You must complete all of the tasks here BEFORE opening the Canvas quiz; otherwise, you will run out of time! -->
-<!-- ::: -->
+[My awkward Google Sheets video tutorials are here](https://www.dropbox.com/sh/rsj9qm67se619pm/AAD1wPt84O8yaIfSPcwN9edua?dl=0)
 
 
 
-<!-- ## The Vietnam War -->
-
-
-<!-- Here, you'll be working with hamlet level data on territorial control, selective violence, and indiscriminate violence during the Vietnam War. Each row is a hamlet in a given month in the year 1969. Using the data (variable dictionary below), answer the following questions.  -->
-
-
-<!-- - Download this: <i class="fas fa-download"></i> [Vietnam HES data](https://www.dropbox.com/scl/fi/iq9jmh9gycjkal58wyr2c/vietnam.csv?rlkey=imdm954j7n9c6j01rvqlxv89n&dl=1) -->
+::: {.callout-warning}
+You must complete all of the tasks here BEFORE opening the Canvas quiz; otherwise, you will run out of time!
+:::
 
 
 
-<!-- 1. What was the Strategic Hamlet Program during the Vietnam War? Look it up, describe in your own words, four to five sentences. Tell us what the program *did* and what its intended *objective* was. (4 points) -->
+## The Vietnam War
 
 
-<!-- ```{r} -->
-<!-- library(tidyverse) -->
-<!-- df = read_csv("https://www.dropbox.com/scl/fi/iq9jmh9gycjkal58wyr2c/vietnam.csv?rlkey=imdm954j7n9c6j01rvqlxv89n&dl=1") -->
-<!-- ``` -->
+Here, you'll be working with hamlet level data on territorial control, selective violence, and indiscriminate violence during the Vietnam War. Each row is a hamlet in a given month in the year 1969. Using the data (variable dictionary below), answer the following questions.
 
 
-
-<!-- 2. HOW MANY bomb sorties were launched, in total, against the most attacked hamlet in Vietnam? (1 point) -->
-
-
-<!-- ```{r} -->
-<!-- df |>  -->
-<!--   group_by(hamlet_id) |>  -->
-<!--   summarise(bombed = sum(bombed)) |>  -->
-<!--   filter(bombed == max(bombed, na.rm = TRUE)) -->
-<!-- ``` -->
+- Download this: <i class="fas fa-download"></i> [Vietnam HES data](https://www.dropbox.com/scl/fi/iq9jmh9gycjkal58wyr2c/vietnam.csv?rlkey=imdm954j7n9c6j01rvqlxv89n&dl=1)
 
 
 
-<!-- 3. Calculate the PERCENT of observations in each control category. Overall, who had more control, the rebels, or the government? (1 point) -->
-
-<!-- ```{r} -->
-<!-- df |> group_by(control) |>  -->
-<!--   tally() |>  -->
-<!--   mutate(percent = n / sum(n) * 100) -->
-<!-- # the state -->
-<!-- ``` -->
+1. What was the Strategic Hamlet Program during the Vietnam War? Look it up, describe in your own words, four to five sentences. Tell us what the program *did* and what its intended *objective* was. (4 points)
 
 
-<!-- 4. About HOW MANY MORE bomb sorties, in total, were aimed at places that had full rebel control than places where the government had full control? (1 point) -->
-
-
-<!-- ```{r} -->
-<!-- df |>  -->
-<!--   group_by(control) |>  -->
-<!--   summarise(bombed = sum(bombed, na.rm = TRUE)) -->
-<!-- 9426 - 529 -->
-<!-- ``` -->
+```{r}
+library(tidyverse)
+df = read_csv("https://www.dropbox.com/scl/fi/iq9jmh9gycjkal58wyr2c/vietnam.csv?rlkey=imdm954j7n9c6j01rvqlxv89n&dl=1")
+```
 
 
 
-<!-- 5. How common was the use of selective violence during the war? Take the average of selective violence across areas of control (note: remember what the average of a 0/1 variable tells you!). Where was it most or least common? How common would you say it was overall? Reference specific quantities in your answer. (2 points) -->
-
-<!-- ```{r} -->
-<!-- df |>  -->
-<!--   group_by(control) |>  -->
-<!--   summarise(selective_terror = mean(selective_terror, na.rm = TRUE)) |>  -->
-<!--   mutate(selective_percent = selective_terror * 100) -->
-<!-- # overall, infrequent: in the highest violece category, only 7.8% of observations experienced selective terror. Least common was in places of full state control (about .1%), most common was in places of majority (but not full) rebel control (7.8%).  -->
-<!-- ``` -->
+2. HOW MANY bomb sorties were launched, in total, against the most attacked hamlet in Vietnam? Note: you'll want to "group by" hamlet ID to answer this question. (1 point)
 
 
-
-<!-- 6. Do anything else you want with the data. Describe what you did and what you found. (2 points) -->
+```{r}
+df |>
+  group_by(hamlet_id) |>
+  summarise(bombed = sum(bombed)) |>
+  filter(bombed == max(bombed, na.rm = TRUE))
+```
 
 
 
+3. Calculate the PERCENT of observations in each control category. Overall, what is the most common control status? (1 point)
+
+```{r}
+df |> group_by(control) |>
+  tally() |>
+  mutate(percent = n / sum(n) * 100)
+# partial state
+```
+
+
+4. About HOW MANY MORE bomb sorties, in total, were aimed at places that had full rebel control than places where the government had full control? (1 point)
+
+
+```{r}
+df |>
+  group_by(control) |>
+  summarise(bombed = sum(bombed, na.rm = TRUE))
+9426 - 529
+```
+
+
+
+5. How common was the use of selective violence during the war? Take the average of selective violence across areas of control (note: remember what the average of a 0/1 variable tells you!). Where was it most or least common? How common would you say it was overall? Reference specific quantities in your answer. (2 points)
+
+
+```{r}
+df |>
+  group_by(control) |>
+  summarise(selective_terror = mean(selective_terror, na.rm = TRUE)) |>
+  mutate(selective_percent = selective_terror * 100)
+# overall, infrequent: in the highest violece category, only 7.8% of observations experienced selective terror. Least common was in places of full state control (about .1%), most common was in places of majority (but not full) rebel control (7.8%).
+```
+
+
+
+6. Do anything else you want with the data. Describe what you did and what you found. (2 points)
 
 
 
 
-<!-- ```{r, echo=FALSE,message=FALSE,warning=FALSE,results="asis",eval=TRUE} -->
-<!-- library(tidyverse) -->
-<!-- library(pander) -->
-<!-- tribble(~Variable, ~Description,  -->
-<!--         "hamlet_id", "9-digit HES identifier", -->
-<!--         "month", "Month", -->
-<!--         "selective_terror", "Did Vietcong use selective violence? (1 = yes, 0 = no)", -->
-<!--         "control", "Who controlled hamlet?\n(1 = full state, 2 = partial state, 3 = contested, 4 = partial rebel, 5 = full rebel)", -->
-<!--         "bombed", "How many bombing sorties in hamlet?", -->
-<!--         "urban", "Is hamlet mostly urban?\n(1 = yes, 0 = no)", -->
-<!--         "pop", "Hamlet population", -->
-<!--         "border", "Distance to closest international border", -->
-<!--         "dev_index", "Development index (note: this is an index so the exact numbers are not interpretable. Lower numbers = less developed, larger numbers = more developed.)", -->
-<!--         "buddhist", "Predominantly Buddhist hamlet?\n(1 = yes, 0 = no)", -->
-<!--         "vietnamese", "Predominantly Vietnamese hamlet?\n(1 = yes, 0 = no)") %>%  -->
-<!--   pandoc.table() -->
-<!-- ``` -->
+
+
+
+```{r, echo=FALSE,message=FALSE,warning=FALSE,results="asis",eval=TRUE}
+library(tidyverse)
+library(pander)
+tribble(~Variable, ~Description,
+        "hamlet_id", "9-digit HES identifier",
+        "month", "Month",
+        "selective_terror", "Did Vietcong use selective violence? (1 = yes, 0 = no)",
+        "control", "Who controlled hamlet?\n(1 = full state, 2 = partial state, 3 = contested, 4 = partial rebel, 5 = full rebel)",
+        "bombed", "How many bombing sorties in hamlet?",
+        "urban", "Is hamlet mostly urban?\n(1 = yes, 0 = no)",
+        "pop", "Hamlet population",
+        "border", "Distance to closest international border",
+        "dev_index", "Development index (note: this is an index so the exact numbers are not interpretable. Lower numbers = less developed, larger numbers = more developed.)",
+        "buddhist", "Predominantly Buddhist hamlet?\n(1 = yes, 0 = no)",
+        "vietnamese", "Predominantly Vietnamese hamlet?\n(1 = yes, 0 = no)") %>%
+  pandoc.table()
+```
 
 
 
