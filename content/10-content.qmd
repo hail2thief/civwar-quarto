@@ -12,10 +12,16 @@ title: "How do wars end?"
 
 - {{< fa file-pdf >}}&ensp;[@tepperman:2002]
 
-- {{< fa file-pdf >}}&ensp;[@atran:axelrod:2008]
+- ["Why Sherman was right to burn Atlanta" ](https://www.dropbox.com/scl/fi/n0zblx37lkn5t8ju4ulxx/Pando_-The-War-Nerd_-Why-Sherman-was-right-to-burn-Atlanta.pdf?rlkey=k6l9uin7858wxtqaey8z5or07&dl=1)
+
+This is a non-academic, but still interesting, article. Take it with a grain of salt! It has many issues. But: I want to discuss the overall idea. 
 
 
 ## Recommended
+
+
+- {{< fa file-pdf >}}&ensp;[@atran:axelrod:2008]
+
 
 
 # Slides
