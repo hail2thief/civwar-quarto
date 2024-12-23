@@ -16,15 +16,15 @@ website:
   search: false
   site-url: "https://civwar.juanftellez.com"
 
-  navbar:
-    pinned: true
-    right:
-      - text: "Syllabus"
-        file: index.qmd
-      - text: "Schedule"
-        file: schedule.qmd
-      - text: "Assignments"
-        file: assignment/index.qmd
+  navbar: false
+    # pinned: true
+    # right:
+    #   - text: "Syllabus"
+    #     file: index.qmd
+    #   - text: "Schedule"
+    #     file: schedule.qmd
+    #   - text: "Assignments"
+    #     file: assignment/index.qmd
 
   page-footer:
     left: |
